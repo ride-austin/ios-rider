@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController">
+            <connections>
+                <outlet property="authViewContainer" destination="6" id="E1p-uf-aFc"/>
+                <outlet property="createButton" destination="9" id="m4v-x5-fmg"/>
+                <outlet property="ivWhiteLogo" destination="0yT-mR-kgX" id="HFO-Vh-6YN"/>
+                <outlet property="loginButton" destination="8" id="KOL-fA-B5K"/>
+                <outlet property="serverControl" destination="aik-s0-Q7V" id="a9W-V1-Wyz"/>
+                <outlet property="splashImage" destination="pPO-xW-e8m" id="0Xt-Jp-rva"/>
+                <outlet property="version" destination="QaN-oK-D98" id="zyB-5T-JTe"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pPO-xW-e8m">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <accessibility key="accessibilityConfiguration" label="splashBgImage"/>
+                </imageView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6" userLabel="Auth Container">
+                    <rect key="frame" x="0.0" y="542" width="375" height="125"/>
+                    <subviews>
+                        <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aik-s0-Q7V">
+                            <rect key="frame" x="25" y="5" width="325" height="32"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <segments>
+                                <segment title="PROD"/>
+                                <segment title="TEST"/>
+                                <segment title="CUSTOM"/>
+                                <segment title="STAGE"/>
+                            </segments>
+                            <color key="tintColor" red="0.090196078430000007" green="0.49803921569999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="enviromentChanged:" destination="-1" eventType="valueChanged" id="yyc-dL-SDA"/>
+                            </connections>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9" customClass="FlatButton">
+                            <rect key="frame" x="192" y="46" width="158" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration" label="REGISTER"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="d1g-Tt-Tl5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <color key="tintColor" red="0.97254901959999995" green="0.32549019610000002" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="REGISTER">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.090196078430000007" green="0.49803921569999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.090196078431372548" green="0.49803921568627452" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doRegister:" destination="-1" eventType="touchUpInside" id="54"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8" customClass="FlatButton">
+                            <rect key="frame" x="24" y="46" width="158" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration" label="SIGN IN"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="hqC-FC-0f0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <state key="normal" title="SIGN IN">
+                                <color key="titleColor" red="0.090196078430000007" green="0.49803921569999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.090196078430000007" green="0.49803921569999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doLogin:" destination="-1" eventType="touchUpInside" id="23"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaN-oK-D98">
+                            <rect key="frame" x="0.0" y="101" width="375" height="21"/>
+                            <accessibility key="accessibilityConfiguration" identifier="splashVersionLabel"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="QPY-yL-O9K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="10"/>
+                            <color key="textColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9" firstAttribute="leading" secondItem="8" secondAttribute="trailing" constant="10" id="0Rn-K4-MmD"/>
+                        <constraint firstAttribute="height" constant="125" id="3JF-VJ-QnQ"/>
+                        <constraint firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="25" id="Ahb-R2-9iD"/>
+                        <constraint firstItem="QaN-oK-D98" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="CuM-9Q-anC"/>
+                        <constraint firstItem="8" firstAttribute="width" secondItem="9" secondAttribute="width" id="Gtp-h2-Pw0"/>
+                        <constraint firstItem="aik-s0-Q7V" firstAttribute="top" secondItem="6" secondAttribute="top" constant="5" id="JYb-iO-0Yl"/>
+                        <constraint firstItem="QaN-oK-D98" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="10" id="LzE-xQ-Dyy"/>
+                        <constraint firstAttribute="trailing" secondItem="aik-s0-Q7V" secondAttribute="trailing" constant="25" id="QjI-WE-vlT"/>
+                        <constraint firstItem="8" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="24" id="T9A-tD-KID"/>
+                        <constraint firstItem="QaN-oK-D98" firstAttribute="top" secondItem="8" secondAttribute="bottom" constant="10" id="YCR-Ui-IkE"/>
+                        <constraint firstAttribute="trailing" secondItem="QaN-oK-D98" secondAttribute="trailing" id="fGU-ce-eJy"/>
+                        <constraint firstItem="8" firstAttribute="top" secondItem="aik-s0-Q7V" secondAttribute="bottom" constant="10" id="hMI-tr-4eU"/>
+                        <constraint firstAttribute="bottom" secondItem="QaN-oK-D98" secondAttribute="bottom" constant="3" id="mMm-gd-Jji"/>
+                        <constraint firstItem="aik-s0-Q7V" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="25" id="v5u-fc-Tfe"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoRideAustin_white" translatesAutoresizingMaskIntoConstraints="NO" id="0yT-mR-kgX">
+                    <rect key="frame" x="104.5" y="48" width="165" height="46"/>
+                    <accessibility key="accessibilityConfiguration" label="splashLogoImage"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="7vF-0U-QBd"/>
+                        <constraint firstAttribute="width" constant="165" id="asT-9W-ukn"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.050980392156862744" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.97254901959999995" green="0.32549019610000002" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" label="Splash">
+                <bool key="isElement" value="NO"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="0yT-mR-kgX" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="9VL-t4-wTL"/>
+                <constraint firstItem="pPO-xW-e8m" firstAttribute="top" secondItem="1" secondAttribute="top" id="HVD-sK-STl"/>
+                <constraint firstItem="0yT-mR-kgX" firstAttribute="top" secondItem="1" secondAttribute="top" constant="48" placeholder="YES" id="Ptx-HY-tDt"/>
+                <constraint firstAttribute="bottom" secondItem="pPO-xW-e8m" secondAttribute="bottom" id="Qxr-H6-WHB"/>
+                <constraint firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="Wzp-Sm-A66"/>
+                <constraint firstAttribute="bottom" secondItem="6" secondAttribute="bottom" placeholder="YES" id="ceZ-4q-MgQ"/>
+                <constraint firstAttribute="trailing" secondItem="pPO-xW-e8m" secondAttribute="trailing" id="feK-eS-6oS"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="feh-7f-OIO"/>
+                <constraint firstItem="pPO-xW-e8m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wmS-WE-DqN"/>
+                <constraint firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="xSV-a9-LrA"/>
+            </constraints>
+            <point key="canvasLocation" x="-11" y="93"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoRideAustin_white" width="165" height="46"/>
+    </resources>
+</document>

@@ -1,0 +1,26 @@
+[
+    {
+    "code": "CHANGE_BOOKING",
+    "description": "I needed to change booking (time/place)"
+    },
+    {
+    "code": "CHANGE_MIND",
+    "description": "I changed my mind"
+    },
+    {
+    "code": "ANOTHER_RIDE",
+    "description": "I found another ride"
+    },
+    {
+    "code": "MISTAKE",
+    "description": "I booked by mistake"
+    },
+    {
+    "code": "TOO_LONG",
+    "description": "It was too long to wait"
+    },
+    {
+    "code": "OTHER",
+    "description": "Other"
+    }
+]

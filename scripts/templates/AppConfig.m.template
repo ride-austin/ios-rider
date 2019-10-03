@@ -1,0 +1,59 @@
+#import "AppConfig.h"
+
+#import "RAEnvironmentManager.h"
+
+@implementation AppConfig
+
++ (NSString *)apiKey {
+    return @"{{apiKey}}";
+}
+
++ (NSString *)stripeKeyQA {
+    return @"{{stripeKeyQA}}";
+}
+
++ (NSString *)googleDirectionsKey {
+    return @"{{googleMapDirectionsKey}}";
+}
+
++ (NSString *)googleMapKey {
+    return @"{{GoogleMapKey}}";
+}
+
++ (NSString *)stripeKey {
+    return @"{{stripeKey}}";
+}
+
++ (NSString *)appleMerchantIdentifier {
+    return @"{{appleMerchantIdentifier}}";
+}
+
++ (NSString *)bugFenderKey {
+    return @"{{bugFenderKey}}" ;
+}
+
++ (NSString *)productionServerURL {
+    return @"{{productionServerURL}}";
+}
+
++ (NSString *)qaServerURL {
+    return @"{{qaServerURL}}";
+}
+
++ (NSString *)stageServerURL {
+    return @"{{stageServerURL}}";
+}
+
++ (NSString *)devServerURL {
+    return @"{{devServerURL}}";
+}
+
++ (NSString *)featureServerURL {
+    return @"{{featureServerURL}}";
+}
+
++ (NSString *)md5PasswordSalt {
+    return @"{{md5PasswordSalt}}";
+}
+
+@end

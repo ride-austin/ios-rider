@@ -1,0 +1,352 @@
+[
+ {
+ "id": 41,
+ "name": "AIDS Services of Austin",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/aids-services-of-austin@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 32,
+ "name": "Andy Roddick Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/andy-roddick-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 7,
+ "name": "Austin Film Society",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austin-film-society@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 25,
+ "name": "Austin Music Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austin-music-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 8,
+ "name": "Austin Parks Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austin-parks-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 31,
+ "name": "Austin Pets Alive!",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austin-pets-alive@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 9,
+ "name": "Austin Sunshine Camps",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austin-sunshine-camps@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 35,
+ "name": "Austin Young Chamber Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austin-young-chamber-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 28,
+ "name": "Autism Society",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/austism-society@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 10,
+ "name": "Barton Springs Conservancy",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/barton-springs-conservancy@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 11,
+ "name": "BikeTexas",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/bike-texas@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 48,
+ "name": "Blue Santa",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/blue-santa@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 36,
+ "name": "Capital Area Dental Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/capital-area-dental@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 12,
+ "name": "CareBOX",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/carebox-program@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 42,
+ "name": "Caritas of Austin",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/caritas@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 6,
+ "name": "Center for Child Protection",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/center-for-child-protection@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 13,
+ "name": "Central Texas Foodbank",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/central-texas-food-bank@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 3,
+ "name": "Dell Children's",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/dell-childrens@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 22,
+ "name": "Dell Seton Medical Center",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/dell-seton-medical-center@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 18,
+ "name": "Drive a Senior",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/drive-a-senior@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 26,
+ "name": "Eanes Education Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/eanes-education-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 30,
+ "name": "ECHO",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/echo@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 29,
+ "name": "Foundation Communities",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/foundation-communities@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 38,
+ "name": "Habitat for Humanity",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/habitat-for-humanity@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 52,
+ "name": "Hands Anonymous Project",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/hands-anonymous-project@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 37,
+ "name": "Health Alliance For Austin Musicians",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/health-alliance-for-austin@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 17,
+ "name": "Hill Country Conservancy",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/hill-country-conservancy@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 39,
+ "name": "Hospice Austin",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/hospice-austin@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 43,
+ "name": "Juvenile Diabetes Research Fund",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/juvenile-diabetes-research@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 20,
+ "name": "Keep Austin Beautiful ",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/keep-austin-beatiful@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 40,
+ "name": "Lifeworks",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/lifeworks@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 1,
+ "name": "Little Helping Hands",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/little-helping-hands@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 14,
+ "name": "LiveStrong",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/livestrong@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 47,
+ "name": "MDA CENTRAL TEXAS",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/mda-central-texas@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 4,
+ "name": "Miracle Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/miracle-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 46,
+ "name": "Music Peace Project",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/music-peace-project@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 5,
+ "name": "Paws of Austin",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/paws-of-austin@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 49,
+ "name": "Pop-up Birthday",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/pop-up-birthday@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 34,
+ "name": "Rocky Mountain Institute",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/rocky-mountain-institute@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 15,
+ "name": "SAFE Austin",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/safe@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 27,
+ "name": "Saving Belle and Abby",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/saving-belle-and-abby@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 33,
+ "name": "Susan G. Komen",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/susan-g-komen@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 44,
+ "name": "TCHF Texas Chapter",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/tchf-texas-chapter@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 21,
+ "name": "Testicular Cancer Foundation",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/testicular-cancer-foundation@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 24,
+ "name": "Texas Tribune",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/texas-tribune@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 23,
+ "name": "The Kindness Campaign",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/the-kindess-campaign@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 50,
+ "name": "Trail of Lights ",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/trail-of-lights@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 45,
+ "name": "We Are Blood",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/we-are-blood@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 16,
+ "name": "Well Aware",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/well-aware@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ },
+ {
+ "id": 2,
+ "name": "YWCA",
+ "imageUrl": "https://media.rideaustin.com/images/roundup/ywca@2x.png",
+ "cityBitmask": 1,
+ "order": 1
+ }
+ ]

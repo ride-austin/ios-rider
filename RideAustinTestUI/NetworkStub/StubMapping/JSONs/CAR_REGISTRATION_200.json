@@ -1,0 +1,15 @@
+{
+    "carCategories" : ["REGULAR"],
+    "color" : "Black",
+    "id" : 16929,
+    "inspectionStatus" : "NOT_INSPECTED",
+    "insuranceExpiryDate" : "2019-01-26",
+    "insurancePictureUrl" : "https://s3.amazonaws.com/media-dev.rideaustin.com/driver-insurances/f9fbb3f4-cfa8-49af-b2d7-8bdb62c28c69.png?AWSAccessKeyId=AKIAJGDZT755X736UE5Q&Expires=1516895244&Signature=ZZVpaRaxB%2FmiLyLbjuKVyhIv2rA%3D",
+    "license" : "ASFDASDFA",
+    "make" : "BMW",
+    "model" : "X7",
+    "removed" : 0,
+    "selected" : 1,
+    "uuid" : 16929,
+    "year" : 2019,
+}

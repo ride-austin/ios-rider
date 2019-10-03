@@ -1,0 +1,60 @@
+{
+    "prediction": [
+                   {
+                   "description": "Hut's Hamburgers, West 6th Street, Austin, TX, United States",
+                   "placeId": "ChIJyU2q3Q21RIYR79FsGum2ypg",
+                   "types": [
+                             "establishment"
+                             ],
+                   "matches": [
+                               {
+                               "offset": 0,
+                               "length": 9
+                               }
+                               ],
+                   "structuredFormatting": {
+                   "description": "Hut's Hamburgers",
+                   "subDescription": "West 6th Street, Austin, TX, United States",
+                   "descriptionMatches": [
+                                          {
+                                          "offset": 0,
+                                          "length": 9
+                                          }
+                                          ]
+                   }
+                   },
+                   {
+                   "description": "Hut's Towing, New York 10, Hamden, NY, United States",
+                   "placeId": "ChIJB9E_Sm6A24kRBPNbMUzvNY0",
+                   "types": [
+                             "establishment"
+                             ],
+                   "matches": [
+                               {
+                               "offset": 0,
+                               "length": 5
+                               },
+                               {
+                               "offset": 27,
+                               "length": 3
+                               }
+                               ],
+                   "structuredFormatting": {
+                   "description": "Hut's Towing",
+                   "subDescription": "New York 10, Hamden, NY, United States",
+                   "descriptionMatches": [
+                                          {
+                                          "offset": 0,
+                                          "length": 5
+                                          }
+                                          ],
+                   "subDescriptionMatches": [
+                                             {
+                                             "offset": 13,
+                                             "length": 3
+                                             }
+                                             ]
+                   }
+                   }
+                   ]
+}

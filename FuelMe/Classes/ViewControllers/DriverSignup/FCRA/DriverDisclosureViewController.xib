@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverDisclosureViewController">
+            <connections>
+                <outlet property="btContinue" destination="9uV-KU-75H" id="exf-Db-IxA"/>
+                <outlet property="imgCheckBox" destination="NzF-Tv-oqQ" id="LKt-Uu-eHB"/>
+                <outlet property="lblTermAndCondition" destination="baJ-Ay-QGA" id="3oJ-BS-eNN"/>
+                <outlet property="vHelpBar" destination="Hhh-NE-tgR" id="EwI-vq-8Sx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhh-NE-tgR" customClass="RAHelpBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" identifier="helpBar">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HMn-EG-khd"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageLegal" translatesAutoresizingMaskIntoConstraints="NO" id="IQN-6w-Mkd">
+                    <rect key="frame" x="0.0" y="40" width="768" height="191"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="191" id="5pD-jb-ttV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review and approve the Driver terms and conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-hO-6Am">
+                    <rect key="frame" x="20" y="246" width="728" height="64"/>
+                    <accessibility key="accessibilityConfiguration" identifier="lblTermTitle"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="wYv-1S-wGt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baJ-Ay-QGA">
+                    <rect key="frame" x="10" y="313" width="738" height="571"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="tvTermContent"/>
+                    <string key="text">DRIVER TERMS: Ride Share Austin
+Last update: May 25, 2016
+The terms and conditions contained herein (“Agreement”) constitute a legal agreement between you, an individual (“you”) and Ride Share Austin (“Company”). The Company, through its proprietary application, provides lead generation to providers of shared or individual (person to person) passenger transportation services using the Services (defined below). The Services enable an authorized transportation provider to seek, receive and fulfil requests for transportation services from an authorized user of the Company’s proprietary mobile application. You desire to enter into this Agreement for the purpose of using the Services and using the Driver App. You acknowledge and agree that the Company is a technology services provider that does not provide transportation services. In order to use the Services, you must agree to the terms and conditions that are set forth below. Upon your execution (electronic or otherwise) of this Agreement, you and Company shall be bound by the terms and conditions set forth herein.
+BY VIRTUE OF YOUR ELECTRONIC EXECUTION OF THIS AGREEMENT, YOU WILL BE ACKNOWLEDGING THAT YOU HAVE READ AND UNDERSTOOD ALL OF THE TERMS OF THIS AGREEMENT. 
+1.	Definitions
+
+a.	“Affiliate” means an entity that, directly or indirectly, controls, is under the control of, or is under common control with a party, where control means having more than fifty percent (50%) of the voting stock or other ownership interest or the majority of the voting rights of such entity.
+
+b.	“Ride Austin Services” means your provision of person to person passenger transportation services to Users (defined below) via the Services in the Territory (defined below) using the Vehicle (defined below). 
+
+c.	“Company Data” means all data related to the access and use of the Services hereunder, including all data related to Users (including User Information), all data related to the provision of Ride Austin Services via the Services and the Driver App, and the Driver ID.
+
+d.	“Driver App” means the mobile application developed, owned or provided by the Company to you that enables the Users to access the Services for the purpose of seeking, receiving and fulfilling on demand requests for Ride Austin Services by Users, as may be updated or modified from time to time.
+
+e.	“Driver ID” means the identification and password key assigned by Company to you that enables you to use and access the Driver App.
+
+f.	“Fees” has the meaning set forth in Section 8. 
+
+g.	“Service Fee” has the meaning set forth in Section 8.
+
+h.	 “Territory” means the geographic areas in which you are enabled by the Driver App to receive requests for Ride Austin Services. 
+
+i.	“Tolls” means any applicable road, bridge, ferry, tunnel and airport charges and fees, including inner-city congestion, environmental or similar charges as reasonably determined by the Services. 
+
+j.	“Services” means the on-demand lead generation and related services licensed by the Company to you that enables you to seek, receive and fulfil on-demand requests for transportation services by Users seeking transportation services; such Services include access to the Driver App and Company’s software, websites, payment services as described in Section 8 below, and related support services systems, as may be updated or modified from time to time.
+
+k.	“User” means an end user authorized by the Company to use the Company’s proprietary mobile application for the purpose of obtaining the Ride Austin Services offered by Company through the drivers. 
+
+l.	“User Information” means information about a User made available to you in connection with such User’s request for and use of Ride Austin Services, which may include the User’s name, pick-up location, contact information and photograph.
+
+m.	“Vehicle” means the vehicle used to provide the Ride Austin Service that: (a) is owned by you or is authorized for use by you by the rightful owner, (b) meets the then-current Company requirements for a vehicle on the Services; and (c) the Company authorizes for your use for the purpose of providing the Ride Austin Services. 
+
+n.	“Your Device” means the relevant mobile phone or such other device used to provide Services to the Customer; and on which the Driver App has been installed as authorized by the Company solely for the purpose of providing the Ride Austin Services.
+
+2.	Procedure
+
+a.	You will be assigned with a Driver ID which will enable you to access and use the Driver App on Your Device in accordance with this Agreement. The Company will have the right, at all times and at its sole discretion, to reclaim, prohibit, suspend, limit or otherwise restrict you from accessing or using the Driver ID or Your Device. You agree that you will maintain your Driver ID in confidence and not share your Driver ID with any third party. You will immediately notify Company of any actual or suspected breach or improper use or disclosure of your Driver ID or the Driver App.
+
+b.	The User who wishes to avail the Ride Austin Services will request for such services through the Company’s proprietary mobile application. The User’s request for the Ride Austin Services may appear to you via the Driver App if you are available and in the vicinity of the User. Upon acceptance of the request made by the User, you will be provided with certain User Information via the Driver App, including the User’s first name and pickup location. You acknowledge and agree that once you have accepted a User’s request for the Ride Austin Services, you shall not be entitled to cancel the request (including by requesting the User to do so) and the Company’s proprietary mobile application may provide certain information about you to the User, including your first name, contact information, photograph and location, and your Vehicle’s make and license plate number. In order to enhance User satisfaction, it is recommended that you wait at least ten (10) minutes for a User to show up at the requested pick-up location. You acknowledge and agree that the User shall be entitled to cancel the Ride Austin Services at any time up within five (5) minutes from the time of making a request, without any cancellation fee being chargeable to the User. Upon reaching the pick-up location specified by the User in his/her request, you will obtain the destination from the User in person upon pickup. You may also obtain the destination from the User via the Driver App if the User elects to enter such destination via the Company’s proprietary mobile application. If you do not wish to accept User requests for the Ride Austin Services for a period of time, you will log off of the Driver App upon notifying the same to the Company. 
+
+c.	You shall not contact any Users or use any User’s personal data for any reason other than for the purposes of providing the Ride Austin Services. You acknowledge and agree that, you may not transport or allow inside your Vehicle individuals other than a User and any individuals authorized by such User, during the performance of Ride Austin Services for such User. The Users shall be transported directly to their specified destination without unauthorized interruption or unauthorized stops. As between the Company and you, you acknowledge and agree that: (a) you shall be solely responsible for determining the most effective, efficient and safe manner to perform each instance of the Ride Austin Services; and (b) except for the Services, you shall provide all necessary equipment, tools and other materials, at your own expense, necessary to perform the Ride Austin Services. You understand and agree that you have a legal obligation under the Americans with Disabilities Act and similar state laws to transport Users with Service Animals (as defined by applicable state and federal law), including guide dogs for the blind and visually impaired Users, and there is no exception to this obligation for allergies or religious objections. Your knowing failure to transport a User with a Service Animal shall constitute a material breach of this Agreement. You agree that a “knowing failure” to comply with this legal obligation shall constitute either: (1) a denial of a ride where you state the denial was due to a Service Animal; or (2) there is more than one (1) instance in which a User or the companion of a User alleges that you cancelled or refused a ride on the basis of a Service Animal.
+
+d.	Upon your completion of the Ride Austin Services for a User, Company prepares an applicable receipt and issues such receipt to the User via email on your behalf. Such receipts are also provided to you via email or the online portal available to you through the Services. Receipts include the breakdown of amounts charged to the User for the Ride Austin Services and may include specific information about you, including your name, contact information and photograph, as well as a map of the route you took. Any corrections to a User’s receipt for the Ride Austin Services must be submitted to Company in writing within three (3) business days after the completion of such Ride Austin Services. In the event of absence of such notice, the Company shall not be liable for recalculation or disbursement of the Fee.
+
+3.	Ratings
+
+a.	You acknowledge that after completing the Ride Austin Services, a User will be requested by the Company’s mobile application to provide a rating for you and for the Ride Austin Services availed from you and optionally, to provide comments or feedback about you and such Ride Austin Services. You will also be directed through the Driver App to provide a rating of the User and optionally, to provide comments or feedback about the User. The ratings and feedback you provide shall be made in good faith. The Company and its Affiliates reserve the right to edit or remove comments in the event that such comments include obscenities or other objectionable content, include an individual’s name or other personal information, or violate any privacy laws, other applicable laws or Company’s or its Affiliates’ content policies.
+
+b.	You must maintain an average rating by Users for your Territory, as may be notified to you from time to time by the Company in its sole discretion (“Minimum Rating”). Your Minimum Rating will reflect the Users’ experience/satisfaction of using your Ride Austin Services. In the event your rating falls below the Minimum Rating, the Company will notify you and may provide you, in Company’s discretion, a limited period of time to raise your rating above the Minimum Rating. In the event, you fail to raise your rating above the Minimum Rating within the time period specified by the Company the Company reserves the right to deactivate your access to the Driver App and the Services.
+
+4.	Your Device
+
+a.	You are responsible for the acquisition, cost and maintenance of Your Devices and the necessary wireless data plan. You acknowledge that the Company shall not be responsible or liable for any fees, costs, or overage charges associated with any data plan. The Company shall install the Driver App on Your Device. The Company hereby grants you with a personal, non-exclusive, non-transferable license to install and use the Driver App on Your Device solely for the purpose of providing Ride Austin Services. The license granted shall immediately terminate and you will delete and fully remove the Driver App from Your Device in the event you cease to provide the Ride Austin Services using Your Device.
+
+5.	Geo location Information and the Vehicle
+
+a.	You must provide your geo-location information to facilitate the provision of the Ride Austin Services. Your geo-location information will be obtained while the Driver App is running and the approximate location of your Vehicle will be displayed to the User before and during the provision of the Ride Austin Services to such User. In addition, Company and its Affiliates may monitor, track and share with third parties your geo-location information obtained through the Driver App for safety and security purposes.
+
+b.	You acknowledge and agree that at all times, you shall: (a) hold and maintain (i) a valid driver's license with the appropriate level of certification to operate your Vehicle, and (ii) all licenses, permits, approvals and authority applicable to you that are necessary to provide the Ride Austin Services to the Users in the Territory; (b) possess the appropriate and current level of training, expertise and experience to provide Ride Austin Services in a professional manner with due skill, care and diligence; and (c) maintain high standards of professionalism, service and courtesy when dealing with the Users. You acknowledge and agree that you may be subject to certain background and driving record checks from time to time in order to qualify to provide, and remain eligible to provide, the Ride Austin Services. You acknowledge and agree that Company reserves the right, at any time in Company’s sole discretion, to deactivate or otherwise restrict you from accessing or using the Driver App or the Services if you fail to meet the requirements set forth in this Agreement. 
+
+c.	You acknowledge and agree that your Vehicle shall at all times be: (a) properly registered and licensed to operate as a passenger transportation vehicle in the Territory; (b) owned or leased by you, or otherwise in your lawful possession; (c) suitable for performing the passenger transportation services contemplated by this Agreement; and (d) maintained in good operating condition, consistent with industry safety and maintenance standards for a Vehicle of its kind and any additional standards or requirements in the applicable Territory, and in a clean and sanitary condition. 
+
+d.	To ensure your compliance with all requirements in this Sections 5, you must provide Company with written copies of all such licenses, permits, approvals, authority, registrations and certifications prior to your provision of any Ride Austin Services. Thereafter, you must submit to Company written evidence of all such licenses, permits, approvals, authority, registrations and certifications as they are renewed. Company shall, upon request, be entitled to review such licenses, permits, approvals, authority, registrations and certifications from time to time, and your failure to provide or maintain any of the foregoing shall constitute a material breach of this Agreement. Company reserves the right to independently verify your documentation from time to time in any manner as the Company deems appropriate in its reasonable discretion.
+
+6.	Ownership. 
+
+a.	The Services, Driver App and Company Data, including all Intellectual Property Rights (defined below) herein are and shall remain the property of Company, its Affiliates or their respective licensors. Neither this Agreement nor your use of the Services, Driver App or Company Data conveys or grants to you any rights in or related to the Services, Driver App or Company Data, except for the limited license granted above. Unless specifically permitted by the Company or elsewhere in this Agreement, you are not permitted to use or make any references to the Company, its Affiliates, or their respective licensors’ company names, logos, products and service names, trademarks, service marks, trade dress, copyrights or other indication of ownership, alone and in combination with other letters, punctuation, words, symbols and/or designs (the "Intellectual Property Rights") for any commercial purposes. You agree that you will not try to register or otherwise use and/or claim ownership in any of the Intellectual Property Rights, alone or in combination with other letters, punctuation, words, symbols and/or designs, or in any confusingly similar mark, name or title, for any goods and services.
+
+b.	Subject to the terms and conditions of this Agreement, Company hereby grants you with a non-exclusive, non-transferable, non-sub licensable, non-assignable license, during the term of this Agreement, to use the Services (including the Driver App on Your Device) solely for the purpose of providing Ride Austin Services to Users. All rights not expressly granted to you are reserved by Company, its Affiliates and their respective licensors.
+
+c.	You shall not and shall not allow any other party to (a) license, sublicense, sell, resell, transfer, assign, distribute or otherwise provide or make available to any other party the Services or the Driver App in any way; (b) modify or make derivative works based upon the Services or Driver App; (c) improperly use the Services or Driver App, including creating links to any part of the Services or Driver App, or improperly obtain data from the Services or Driver App; (d) reverse engineer, decompile, modify, or disassemble the Services or Driver App; (e) design or develop a competitive or substantially similar product or service; (f) copy or extract any features, functionality, or content thereof; or (g) launch or cause to be launched on or in connection with the Services an automated program or script, including web spiders, crawlers, robots, indexers, bots, viruses or worms, or any program which may make multiple server requests per second, or unduly burden or hinder the operation and/or performance of the Services.
+ 
+7.	Confidentiality
+
+a.	Neither party will disclose to third parties any information that it acquires as a result of this Agreement including but not limited to agreed financial terms relating to the other party’s operation, technical data, test analysis data, marketing, User information or any other information which one party may communicate to the other from time to time (“Confidential Information”). Neither party shall have the right to use any of this Confidential Information except for the purposes for which it has been disclosed to the other party under this Agreement. Each party agrees, at all times, to use all reasonable efforts, but in any case no less than the efforts that each party uses in the protection of its own Confidential Information of like value to protect Confidential Information belonging to the other party. Each party acknowledges and agrees that it shall not disclose Confidential Information of the other party to any third party, except to its employees, officers, contractors, agents and service providers ("Representatives") as necessary to perform under this Agreement, provided that the Representatives are bound in writing to obligations of confidentiality and non-use of Confidential Information no less protective than the terms hereof and shall return or destroy all Confidential Information of the disclosing party, upon the termination of this Agreement or at the request of the other party (subject to applicable law and, with respect to Company, its internal record-keeping requirements). Both parties agree that the obligations pursuant to this Section shall continue to survive the termination of this Agreement for a period of five (5) years. Nothing in this Agreement shall apply to information which is already in the public domain or is made public other than as a result of this Agreement. Nothing in this Agreement shall be construed to convey any title or ownership rights to the Confidential Information of the disclosing party or to any patent, copyright, trademark, or trade secret embodied therein, or to grant any other right, title, or ownership interest in the Confidential Information to the receiving party.
+
+b.	Notwithstanding the foregoing, Confidential Information shall not include any information to the extent it : (a) is or becomes part of the public domain through no act of the receiving party; (b) was possessed by the receiving party prior to the date of this Agreement without an obligation of confidentiality; (c) is disclosed to the receiving party by a third party having no of confidentiality; or (d) is required to be disclosed pursuant to law, court order or governmental authority, provided the receiving party shall notify the disclosing party to the extent legally permitted of such disclosure.
+
+c.	In case of breach of any confidentiality obligations by a party, the affected party shall be entitled, without waiving any other rights or remedies, to seek such injunctive or equitable relief as may be deemed proper by a court of competent jurisdiction.
+
+8.	Payments
+
+You are entitled to charge a fare for each instance of completed Ride Austin Services provided to a User, which shall be displayed on the Driver App at the completion of your trip (“Fees”). For your reference, the Fees are calculated based upon the driver fare schedule set forth at http://www.rideaustin.com/driver (the “Fee Calculation”). 
+The Fees displayed on the Driver App is the only payment you will receive in connection with the provision of Ride Austin Services. You are also entitled to charge the User for any Tolls or taxes incurred during the provision of Ride Austin Services, if applicable. You shall: (i) appoint Company as your payment collection agent solely for the purpose of accepting the applicable Fees and taxes from the User on your behalf via the payment methods facilitated by the Services; and (ii) agree that payment made by User to Company (or to an Affiliate of Company acting as an agent of Company) shall be considered the same as payment made directly by User to you. Company shall consider all such requests from you in good faith. Company agrees to remit the applicable Fee to you on a weekly basis. If you have separately agreed with the Company on any amount to be deducted from the Fee prior to remittance to you, such deductions from the Fee shall be made by the Company.
+
+a.	Company reserves the right to modify and/ or adjust the Fee Calculation at any time in Company’s discretion based upon local market factors, and Company will provide you with notice in the event of changes to Fee Calculation. Continued usage of the Services after any such change in the Fare Calculation shall constitute your consent to such change. 
+
+b.	In consideration of Company’s provision of the Driver App and the Services for your use and benefit hereunder, you agree to pay the Company a service fee on a per Ride Austin Service transaction basis, calculated as a percentage of the Fee, determined as per the Fee Calculation provided to you, notified to you via email or otherwise made available electronically by Company from time to time for the applicable Territory (“Service Fee”). In the event regulations applicable to your Territory require taxes to be calculated on the Fee, Company shall calculate the Service Fee based on the Fee net of such taxes. Company reserves the right to change the Service Fee at any time in Company’s discretion.
+
+c.	In the event a User cancels an accepted request for the Ride Austin Services which is not authorized under this Agreement as non-chargeable, the Company may charge the User a cancellation fee on your behalf. This cancellation fee shall be deemed the Fee for the cancelled Ride Austin Services for the purpose of remittance to you hereunder (“Cancellation Fee”). 
+
+d.	You acknowledge and agree that you are required to: (a) complete all tax registration obligations and calculate and remit all tax liabilities related to your provision of the Ride Austin Services as required by applicable law; and (b) provide Company with all relevant tax information. You are responsible for taxes on your own income arising from the performance of Ride Austin Services. Notwithstanding anything to the contrary in this Agreement, Company may in its reasonable discretion based on applicable tax and regulatory considerations, collect and remit taxes resulting from your provision of Ride Austin Services and/or provide any of the relevant tax information you have provided pursuant to the foregoing requirements in this Section directly to the applicable governmental tax authorities on your behalf or otherwise.
+
+9.	Insurance
+
+a.	You agree to maintain during the term of this Agreement required insurance policies, for protection against bodily injury and property damage to you and third parties and for the operation of the Vehicle, owned by you or such other private passenger, on the public roads within the Territory, as per the minimum requirement of coverage under the applicable law. At a minimum, You agree to maintain during the term of this Agreement workers’ compensation insurance as required by all applicable laws in the Territory. If permitted by applicable law, you may choose to insure yourself against industrial injuries by maintaining occupational accident insurance in place of workers’ compensation insurance. Furthermore, if permitted by applicable law, you may choose not to insure yourself against industrial injuries at all, but do so at your own risk. You understand and acknowledge that your personal automobile insurance policy may not afford liability, comprehensive, collision, medical payments, personal injury protection, uninsured motorist, underinsured motorist, or other coverage for the Ride Austin Services you provide pursuant to this Agreement. 
+
+b.	You agree to provide Company and its Affiliates a copy of the insurance policy, policy declarations, proof of insurance identification card and proof of premium payment for the insurance policy required in this Section upon request. Furthermore, you must provide Company with written notice of cancellation of insurance policy, if any, fully acknowledging that your access to the Services shall be suspended and that you shall not be entitled to provide the Ride Austin Services unless you have in place a valid insurance policy. The Company shall have no right to control your selection or maintenance of your policy.
+
+c.	If you have any questions or concerns about the scope or applicability of your own insurance coverage, it is your responsibility, not that of Company, to resolve them with your insurer(s).
+
+d.	You are required to promptly notify Company of any accidents that occur while providing Ride Austin Services and to cooperate and provide all necessary information related thereto.
+
+10.	Representations and Warranties; Disclaimers
+
+a.	The parties represent and warrant that: 
+
+(i)	they have full power and authority to enter into this Agreement and perform their obligations hereunder; 
+(ii)	they have not entered into, and during the term will not enter into, any agreement that would prevent them from complying with the terms of this Agreement.
+ 
+b.	You represent and warrant that, at all times during the term of this Agreement:
+
+(i)	you possess a valid driver’s license and are authorized and medically fit to operate the Vehicle and have all appropriate licenses, approvals and authority to provide Ride Austin Services to Users in the Territory;
+(ii)	the Vehicle is in good operating condition and meets the industry safety standards and all applicable statutory requirements for the Vehicle;
+(iii)	you will not drive under the influence of alcohol or any other intoxicating substances that will impair your ability to drive and/or provide the Ride Austin Services;
+(iv)	you have an applicable insurance policy in place, (in coverage amounts consistent with all applicable legal requirements);
+(v)	you will be solely responsible for any and all liability that results from or is alleged as a result of your provision of Ride Austin Services, including, but not limited to personal injuries, death and property damages;
+(vi)	you will comply with all applicable laws, rules and regulations while providing the Ride Austin Services and you will be solely responsible for any violations of such provisions;
+(vii)	you will not make any misrepresentation regarding the Company;
+(viii)	you will not attempt to defraud the Company or Users in connection with your provision of Ride Austin Services;
+(ix)	you will not discriminate or harass any User or anyone on the basis of race, national origin, religion, gender, gender identity, physical or mental disability, medical condition, marital status, age or sexual orientation;
+(x)	you shall provide such information about yourself, including any past criminal records and driving irregularity records, and you agree to provide any further necessary authorizations to facilitate our access to such records during the term of this Agreement;
+(xi)	possess the appropriate and current level of training, expertise and experience to provide Ride Austin Services in a professional manner with due skill, care and diligence
+(xii)	you will abide by and comply with the relevant policies/guidelines and the directions/instructions provided by the Company from time to time;
+(xiii)	you will not enter into any other contract or arrangement with any third party during the subsistence of this Agreement that will hamper, restrict or prohibit you from rendering the Ride Austin Services under this Agreement; and
+(xiv)	you will not edit in any way or misuse the Confidential Information or any other information provided by Company and/or the User for the performance of the Ride Austin Services under this Agreement.
+
+c.	Disclaimer of Warranties
+
+COMPANY AND ITS AFFILIATES PROVIDE, AND YOU ACCEPT, THE SERVICES AND THE DRIVER APP ON AN "AS IS" AND "AS AVAILABLE" BASIS. COMPANY AND ITS AFFILIATES DO NOT REPRESENT, WARRANT OR GUARANTEE THAT YOUR ACCESS TO OR USE OF THE SERVICES OR THE DRIVER APP: (A) WILL BE UNINTERRUPTED OR ERROR FREE; OR (B) WILL RESULT IN ANY REQUESTS FOR RIDE AUSTIN SERVICES. NOTWITHSTANDING ANYTHING CONTAINED HEREIN, COMPANY AND ITS AFFILIATES EXPRESSLY DISCLAIM ALL LIABILITY FOR ANY ACT OR OMISSION OF YOU, ANY USER OR OTHER THIRD PARTY. FURTHER, EXCEPT AS OTHERWISE STATED IN THE THIS AGREEMENT, COMPANY MAKES NO OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING EXPRESS OR IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. 
+
+11.	Indemnification. 
+
+a.	You agree to defend, indemnify and hold harmless the Company, and its Affiliates, officers, managers, members, directors, employees, successors, assigns, customers, suppliers and agents, from and against any and all claims, damages, obligations, losses, liabilities, penalties, fines, social security contributions, taxes costs and expenses (including but not limited to attorneys' fees) arising from or related to: (a) your breach of your representations, warranties or obligations under this Agreement; or (b) a claim by a third party (including Users, regulators and governmental authorities) directly or indirectly related to your provision of the Ride Austin Services or use of the Services; or (c) any fines or penalties imposed on you during the driving of the Vehicle in violation of traffic laws; or (d) any claim by the User against the Company for deficient, incorrect, or non-provision of the Ride Austin Services; or (e) any claim from the rightful owner of the Vehicle owing to the theft of the Vehicle or damage caused to the Vehicle; or (f) your negligence or wilful misconduct. Indemnification obligation will survive the terms and conditions of this Agreement and your use of the Service, the Driver App and associated software. This indemnification provision shall not apply to your breach of any representations regarding your status as an independent contractor.
+
+12.	Limitation of Liability. 
+
+COMPANY AND ITS AFFILIATES SHALL NOT BE LIABLE UNDER OR RELATED TO THIS AGREEMENT FOR ANY OF THE FOLLOWING, WHETHER BASED ON CONTRACT, TORT OR ANY OTHER LEGAL THEORY, EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES: (i) ANY INCIDENTAL, PUNITIVE, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR OTHER INDIRECT DAMAGES OF ANY TYPE OR KIND; OR (ii) YOUR OR ANY THIRD PARTY’S PROPERTY DAMAGE, OR LOSS OR INACCURACY OF DATA, OR UNAVAILABILITY OF THE SERVICE, OR LOSS OF BUSINESS, REVENUE, PROFITS, USE OR OTHER ECONOMIC ADVANTAGE. EXCEPT FOR COMPANY’S OBLIGATIONS TO PAY AMOUNTS DUE TO YOU PURSUANT TO SECTION 8 ABOVE, BUT SUBJECT TO ANY LIMITATIONS OR OTHER PROVISIONS CONTAINED IN THIS AGREEMENT WHICH ARE APPLICABLE THERETO, IN NO EVENT SHALL THE LIABILITY OF COMPANY OR ITS AFFILIATES UNDER THIS AGREEMENT EXCEED THE AMOUNT OF SERVICE FEES ACTUALLY PAID TO OR DUE TO COMPANY HEREUNDER IN THE SIX (6) MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO SUCH CLAIM.
+
+13.	Term and Termination.
+
+a.	This Agreement shall commence on the date accepted by you and shall continue until terminated as set forth herein.
+
+b.	Either party may terminate this Agreement: (a) without cause at any time upon seven (7) days prior written notice to the other party; (b) immediately, without notice, for the other party’s material breach of this Agreement, which remains uncured for a period of fifteen (15) days post notification of the breach by the non-defaulting party; or (c) immediately, without notice, in the event of the insolvency or bankruptcy of the other party, or upon the other party’s filing or submission of request for suspension of payment (or similar action or event) against the terminating party. In addition, Company may terminate this Agreement or deactivate your Driver ID immediately, without notice, in the event you violate any of the terms of this Agreement.
+
+c.	Upon termination of the Agreement, you shall immediately delete and fully remove the Driver App from any of Your Devices. 
+
+14.	Relationship of the Parties and with the User
+
+a.	The relationship between the parties under this Agreement is solely that of independent contracting parties. The parties expressly agree that: (a) this Agreement is not an employment agreement, nor does it create an employment relationship, between Company and you; and (b) no joint venture, partnership, or agency relationship exists between the Company and you. You further acknowledge and agree that Company’s provision to you of the Driver App and the Services creates a direct business relationship between Company and you. Company does not, and shall not be deemed to, direct or control you generally or in your performance under this Agreement specifically, including in connection with your provision of Ride Austin Services, your acts or omissions, or your operation and maintenance of your Vehicle. You retain the sole right to determine when, where, and for how long you will utilize the Driver App or the Services. With the exception of any signage required by local law or permit/license requirements, Company shall have no right to require you to: (a) display Company’s or any of its Affiliates’ names, logos or colours on your Vehicle(s); or (b) wear a uniform or any other clothing displaying Company’s or any of its Affiliates’ names, logos or colours. You acknowledge and agree that you have complete discretion to provide services or otherwise engage in other business or employment activities. For the sake of clarity, you understand that you retain the complete right to; (i) use other software application services in addition to the Services; and (ii) engage in any other occupation or business. Company retains the right to deactivate or otherwise restrict you from accessing or using the Driver App or the Services in the event of a violation or alleged violation of this Agreement, your disparagement of Company or any of its Affiliates, your act or omission that causes harm to Company’s or its Affiliates’ brand, reputation or business as determined by Company in its sole discretion.
+
+b.	You have no authority to bind Company or its Affiliates and you undertake not to hold yourself out as an employee, agent or authorized representative of Company or its Affiliates. Where, by implication of mandatory law or otherwise, you may be deemed an agent or representative of Company, you undertake and agree to indemnify, defend (at Company’s option) and hold Company and its Affiliates harmless from and against any claims by any person or entity based on such implied agency or representative relationship.
+
+c.	You acknowledge and agree that your provision of Ride Austin Services to Users creates a direct business relationship between you and the User. Company is not responsible or liable for the actions or inactions of a User in relation to you, your activities or your Vehicle. You shall have the sole responsibility for any obligations or liabilities to Users or third parties that arise from your provision of the Ride Austin Services. You acknowledge and agree that you are solely responsible for taking such precautions as may be reasonable and proper regarding any acts or omissions of a User or third party. 
+
+15.	Miscellaneous Terms
+
+a.	Background Check. You acknowledge and agree that you may be subject to certain background and driving record checks from time to time in order to qualify to provide and remain eligible to provide the Ride Austin Services. The background verification/ check conducted by the Company shall require you to pass a fingerprinting background check by the city of Austin and may include but not limited to checking references, past employment records, driving history, criminal records and identity check, driving license for the benefit of Company and the Users. You shall be required to submit the necessary/relevant documents pertaining to the background check and extend reasonable co-operation as required.
+
+b.	Privacy. Our collection and use of your personal information in connection with the Ride Austin Services shall be governed by our Privacy Policy located at http://www.rideaustin.com/legal/privacy (“Privacy Policy”).
+
+c.	Amendments. Company reserves the right to modify this Agreement at any time upon posting the amended terms on this Services or Driver App. If the Company make changes, the same shall be notified to you by, at a minimum, revising the “Last Updated” date at the top of this Agreement. You are responsible for regularly reviewing this Agreement. Continued use of the Services or Driver App after any such changes shall constitute your consent to such changes. If you do not agree to any such changes you may not use or access Services or Driver App. 
+
+d.	Supplemental Terms. Supplemental terms may apply to your use of the Services, such as use policies or terms related to certain features and functionality, which may be modified from time to time (“Supplemental Terms”). You may be presented with certain Supplemental Terms from time to time. Supplemental Terms are in addition to, and shall be deemed a part of, this Agreement. Supplemental Terms shall prevail over this Agreement in the event of a conflict.
+
+e.	Severability. If any provision of this Agreement is or becomes invalid or non-binding, the parties shall remain bound by all other provisions hereof. In that event, the parties shall replace the invalid or non-binding provision with provisions that are valid and binding and that have, to the greatest extent possible, a similar effect as the invalid or non-binding provision, given the contents and purpose of this Agreement. 
+
+f.	Assignment. Neither party shall assign or transfer this Agreement or any of its rights or obligations hereunder, in whole or in part, without the prior written consent of the other party; provided that Company may assign or transfer this Agreement or any or all of its rights or obligations under this Agreement from time to time without consent: (a) to an Affiliate; or (b) to an acquirer of all or substantially all of Company’s business, equity or assets.
+
+g.	Entire Agreement. This Agreement, including all Supplemental Terms and the Privacy Policy, constitutes the entire agreement and understanding of the parties with respect to its subject matter and replaces and supersedes all prior or contemporaneous agreements or undertakings regarding such subject matter. In this Agreement, the words “including” and “include” mean “including, but not limited to.” The recitals form a part of this Agreement.
+
+h.	No Third Party Beneficiaries. Nothing contained in this Agreement is intended to or shall be interpreted to create any third-party beneficiary claims.
+
+i.	Notices. Any notice delivered by Company to you under this Agreement will be delivered by email to the email address associated with your account or by posting on the portal available to you on the Services. Any notice delivered by you to Company under this Agreement will be delivered by contacting Company at www.RideAustin.com in the “Contact Us” section. Additional Territory-specific notices may be required from time to time.
+
+j.	Dispute. Owing to the complexities of tracking rides, trip completions, applicable Cancellation Fees etc., Fees and accordingly the Service Fee may become the subject of dispute. Company and you agree to follow the following dispute resolution process regarding any Fee disputes: (i) you shall provide Company with written notice of any such Fee dispute (with reasons and evidence), (ii) Company and you will meet (if required) and make a good faith effort to resolve the dispute; and (iii) if we do not mutually agree upon a dispute resolution, Company will determine, in its sole, good faith, discretion, the total Fee (if any; and accordingly the Service Fee payable to Company), to be paid to you by a User. AS YOUR SOLE REMEDY FOR DISAGREEING WITH A DISPUTED FEE PAYMENT (OR NON-PAYMENT), YOU MAY DELETE THE DRIVER APP AND DISCONTINUE PROVIDING THE RIDE AUSTIN SERVICE.  This sole remedy provision does not limit Company’s rights to recover undisputed Service Fees or Service Fees that have not been paid due to your intentional failure to pay an undisputed amount.
+
+k.	Governing Law. It is understood and agreed that the construction and interpretation of this Agreement shall at all times and in all respects be governed by the laws of State of Texas without regard to its rules of conflicts of laws.  By accepting this Agreement, you agree to submit to the exclusive jurisdiction and venue of Federal and State courts located in Austin, Texas.
+
+l.	Survival. Each provision of this Agreement that would by its nature or terms survive any termination of this Agreement shall survive any termination of this Agreement, regardless of the cause. 
+
+
+
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIz-oV-4Mu">
+                    <rect key="frame" x="255" y="904" width="258" height="30"/>
+                    <subviews>
+                        <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzF-Tv-oqQ">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <accessibility key="accessibilityConfiguration" identifier="checkBoxTerm"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="eyH-7U-ge0"/>
+                                <constraint firstAttribute="width" constant="30" id="s3i-KA-06C"/>
+                            </constraints>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" backgroundImage="checkbox-off"/>
+                            <state key="selected" backgroundImage="checkbox-on"/>
+                            <connections>
+                                <action selector="btnCheckPressed:" destination="-1" eventType="touchUpInside" id="wsr-aH-e2Z"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I AGREE AND ACKNOWLEDGE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gm3-oB-52P">
+                            <rect key="frame" x="38" y="5" width="220" height="21"/>
+                            <accessibility key="accessibilityConfiguration" identifier="lblCheckBoxDescription"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="4xQ-yU-kgy"/>
+                                <constraint firstAttribute="height" constant="21" id="6XA-Pb-FcX"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="nyV-cZ-0EZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="6XA-Pb-FcX"/>
+                                    <exclude reference="nyV-cZ-0EZ"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="NzF-Tv-oqQ" secondAttribute="bottom" id="8SN-Wa-gnM"/>
+                        <constraint firstItem="NzF-Tv-oqQ" firstAttribute="top" secondItem="ZIz-oV-4Mu" secondAttribute="top" id="Lbu-li-MJa"/>
+                        <constraint firstItem="NzF-Tv-oqQ" firstAttribute="leading" secondItem="ZIz-oV-4Mu" secondAttribute="leading" id="OAt-Ck-hzK"/>
+                        <constraint firstAttribute="height" constant="30" id="RTv-4g-T56"/>
+                        <constraint firstAttribute="width" constant="258" id="ld2-dE-4nw"/>
+                        <constraint firstItem="Gm3-oB-52P" firstAttribute="centerY" secondItem="ZIz-oV-4Mu" secondAttribute="centerY" id="peI-7b-fPr"/>
+                        <constraint firstAttribute="trailing" secondItem="Gm3-oB-52P" secondAttribute="trailing" id="yCu-tM-BxW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uV-KU-75H" customClass="FlatButton">
+                    <rect key="frame" x="20" y="949" width="728" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="btnContinue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Xag-VL-UyQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                    <color key="tintColor" red="0.97254901959999995" green="0.32549019610000002" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="CONTINUE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnContinuePressed:" destination="-1" eventType="touchUpInside" id="tYg-il-sD6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gBN-hO-6Am" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3nX-kC-oVx"/>
+                <constraint firstItem="IQN-6w-Mkd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="46a-ew-0hR"/>
+                <constraint firstItem="ZIz-oV-4Mu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Xt-MC-U4i"/>
+                <constraint firstAttribute="trailing" secondItem="baJ-Ay-QGA" secondAttribute="trailing" constant="20" id="7Hb-Qq-JM3"/>
+                <constraint firstItem="IQN-6w-Mkd" firstAttribute="top" secondItem="Hhh-NE-tgR" secondAttribute="bottom" id="A3Q-ht-ETE"/>
+                <constraint firstItem="9uV-KU-75H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="BF3-OT-WvH"/>
+                <constraint firstAttribute="trailing" secondItem="Hhh-NE-tgR" secondAttribute="trailing" id="KYg-Ux-BO0"/>
+                <constraint firstAttribute="bottom" secondItem="9uV-KU-75H" secondAttribute="bottom" constant="25" id="KoT-rt-A64"/>
+                <constraint firstItem="Hhh-NE-tgR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lde-pb-a9F"/>
+                <constraint firstAttribute="trailing" secondItem="gBN-hO-6Am" secondAttribute="trailing" constant="20" id="TUi-0R-RnL"/>
+                <constraint firstItem="gBN-hO-6Am" firstAttribute="top" secondItem="IQN-6w-Mkd" secondAttribute="bottom" constant="15" id="Va4-NO-YO9"/>
+                <constraint firstItem="baJ-Ay-QGA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Yn7-V6-otE"/>
+                <constraint firstItem="Hhh-NE-tgR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bod-LZ-5KM"/>
+                <constraint firstAttribute="trailing" secondItem="IQN-6w-Mkd" secondAttribute="trailing" id="c1E-nR-EvS"/>
+                <constraint firstAttribute="trailing" secondItem="9uV-KU-75H" secondAttribute="trailing" constant="20" id="ecP-1o-Iyj"/>
+                <constraint firstItem="9uV-KU-75H" firstAttribute="top" secondItem="ZIz-oV-4Mu" secondAttribute="bottom" constant="15" id="fcR-YI-oBp"/>
+                <constraint firstItem="baJ-Ay-QGA" firstAttribute="top" secondItem="gBN-hO-6Am" secondAttribute="bottom" constant="3" id="ggm-Pn-rZ6"/>
+                <constraint firstItem="ZIz-oV-4Mu" firstAttribute="top" secondItem="baJ-Ay-QGA" secondAttribute="bottom" constant="20" id="zRH-Hl-nqB"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox-off" width="20" height="20"/>
+        <image name="checkbox-on" width="20" height="20"/>
+        <image name="imageLegal" width="375" height="190"/>
+    </resources>
+</document>

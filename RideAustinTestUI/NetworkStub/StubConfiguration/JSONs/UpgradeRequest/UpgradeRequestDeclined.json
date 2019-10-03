@@ -1,0 +1,8 @@
+{
+    "upgradeRequest": {
+        "source":"REGULAR",
+        "target":"SUV",
+        "status":"DECLINED",
+        "surgeFactor":2.5
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "id": 75,
+    "avatarType": "RIDER",
+    "platformType": "IOS",
+    "version": "2.9.0",
+    "mandatoryUpgrade": false,
+    "userAgentHeader": "RideAustin_iOS",
+    "uuid": "75"
+}

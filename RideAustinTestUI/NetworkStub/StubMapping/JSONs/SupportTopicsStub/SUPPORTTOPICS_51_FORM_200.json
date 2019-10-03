@@ -1,0 +1,17 @@
+{
+  "actionType" : "lostandfound\/contact",
+  "id" : 51,
+  "title" : "Contact my driver about a lost item",
+  "headerText" : "Tell us more",
+  "supportFields" : [
+    {
+      "fieldTitle" : "Phone number",
+      "fieldPlaceholder" : "Enter the best phone number to reach you",
+      "fieldType" : "phone",
+      "isMandatory" : true,
+      "variable" : "phone"
+    }
+  ],
+  "body" : "The best way to retrieve an item you may have left in a vehicle is to call the driver. Here's how:\n\n1. Scroll down and enter the phone number you would like to be contacted at. Tap submit.\n\nIf you lost your personal phone, enter a friend's phone number instead.\n\n2. We'll call the number you enter to connect you directly with your driver's mobile number.\n\nIf your driver picks up and confirms that your item has been found, coordinate a mutually convenient time and place to meet for its return to you.\n\nPlease be considerate that your driver's personal schedule will be affected by taking time out to return your item to you.\n\nDrivers are independent contractors. Neither RideAustin nor drivers are responsible for the items left in a vehicle after a trip ends. We're here to help, but cannot guarantee that a driver has your item or can immediately deliver it to you.",
+  "actionTitle" : "Submit"
+}

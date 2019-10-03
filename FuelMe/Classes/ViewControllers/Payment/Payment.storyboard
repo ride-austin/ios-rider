@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Unpaid Balance View Controller-->
+        <scene sceneID="Tgn-aU-hDR">
+            <objects>
+                <viewController storyboardIdentifier="UnpaidBalanceViewController" id="69p-L6-sXZ" customClass="UnpaidBalanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fN9-8P-KCY"/>
+                        <viewControllerLayoutGuide type="bottom" id="iEX-HH-Hys"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NTQ-uJ-8A5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uuv-RF-YrF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="6mE-TV-Z1T">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-unpaid-balance-large-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3pr-8M-R9Y">
+                                            <rect key="frame" x="151.5" y="30" width="71" height="78"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8H-px-vkG">
+                                            <rect key="frame" x="139.5" y="123" width="97" height="43.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="36"/>
+                                            <color key="textColor" red="0.98039215686274506" green="0.027450980392156862" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to pay your balance to be able to take another trip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkG-pH-Ok2">
+                                            <rect key="frame" x="24" y="182" width="327" height="38.5"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                                            <color key="textColor" red="0.17254901960784313" green="0.19607843137254902" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e10-bS-ryh">
+                                            <rect key="frame" x="0.0" y="249" width="375" height="1"/>
+                                            <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="UQl-uD-vHC"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="e10-bS-ryh" secondAttribute="trailing" id="7QT-aa-wRf"/>
+                                        <constraint firstItem="P8H-px-vkG" firstAttribute="top" secondItem="3pr-8M-R9Y" secondAttribute="bottom" constant="15" id="7ap-nO-fS1"/>
+                                        <constraint firstItem="P8H-px-vkG" firstAttribute="centerX" secondItem="6mE-TV-Z1T" secondAttribute="centerX" id="BD6-zP-QJg"/>
+                                        <constraint firstItem="e10-bS-ryh" firstAttribute="leading" secondItem="6mE-TV-Z1T" secondAttribute="leading" id="K0d-j1-siH"/>
+                                        <constraint firstItem="3pr-8M-R9Y" firstAttribute="centerX" secondItem="6mE-TV-Z1T" secondAttribute="centerX" id="MEf-Q3-c1j"/>
+                                        <constraint firstAttribute="trailing" secondItem="MkG-pH-Ok2" secondAttribute="trailing" constant="24" id="ZDe-xy-5dV"/>
+                                        <constraint firstItem="3pr-8M-R9Y" firstAttribute="top" secondItem="6mE-TV-Z1T" secondAttribute="top" constant="30" id="hbA-gU-VsF"/>
+                                        <constraint firstItem="MkG-pH-Ok2" firstAttribute="leading" secondItem="6mE-TV-Z1T" secondAttribute="leading" constant="24" id="qhH-Qy-jCp"/>
+                                        <constraint firstItem="MkG-pH-Ok2" firstAttribute="top" secondItem="P8H-px-vkG" secondAttribute="bottom" constant="15" id="rlZ-vQ-4JD"/>
+                                        <constraint firstAttribute="bottom" secondItem="e10-bS-ryh" secondAttribute="bottom" id="rsh-jX-wSW"/>
+                                    </constraints>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="4kI-AI-RRC">
+                                    <rect key="frame" x="0.0" y="250" width="375" height="85"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z60-aZ-8nn">
+                                            <rect key="frame" x="20" y="20" width="335" height="45"/>
+                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.65490196078431373" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="gOH-bh-WfG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <state key="normal" title="SUBMIT">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <real key="value" value="22.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapSubmit:" destination="69p-L6-sXZ" eventType="touchUpInside" id="0Sr-Vj-qNr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Z60-aZ-8nn" firstAttribute="top" secondItem="4kI-AI-RRC" secondAttribute="top" constant="20" id="0gT-Ky-o7I"/>
+                                        <constraint firstItem="Z60-aZ-8nn" firstAttribute="leading" secondItem="4kI-AI-RRC" secondAttribute="leading" constant="20" id="9hs-0l-0cB"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z60-aZ-8nn" secondAttribute="trailing" constant="20" id="EQI-wD-cpq"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="69p-L6-sXZ" id="5OH-FP-aUc"/>
+                                    <outlet property="delegate" destination="69p-L6-sXZ" id="4bq-bg-tYT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uuv-RF-YrF" firstAttribute="top" secondItem="NTQ-uJ-8A5" secondAttribute="top" id="2NK-S7-xvK"/>
+                            <constraint firstItem="Uuv-RF-YrF" firstAttribute="leading" secondItem="NTQ-uJ-8A5" secondAttribute="leading" id="C2Y-Us-PQi"/>
+                            <constraint firstAttribute="trailing" secondItem="Uuv-RF-YrF" secondAttribute="trailing" id="apW-EX-LGw"/>
+                            <constraint firstItem="iEX-HH-Hys" firstAttribute="top" secondItem="Uuv-RF-YrF" secondAttribute="bottom" id="fhA-9k-1BX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbAmount" destination="P8H-px-vkG" id="f3B-OR-Khe"/>
+                        <outlet property="tableView" destination="Uuv-RF-YrF" id="kWJ-Jr-SDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2K-UV-bQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743.20000000000005" y="-257.72113943028489"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-unpaid-balance-large-icon" width="71" height="78"/>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+ [
+  {
+  "cityId": 1,
+  "availableInCategories": [
+                            "PREMIUM",
+                            "LUXURY"
+                            ],
+  "name": "WOMEN_ONLY",
+  "createdDate": 1476779565000,
+  "updatedDate": 1476779565000,
+  "description": "WOMEN ONLY",
+  "configuration": "{\"penalizeDeclinedRides\":true}"
+  }
+  ]

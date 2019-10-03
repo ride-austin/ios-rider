@@ -1,0 +1,87 @@
+/*
+{
+carCategories =         (
+REGULAR,
+SUV,
+PREMIUM,
+LUXURY
+);
+course = "-1";
+driver =         {
+activationStatus = INACTIVE;
+active = 1;
+agreedToLegalTerms = 1;
+cars =             (
+{
+carCategories =                     (
+REGULAR,
+SUV,
+PREMIUM,
+LUXURY
+);
+color = Gray;
+id = 17;
+inspectionStatus = "NOT_INSPECTED";
+license = "Kitos3-1234";
+make = "Aston Martin";
+model = "V8 Vantage";
+uuid = 17;
+year = 2016;
+}
+);
+checkrReports =             (
+);
+email = "kitos3@fuelmeapp.com";
+enabledRequestTypes =             (
+);
+fingerprintCleared = 0;
+firstname = "Kitos 3";
+fullName = "Kitos 3 ";
+gender = UNKNOWN;
+grantedDriverTypes =             (
+);
+id = 73;
+inspectionStatus = "NOT_INSPECTED";
+lastname = "";
+payoneerId = 0;
+payoneerStatus = Active;
+phoneNumber = "+48784062443";
+photoUrl = "http://media-stage.rideaustin.com/driver-photos/4f548c31-14f8-4bba-896d-1fcad413b823.png";
+rating = 5;
+type = DRIVER;
+user =             {
+address =                 {
+};
+avatars =                 (
+);
+dateOfBirth = "1995-08-30";
+email = "kitos3@fuelmeapp.com";
+enabled = 1;
+firstname = "Kitos 3";
+fullName = "Kitos 3 ";
+gender = UNKNOWN;
+id = 56;
+lastname = "";
+nickName = kitosNickName;
+phoneNumber = "+48784062443";
+photoUrl = "http://media-stage.rideaustin.com/user-photos/d98fab74-14cb-4f6e-b21e-165ad11c312b.png";
+uuid = 56;
+};
+uuid = 73;
+};
+driverTypes =         (
+);
+drivingDistanceToRider = 282;
+drivingTimeToRider = 72;
+heading = "278.105011";
+id = 15210;
+latitude = "41.137151";
+locationUpdatedOn = 1478951657000;
+longitude = "1.251067";
+speed = "-1";
+status = RIDING;
+surgeAreaCarCategoriesBitMask = 0;
+surgeUpdatedOn = 1478951657000;
+uuid = 15210;
+}
+*/

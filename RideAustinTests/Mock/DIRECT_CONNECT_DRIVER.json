@@ -1,0 +1,14 @@
+{
+    "firstName" : "driver first name",
+    "lastName" : "driver last name",
+    "photoUrl" : "http://media-stage.rideaustin.com/user-photos/91be7cb1-c815-4ca4-b68a-4bfcc1cf9274.png",
+    "rating": 4.123,
+    "categories": [
+                   "REGULAR",
+                   "SUV"
+    ],
+    "factors": {
+        "REGULAR" : 4.1,
+        "SUV" : 1.0
+    }
+}

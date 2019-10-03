@@ -1,0 +1,35 @@
+{
+    "driverRegistration": {
+        "logoWhiteUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+        "supportEmail": "support@rideaustin.com",
+        "requirements": [
+                         "2001 or Newer",
+                         "4 Door",
+                         "Not salvaged or Re-built Vehicles"
+                         ],
+        "driverRegistrationTerms": "https://media.rideaustin.com/download/DriverTermsAustin.txt",
+        "inspection_sticker": {
+            "enabled": true,
+            "sticker_required_year": 3000,
+            "header": "Registration Sticker",
+            "title1": "Take a photo of your Registration Sticker",
+            "text1": "Please make sure that we can easily read all the details."
+        },
+        "tnc_card": {
+            "enabled": true,
+            "backPhoto": true,
+            "header": "Chauffeur's Permit",
+            "title1": "Chauffeur's Permit",
+            "action1": "If you have this, upload a picture",
+            "text1": "You’ll need a permit from the City Of Austin Ground Transportation Department. If you have this, upload a picture here:",
+            "title2": "Don't have one?",
+            "text2": "<a href=\"https://austintexas.gov/sites/default/files/files/Transportation/Ground_Transportation/Chauffeur_Permit_application_09-21-2017.pdf\">View guidelines</a>",
+            "title1_back": "Chauffeur's Permit Backside",
+            "text1_back": "Please take a photo of the back of your permit"
+        },
+        "description": "Thank you for choosing to drive with RideAustin. To qualify, drivers are required to be 21 years of age and have vehicles that are:",
+        "newCarSuccessMessage": "After completing the next steps, check your email for further instructions.",
+        "enabled": true,
+        "minCarYear": 2001
+    }
+}

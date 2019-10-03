@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageCollectionViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="qBF-u8-shn" customClass="CharityCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdp-gi-eYF">
+                    <rect key="frame" x="0.0" y="0.0" width="108" height="84"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.0" green="0.58823529409999997" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5mn-am-eRQ">
+                    <rect key="frame" x="0.0" y="0.0" width="108" height="84"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="pGv-pf-zVW">
+                    <rect key="frame" x="90" y="67" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="vB3-yp-YCf"/>
+                        <constraint firstAttribute="width" constant="13" id="vQg-6f-1ev"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyson" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uKP-j5-03E">
+                    <rect key="frame" x="0.0" y="84" width="108" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="t1P-fZ-h7J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5mn-am-eRQ" secondAttribute="trailing" id="0Y1-wt-shZ"/>
+                <constraint firstAttribute="bottom" secondItem="5mn-am-eRQ" secondAttribute="bottom" id="1hw-rt-d2o"/>
+                <constraint firstAttribute="trailing" secondItem="5mn-am-eRQ" secondAttribute="trailing" id="2kb-qd-H80"/>
+                <constraint firstItem="5mn-am-eRQ" firstAttribute="leading" secondItem="qBF-u8-shn" secondAttribute="leading" id="3Eb-T8-kAq"/>
+                <constraint firstItem="5mn-am-eRQ" firstAttribute="top" secondItem="qBF-u8-shn" secondAttribute="top" id="7Op-9Y-lyP"/>
+                <constraint firstItem="tdp-gi-eYF" firstAttribute="leading" secondItem="qBF-u8-shn" secondAttribute="leading" id="DM1-fI-BcN"/>
+                <constraint firstItem="tdp-gi-eYF" firstAttribute="bottom" secondItem="5mn-am-eRQ" secondAttribute="bottom" constant="1" id="EHx-CY-bGR"/>
+                <constraint firstItem="uKP-j5-03E" firstAttribute="top" secondItem="5mn-am-eRQ" secondAttribute="bottom" id="Hdj-Bf-538"/>
+                <constraint firstItem="uKP-j5-03E" firstAttribute="leading" secondItem="qBF-u8-shn" secondAttribute="leading" id="La4-yK-ZTj"/>
+                <constraint firstItem="tdp-gi-eYF" firstAttribute="top" secondItem="5mn-am-eRQ" secondAttribute="top" constant="1" id="Ofj-j4-RcL"/>
+                <constraint firstItem="5mn-am-eRQ" firstAttribute="top" secondItem="qBF-u8-shn" secondAttribute="top" id="Pgt-J5-lkl"/>
+                <constraint firstAttribute="bottom" secondItem="uKP-j5-03E" secondAttribute="bottom" id="QQk-9s-j5P"/>
+                <constraint firstItem="tdp-gi-eYF" firstAttribute="trailing" secondItem="5mn-am-eRQ" secondAttribute="trailing" constant="1" id="R3V-Kr-14E"/>
+                <constraint firstAttribute="bottom" secondItem="pGv-pf-zVW" secondAttribute="bottom" constant="30" id="Z4g-7h-oic"/>
+                <constraint firstItem="tdp-gi-eYF" firstAttribute="leading" secondItem="5mn-am-eRQ" secondAttribute="leading" constant="1" id="hfL-qn-2Ri"/>
+                <constraint firstItem="uKP-j5-03E" firstAttribute="top" secondItem="tdp-gi-eYF" secondAttribute="bottom" id="j76-a2-eyc"/>
+                <constraint firstAttribute="trailing" secondItem="uKP-j5-03E" secondAttribute="trailing" id="ms4-Yr-CZe"/>
+                <constraint firstAttribute="trailing" secondItem="tdp-gi-eYF" secondAttribute="trailing" id="pbs-I8-VLd"/>
+                <constraint firstItem="5mn-am-eRQ" firstAttribute="leading" secondItem="qBF-u8-shn" secondAttribute="leading" id="sJc-SU-je2"/>
+                <constraint firstAttribute="trailing" secondItem="pGv-pf-zVW" secondAttribute="trailing" constant="5" id="sbm-TW-qdi"/>
+                <constraint firstItem="uKP-j5-03E" firstAttribute="top" secondItem="5mn-am-eRQ" secondAttribute="bottom" constant="1" id="y1V-G6-xZO"/>
+                <constraint firstItem="tdp-gi-eYF" firstAttribute="top" secondItem="qBF-u8-shn" secondAttribute="top" id="zZ4-6B-va0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1hw-rt-d2o"/>
+                    <exclude reference="2kb-qd-H80"/>
+                    <exclude reference="Pgt-J5-lkl"/>
+                    <exclude reference="sJc-SU-je2"/>
+                    <exclude reference="EHx-CY-bGR"/>
+                    <exclude reference="Ofj-j4-RcL"/>
+                    <exclude reference="R3V-Kr-14E"/>
+                    <exclude reference="hfL-qn-2Ri"/>
+                    <exclude reference="y1V-G6-xZO"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="blankView" destination="tdp-gi-eYF" id="t27-35-8nO"/>
+                <outlet property="charityImage" destination="5mn-am-eRQ" id="EYK-rW-VjA"/>
+                <outlet property="charityName" destination="uKP-j5-03E" id="PWq-Im-3Zu"/>
+                <outlet property="checkBox" destination="pGv-pf-zVW" id="Gxp-NM-hyd"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="check" width="12" height="12"/>
+    </resources>
+</document>

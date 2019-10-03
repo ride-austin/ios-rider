@@ -1,0 +1,43 @@
+{
+    "active" : true,
+    "charity" :     {
+        "cityBitmask": 2,
+        "id" : 51,
+        "imageUrl" : "https://media.rideaustin.com/images/roundup/blue-santa@2x.png",
+        "name" : "Blue Santa Houston",
+        "order" : 1
+    },
+    "cityId" : 1,
+    "email" : "user1@gmail.com",
+    "firstname" : "Jose",
+    "fullName" : "Jose Abreu",
+    "gender" : "UNKNOWN",
+    "id" : 1823,
+    "lastLoginDate" : 1493091484000,
+    "lastname" : "Abreu",
+    "phoneNumber" : "+18093212132",
+    "rating" : 5,
+    "stripeId" : "cus_AXMCEJ2Lr0D0gp",
+    "type" : "RIDER",
+    "user" :     {
+        "active" : true,
+        "avatars" :  [
+               {
+                   "active" : true,
+                   "id" : 1823,
+                   "type" : "RIDER"
+               }
+        ],
+        "email" : "user1@gmail.com",
+        "enabled" : true,
+        "firstname" : "Jose",
+        "fullName" : "Jose Abreu",
+        "gender" : "UNKNOWN",
+        "id" : 1443,
+        "lastname" : "Abreu",
+        "phoneNumber" : "+18093212132",
+        "photoUrl" : "http://media-stage.rideaustin.com/user-photos/91be7cb1-c815-4ca4-b68a-4bfcc1cf9274.png",
+        "uuid" : 1443,
+    },
+    "uuid": 1823
+}

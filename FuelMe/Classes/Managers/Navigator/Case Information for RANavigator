@@ -1,0 +1,21 @@
+CASE 1 from start
+1 show launchImage
+
+check for authToken
+- without auth, show splashVC
+2 show menu and address
+check for credentials
+- if logged out, show splashVC
+check if rider is in a ride
+- if yes then load ride
+- else
+check version
+- if mandatory yes, show splash without removing authentication
+check existing configuration items
+- reload config,
+for new config update what is needed (need to define)
+
+
+CASE 2 when app is already loaded coming from background
+1. need to check status of existing ride
+2. else check if rider is in a ride

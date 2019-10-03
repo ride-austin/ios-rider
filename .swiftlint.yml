@@ -1,0 +1,66 @@
+excluded:
+  - Pods
+  - Resources/Generated
+  - ThirdParty
+  - RideAustinTestUI
+
+opt_in_rules:
+  # File header comments should not be added.
+  - file_header
+
+disabled_rules:
+  # Trailing commas in arrays and dictionaries should be enforced.
+  - trailing_comma
+
+  # Lines can have trailing whitespace (improves developer experience in Xcode)
+  - trailing_whitespace
+
+  # Disable line length
+  - line_length
+
+  # Disable limit to identifier names
+  - identifier_name
+
+  # Disable maximum limit to function body length
+  - function_body_length
+
+  # Disable maximum limit to type body length
+  - type_body_length
+
+  # Disable maximum limit to file length
+  - file_length
+
+  # Disable cyclomatic complexity check
+  - cyclomatic_complexity
+
+# Else and catch should be on its own line.
+statement_position:
+  statement_mode: uncuddled_else
+
+custom_rules:
+  equal_false_not_false:
+    name: "Not Bool" # rule name. optional.
+    message: "Use `swift == false` instead"
+    regex: "!(\\w)"
+    severity: warning # violation severity. optional.
+
+  no_forcing_of_quick_tests:
+    included: ".*\\Spec.swift"
+    name: "Quick tests"
+    regex: "(f(it|describe|context|itBehavesLike)\\(\")" # matches eg: `fit("`
+    message: "Do not force tests"
+    severity: warning
+
+  no_disabling_of_quick_tests:
+    included: ".*\\Spec.swift"
+    name: "Quick tests"
+    regex: "(x(it|describe|context|itBehavesLike)\\(\")" # matches eg: `xit("`
+    message: "Do not disable tests"
+    severity: warning
+
+large_tuple:
+  - 3
+
+type_name:
+  excluded:
+    - T

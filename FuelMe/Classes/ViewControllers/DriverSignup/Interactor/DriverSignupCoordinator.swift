@@ -519,12 +519,14 @@ extension DSFlowController: FingerprintsCoordinatorDelegate {
     func didTapNotNow() {
         coordinator = nil
         endDriverSignup()
+        clearContext()
         showAlert(NSString.accessibleAlertTitleRideAustin(), "Thank you for your application! We will reach out to you soon regarding next steps.")
     }
     
     func didFinishSuccessfully() {
         coordinator = nil
         endDriverSignup()
+        clearContext()
         showAlert(NSString.accessibleAlertTitleRideAustin(), "Thank you for your application! We will reach out to you soon regarding next steps.")
     }
     

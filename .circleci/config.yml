@@ -74,8 +74,7 @@ jobs:
             - ./Pods
       - add_ssh_keys: 
           fingerprints:
-            - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
-            - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+            - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Map GoogleService-Info.plist
           command: |
@@ -113,8 +112,7 @@ jobs:
             - ./Pods
       - add_ssh_keys: 
             fingerprints:
-              - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
-              - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+              - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Map GoogleService-Info.plist
           command: |
@@ -152,8 +150,7 @@ jobs:
             - ./Pods
       - add_ssh_keys: 
             fingerprints:
-              - "25:d8:d7:7b:20:a3:1a:62:96:72:34:10:5d:2a:92:9d"
-              - "fa:f9:91:c4:51:b6:ab:85:bb:ca:bf:d2:b6:70:ca:db"
+              - "60:9b:99:39:c7:d9:31:df:6b:51:73:2d:be:31:c9:5e"
       - run:
           name: Refresh signing
           command: bundle exec fastlane refresh_signing

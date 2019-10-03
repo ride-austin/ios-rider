@@ -1,0 +1,23 @@
+{
+    "requestedCarType" :{
+        "carCategory": "SUV",
+        "title": "SUV",
+        "description": "SUV Car",
+        "iconUrl": "https://media.rideaustin.com/icon/suv.png",
+        "maxPersons": 6,
+        "order": 2,
+        "active": true,
+        "cityId": 1,
+        "minimumFare": "10.00",
+        "baseFare": "3.00",
+        "bookingFee": "2.00",
+        "raFeeFactor": 0.2,
+        "ratePerMile": "2.60",
+        "ratePerMinute": "0.35",
+        "cancellationFee": "5.00",
+        "tncFeeRate": 1,
+        "processingFeeRate": 1,
+        "processingFeeText": "$1.00 Processing fee",
+        "processingFee": "1.00"
+    }
+}

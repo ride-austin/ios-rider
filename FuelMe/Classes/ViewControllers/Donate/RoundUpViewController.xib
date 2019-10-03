@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundUpViewController">
+            <connections>
+                <outlet property="cvCharities" destination="FSM-Hv-a2y" id="Kfx-ux-0Ti"/>
+                <outlet property="switchRoundUp" destination="4Kn-ts-8Yr" id="0rT-ZN-zch"/>
+                <outlet property="vContainerCharities" destination="j3e-8S-i6a" id="JqQ-CT-3PL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="amR-Kk-jb0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose to round up the cost of your fare to help support the local community. Please select your preferred charity." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-4b-X8L" userLabel="lblDescription">
+                    <rect key="frame" x="25" y="10" width="325" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="TJB-Vh-9Xh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-10-Vhl">
+                    <rect key="frame" x="0.0" y="96" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round up fare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8H-fN-aMO">
+                            <rect key="frame" x="10" y="16" width="105.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Kn-ts-8Yr">
+                            <rect key="frame" x="316" y="10" width="51" height="31"/>
+                            <accessibility key="accessibilityConfiguration" identifier="roundUpSwitch"/>
+                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="roundUpSwitchChanged:" destination="-1" eventType="valueChanged" id="FCq-pO-IJj"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4Kn-ts-8Yr" firstAttribute="centerY" secondItem="uYJ-10-Vhl" secondAttribute="centerY" id="aq3-dA-7Xf"/>
+                        <constraint firstItem="u8H-fN-aMO" firstAttribute="centerY" secondItem="uYJ-10-Vhl" secondAttribute="centerY" id="i0U-TR-e6Q"/>
+                        <constraint firstAttribute="trailing" secondItem="4Kn-ts-8Yr" secondAttribute="trailing" constant="10" id="mIB-CM-Dqc"/>
+                        <constraint firstAttribute="height" constant="50" id="rt0-Qd-rSI"/>
+                        <constraint firstItem="u8H-fN-aMO" firstAttribute="leading" secondItem="uYJ-10-Vhl" secondAttribute="leading" constant="10" id="y0c-7Y-3ds"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-8S-i6a">
+                    <rect key="frame" x="0.0" y="146" width="375" height="521"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a charity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yk9-A9-EZh">
+                            <rect key="frame" x="10" y="15" width="123.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FSM-Hv-a2y">
+                            <rect key="frame" x="10" y="43" width="355" height="468"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g9n-OX-Gfe">
+                                <size key="itemSize" width="108" height="100"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="AKM-FR-vAy"/>
+                                <outlet property="delegate" destination="-1" id="eDC-Is-sTM"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Yk9-A9-EZh" firstAttribute="leading" secondItem="j3e-8S-i6a" secondAttribute="leading" constant="10" id="MhG-8R-iTr"/>
+                        <constraint firstItem="Yk9-A9-EZh" firstAttribute="top" secondItem="j3e-8S-i6a" secondAttribute="top" constant="15" id="WCZ-Jd-rqT"/>
+                        <constraint firstAttribute="trailing" secondItem="FSM-Hv-a2y" secondAttribute="trailing" constant="10" id="bbo-Fu-7zj"/>
+                        <constraint firstItem="FSM-Hv-a2y" firstAttribute="top" secondItem="Yk9-A9-EZh" secondAttribute="bottom" constant="10" id="dHf-07-ceI"/>
+                        <constraint firstAttribute="bottom" secondItem="FSM-Hv-a2y" secondAttribute="bottom" constant="10" id="fvw-p3-PJc"/>
+                        <constraint firstItem="FSM-Hv-a2y" firstAttribute="leading" secondItem="j3e-8S-i6a" secondAttribute="leading" constant="10" id="xPo-Kh-6kU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EgX-4b-X8L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="0Bt-5a-fvM"/>
+                <constraint firstAttribute="trailing" secondItem="j3e-8S-i6a" secondAttribute="trailing" id="DrG-2G-HBT"/>
+                <constraint firstAttribute="trailing" secondItem="uYJ-10-Vhl" secondAttribute="trailing" id="EeQ-KS-Tmg"/>
+                <constraint firstItem="uYJ-10-Vhl" firstAttribute="top" secondItem="EgX-4b-X8L" secondAttribute="bottom" constant="15" id="KMV-PE-QKm"/>
+                <constraint firstAttribute="trailing" secondItem="EgX-4b-X8L" secondAttribute="trailing" constant="25" id="Mb1-94-Emj"/>
+                <constraint firstItem="uYJ-10-Vhl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WSA-AS-yPQ"/>
+                <constraint firstAttribute="bottom" secondItem="j3e-8S-i6a" secondAttribute="bottom" id="pc2-ND-TeH"/>
+                <constraint firstItem="j3e-8S-i6a" firstAttribute="top" secondItem="uYJ-10-Vhl" secondAttribute="bottom" id="sm1-c0-vhe"/>
+                <constraint firstItem="j3e-8S-i6a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v9W-KT-u2e"/>
+                <constraint firstItem="EgX-4b-X8L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="vrz-hA-Lx5"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

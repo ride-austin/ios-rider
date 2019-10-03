@@ -1,0 +1,162 @@
+REQUESTED
+{
+    cityId = 1;
+    createdDate = 1493277657682;
+    end =     {
+    };
+    id = 1225336;
+    raPayment = "0.00";
+    requestedCarType =     {
+        active = 1;
+        baseFare = "1.50";
+        bookingFee = "2.00";
+        cancellationFee = "4.00";
+        carCategory = REGULAR;
+        cityId = 1;
+        description = "Standard Car";
+        iconUrl = "https://media.rideaustin.com/icon/regular.png";
+        maxPersons = 4;
+        minimumFare = "5.00";
+        order = 1;
+        processingFee = "1.00";
+        processingFeeRate = 1;
+        processingFeeText = "$1.00 Processing fee";
+        raFeeFactor = 0;
+        ratePerMile = "0.99";
+        ratePerMinute = "0.25";
+        title = STANDARD;
+        tncFeeRate = 1;
+    };
+    rideCost = "0.00";
+    rider =     {
+        active = 1;
+        charity =         {
+            cityBitmask = 1;
+            id = 8;
+            imageUrl = "https://media.rideaustin.com/images/roundup/austin-parks-foundation@2x.png";
+            name = "Austin Parks Foundation";
+            order = 1;
+        };
+        cityId = 1;
+        email = "ride129@test.com";
+        firstname = RideOneTwoNine;
+        fullName = "RideOneTwoNine Test";
+        gender = UNKNOWN;
+        id = 2982;
+        lastname = Test;
+        phoneNumber = "+971565362129";
+        rating = 5;
+        type = RIDER;
+        user =         {
+            avatars =             (
+            );
+            email = "ride129@test.com";
+            enabled = 1;
+            firstname = RideOneTwoNine;
+            fullName = "RideOneTwoNine Test";
+            gender = UNKNOWN;
+            id = 2245;
+            lastname = Test;
+            phoneNumber = "+971565362129";
+            photoUrl = "http://media-stage.rideaustin.com/user-photos/153c343b-98d7-464f-974f-dbe6b7e174b7.png";
+            uuid = 2245;
+        };
+        uuid = 2982;
+    };
+    start =     {
+        address = "702 Rio Grande Street, Austin, Texas";
+        zipCode = 73781;
+    };
+    startAddress = "702 Rio Grande Street, Austin, Texas";
+    startAreaId = 1899;
+    startLocationLat = "30.271318";
+    startLocationLong = "-97.749334";
+    status = REQUESTED;
+    surgeFactor = 1;
+    totalCharge = "0.00";
+    totalFare = "0.00";
+    updatedDate = 1493277657682;
+    uuid = 1225336;
+}
+
+get ride REQUESTED
+{
+    cityId = 1;
+    createdDate = 1493277658000;
+    end =     {
+    };
+    id = 1225336;
+    raPayment = "0.00";
+    requestedCarType =     {
+        active = 1;
+        baseFare = "1.50";
+        bookingFee = "2.00";
+        cancellationFee = "4.00";
+        carCategory = REGULAR;
+        cityId = 1;
+        description = "Standard Car";
+        iconUrl = "https://media.rideaustin.com/icon/regular.png";
+        maxPersons = 4;
+        minimumFare = "5.00";
+        order = 1;
+        processingFee = "1.00";
+        processingFeeRate = 1;
+        processingFeeText = "$1.00 Processing fee";
+        raFeeFactor = 0;
+        ratePerMile = "0.99";
+        ratePerMinute = "0.25";
+        title = STANDARD;
+        tncFeeRate = 1;
+    };
+    rideCost = "0.00";
+    rider =     {
+        active = 1;
+        charity =         {
+            cityBitmask = 1;
+            id = 8;
+            imageUrl = "https://media.rideaustin.com/images/roundup/austin-parks-foundation@2x.png";
+            name = "Austin Parks Foundation";
+            order = 1;
+        };
+        cityId = 1;
+        email = "ride129@test.com";
+        firstname = RideOneTwoNine;
+        fullName = "RideOneTwoNine Test";
+        gender = UNKNOWN;
+        id = 2982;
+        lastname = Test;
+        phoneNumber = "+971565362129";
+        rating = 5;
+        type = RIDER;
+        user =         {
+            avatars =             (
+            );
+            email = "ride129@test.com";
+            enabled = 1;
+            firstname = RideOneTwoNine;
+            fullName = "RideOneTwoNine Test";
+            gender = UNKNOWN;
+            id = 2245;
+            lastname = Test;
+            phoneNumber = "+971565362129";
+            photoUrl = "http://media-stage.rideaustin.com/user-photos/153c343b-98d7-464f-974f-dbe6b7e174b7.png";
+            uuid = 2245;
+        };
+        uuid = 2982;
+    };
+    start =     {
+        address = "702 Rio Grande Street, Austin, Texas";
+        zipCode = 73781;
+    };
+    startAddress = "702 Rio Grande Street, Austin, Texas";
+    startAreaId = 1899;
+    startLocationLat = "30.271318";
+    startLocationLong = "-97.749334";
+    status = "NO_AVAILABLE_DRIVER";
+    surgeFactor = 1;
+    totalCharge = "0.00";
+    totalFare = "0.00";
+    updatedDate = 1493277670000;
+    uuid = 1225336;
+    comment = "A ride comment.";
+}

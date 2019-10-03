@@ -1,0 +1,23 @@
+{
+    "requestedCarType" :{
+        "carCategory": "REGULAR",
+        "title": "STANDARD",
+        "description": "Standard Car",
+        "iconUrl": "https://media.rideaustin.com/icon/regular.png",
+        "maxPersons": 4,
+        "order": 1,
+        "active": true,
+        "cityId": 1,
+        "minimumFare": "5.00",
+        "baseFare": "1.50",
+        "bookingFee": "2.00",
+        "raFeeFactor": 0,
+        "ratePerMile": "0.99",
+        "ratePerMinute": "0.25",
+        "cancellationFee": "4.00",
+        "tncFeeRate": 1,
+        "processingFeeRate": 1,
+        "processingFeeText": "$1.00 Processing fee",
+        "processingFee": "1.00"
+    }
+}

@@ -1,0 +1,224 @@
+{
+    "accessibility": {
+        "phoneNumber": "+15124782222",
+        "title": "Please contact Austin Cab Company (512) 478-2222",
+        "enabled": true
+    },
+    "supportedCities": [
+                        {
+                        "cityId": 1,
+                        "cityName": "AUSTIN",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+                        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideAustinBlack@3x.png"
+                        },
+                        {
+                        "cityId": 2,
+                        "cityName": "HOUSTON",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideHouston@3x.png",
+                        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideHoustonBlack@3x.png"
+                        }
+                        ],
+    "smsMaskingEnabled": true,
+    "geocodingConfiguration": {
+        "queryHints": [
+                       {
+                       "prefixes": [
+                                    "ai",
+                                    "hou"
+                                    ],
+                       "contains": [
+                                    "airport",
+                                    "houston"
+                                    ],
+                       "description": "George Bush Intercontinental Airport, North Terminal Road, Houston, TX, United States",
+                       "reference": "ChIJx1VD2SO0QIYRMcLAyPy0xpw",
+                       "primaryAddress": "George Bush Intercontinental Airport",
+                       "secondaryAddress": "North Terminal Road, Houston, TX, United States"
+                       },
+                       {
+                       "prefixes": [
+                                    "ai",
+                                    "hou"
+                                    ],
+                       "contains": [
+                                    "airport",
+                                    "houston"
+                                    ],
+                       "description": "Hobby Airport, Houston, TX, United States",
+                       "reference": "ChIJI2ZP70-WQIYRWZj03jmDCJY",
+                       "primaryAddress": "Hobby Airport",
+                       "secondaryAddress": "Houston, TX, United States"
+                       }
+                       ]
+    },
+    "currentCity": {
+        "cityId": 2,
+        "cityName": "HOUSTON",
+        "cityCenterLocation": "29.8174782 -95.6814804",
+        "cityCenterLocationData": {
+            "lat": 29.8174782,
+            "lng": -95.6814804
+        },
+        "cityBoundaryPolygon": [
+                                {
+                                "lat": 30.20211,
+                                "lng": -94.70215
+                                },
+                                {
+                                "lat": 29.13777,
+                                "lng": -94.70215
+                                },
+                                {
+                                "lat": 29.13777,
+                                "lng": -95.85022
+                                },
+                                {
+                                "lat": 30.20211,
+                                "lng": -95.85022
+                                }
+                                ]
+    },
+    "generalInformation": {
+        "privacyStatement": "http://www.ridehou.com/legal/userterms/",
+        "splashUrl": "https://media.rideaustin.com/images/photoHouston@3x.jpg",
+        "companyDomain": "ridehou.com",
+        "playStoreLink": "market://details?id=com.rideaustin.android",
+        "logoUrl": "https://media.rideaustin.com/images/logoRideHouston@3x.png",
+        "appstoreLink": "itms-apps://itunes.apple.com/app/id1116489847",
+        "legalRider": "http://www.ridehou.com/legal/userterms/",
+        "supportEmail": "support@ridehou.com",
+        "facebookUrl": "https://www.facebook.com/werideaustin",
+        "legalDriver": "http://www.ridehou.com/legal/driverterms/",
+        "playStoreWeb": "https://play.google.com/store/apps/details?id=com.rideaustin.android",
+        "applicationNamePipe": "Ride|Houston",
+        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideHoustonBlack@3x.png",
+        "facebookUrlSchemeiOS": "fb://page?id=241278152906970",
+        "iconUrl": "https://media.rideaustin.com/images/Ride_180-1.png",
+        "companyWebsite": "http://www.ridehou.com",
+        "applicationName": "Ride Houston"
+    },
+    "rides": {
+        "distantPickUpNotificationThreshold": 200
+    },
+    "riderLiveLocation": {
+        "expirationTime": 5,
+        "requiredAccuracy": 50,
+        "enabled": true
+    },
+    "riderReferFriend": {
+        "detailtexttemplate": " Every time a new RideAustin user signs up with your invite code, theyll receive $5 off their first fare. Once they take their first ride, youll also get $5 off the fare on your next ride. Discounts expire after 7 days, and you can accumulate up to $500 of discounts in your account.",
+        "emailbodytemplate": "<p>You should try RideAustin! Get <codeValue> in ride credit using my code <b><codeLiteral><b>. Download the app at: <downloadUrl></p>",
+        "downloadUrl": "http://www.rideaustin.com",
+        "smsbodytemplate": "You should try RideAustin! Get <codeValue> in ride credit using my code <codeLiteral> Download the app at: <downloadUrl>",
+        "enabled": true
+    },
+    "commonMessages": {
+        "networkTimeoutMessage": "You appear to have a poor connection. Keep calm and try again later."
+    },
+    "ratingConfiguration": {
+        "defaultRating": 5,
+        "minimumRatingThreshold": 5,
+        "limit": 50
+    },
+    "tipping": {
+        "rideTipLimit": 200,
+        "ridePaymentDelay": 180
+    },
+    "directConnectPhone": "+12013895725",
+    "rideCancellation": {
+        "enabled": false
+    },
+    "womanOnly": {
+        "enabled": false
+    },
+    "carTypes": [
+                 {
+                 "carCategory": "REGULAR",
+                 "title": "STANDARD",
+                 "description": "Standard Car",
+                 "iconUrl": "https://media.rideaustin.com/icon/regular_seats.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/regular.png",
+                 "maxPersons": 4,
+                 "order": 1,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "5.00",
+                 "baseFare": "1.50",
+                 "bookingFee": "2.00",
+                 "raFeeFactor": 0,
+                 "ratePerMile": "0.99",
+                 "ratePerMinute": "0.20",
+                 "cancellationFee": "4.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "SUV",
+                 "title": "SUV",
+                 "description": "SUV Car",
+                 "iconUrl": "https://media.rideaustin.com/icon/suv_seats.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/suv.png",
+                 "maxPersons": 6,
+                 "order": 2,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "9.00",
+                 "baseFare": "3.00",
+                 "bookingFee": "2.00",
+                 "raFeeFactor": 0.1,
+                 "ratePerMile": "2.00",
+                 "ratePerMinute": "0.30",
+                 "cancellationFee": "5.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "PREMIUM",
+                 "title": "PREMIUM",
+                 "description": "Premium Car",
+                 "iconUrl": "https://media.rideaustin.com/icon/premium.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/premium.png",
+                 "configuration": "{\"disableTipping\":true}",
+                 "maxPersons": 4,
+                 "order": 3,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "10.00",
+                 "baseFare": "3.00",
+                 "bookingFee": "2.00",
+                 "raFeeFactor": 0.2,
+                 "ratePerMile": "2.75",
+                 "ratePerMinute": "0.40",
+                 "cancellationFee": "6.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "LUXURY",
+                 "title": "LUXURY",
+                 "iconUrl": "https://media.rideaustin.com/icon/luxury.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/luxury.png",
+                 "maxPersons": 4,
+                 "order": 5,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "10.00",
+                 "baseFare": "5.00",
+                 "bookingFee": "2.00",
+                 "raFeeFactor": 0.2,
+                 "ratePerMile": "3.75",
+                 "ratePerMinute": "0.50",
+                 "cancellationFee": "10.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 }
+                 ]
+}

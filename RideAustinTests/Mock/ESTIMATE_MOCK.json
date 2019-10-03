@@ -1,0 +1,10 @@
+{
+  "campaignInfo": {
+      "bannerIcon": "http://media-stage.rideaustin.com/user-photos/153c343b-98d7-464f-974f-dbe6b7e174b7.png",
+      "bannerText": "Test Banner",
+      "id": 34,
+      "estimatedFare": "10.0"
+  },
+  "duration": 2,
+  "totalFare": "10.0"
+}

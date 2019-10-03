@@ -1,0 +1,268 @@
+{
+    "currentTerms": {
+        "currentTermsId": 1,
+        "currentTermsUrl": "https://media.rideaustin.com/download/DriverTermsAustin.txt",
+        "currentTermsIsMandatory": true,
+        "currentTermsVersion": "1.0",
+        "currentTermsPublicationDate": 1496015700000
+    },
+    "accessibility": {
+        "phoneNumber": "+15124782222",
+        "title": "Please contact Austin Cab Company (512) 478-2222",
+        "enabled": true
+    },
+    "supportedCities": [
+                        {
+                        "cityId": 1,
+                        "cityName": "AUSTIN",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+                        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideAustinBlack@3x.png"
+                        },
+                        {
+                        "cityId": 2,
+                        "cityName": "HOUSTON",
+                        "logoUrl": "https://media.rideaustin.com/images/logoRideHouston@3x.png",
+                        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideHoustonBlack@3x.png"
+                        }
+                        ],
+    "smsMaskingEnabled": true,
+    "geocodingConfiguration": {
+        "queryHints": [
+                       {
+                       "prefixes": [
+                                    "ai",
+                                    "au"
+                                    ],
+                       "contains": [
+                                    "airport"
+                                    ],
+                       "description": "Austin-Bergstrom International Airport, Presidential Boulevard, Austin, TX, United States",
+                       "reference": "ChIJRf9KizuxRIYRaCfcyaj8pxw",
+                       "primaryAddress": "Austin-Bergstrom International Airport",
+                       "secondaryAddress": "Presidential Boulevard, Austin, TX, United States"
+                       }
+                       ]
+    },
+    "currentCity": {
+        "cityId": 1,
+        "cityName": "AUSTIN",
+        "cityCenterLocation": "30.267153 -97.743061",
+        "cityCenterLocationData": {
+            "lat": 30.267153,
+            "lng": -97.743061
+        },
+        "cityBoundaryPolygon": [
+                                {
+                                "lat": 30.58591,
+                                "lng": -97.41895
+                                },
+                                {
+                                "lat": 30.0758,
+                                "lng": -97.41895
+                                },
+                                {
+                                "lat": 30.0758,
+                                "lng": -98.08044
+                                },
+                                {
+                                "lat": 30.58591,
+                                "lng": -98.08044
+                                }
+                                ]
+    },
+    "generalInformation": {
+        "privacyStatement": "http://www.rideaustin.com/legal/userterms/",
+        "splashUrl": "https://media.rideaustin.com/images/photoAustin@3x.jpg",
+        "companyDomain": "rideaustin.com",
+        "playStoreLink": "market://details?id=com.rideaustin.android",
+        "logoUrl": "https://media.rideaustin.com/images/logoRideAustin@3x.png",
+        "appstoreLink": "itms-apps://itunes.apple.com/app/id1116489847",
+        "legalRider": "http://www.rideaustin.com/legal/userterms/",
+        "supportEmail": "support@rideaustin.com",
+        "facebookUrl": "https://www.facebook.com/werideaustin",
+        "legalDriver": "http://www.rideaustin.com/legal/driverterms/",
+        "playStoreWeb": "https://play.google.com/store/apps/details?id=com.rideaustin.android",
+        "applicationNamePipe": "Ride|Austin",
+        "logoBlackUrl": "https://media.rideaustin.com/images/logoRideAustinBlack@3x.png",
+        "facebookUrlSchemeiOS": "fb://page?id=241278152906970",
+        "iconUrl": "https://media.rideaustin.com/images/Ride_180-1.png",
+        "companyWebsite": "http://www.rideaustin.com",
+        "applicationName": "Ride Austin"
+    },
+    "rides": {
+        "rideSummaryDescription": "Eligible credits will be applied on your emailed receipt.",
+        "distantPickUpNotificationThreshold": 200,
+        "rideSummaryDescriptionFreeCreditCharged": "Eligible credits have been applied."
+    },
+    "riderLiveLocation": {
+        "expirationTime": 5,
+        "requiredAccuracy": 50,
+        "enabled": true
+    },
+    "riderReferFriend": {
+        "detailtexttemplate": " Every time a new RideAustin user signs up with your invite code, they'll receive $5 off their first fare. Once they take their first ride, you'll also get $5 off the fare on your next ride. Discounts expire after 7 days, and you can accumulate up to $500 of discounts in your account.",
+        "emailbodytemplate": "<p>You should try RideAustin! Get <codeValue> in ride credit using my code <b><codeLiteral><b>. Download the app at: <downloadUrl></p>",
+        "downloadUrl": "http://www.rideaustin.com",
+        "smsbodytemplate": "You should try RideAustin! Get <codeValue> in ride credit using my code <codeLiteral> Download the app at: <downloadUrl>",
+        "enabled": true
+    },
+    "commonMessages": {
+        "networkTimeoutMessage": "You appear to have a poor connection. Keep calm and try again later."
+    },
+    "ratingConfiguration": {
+        "defaultRating": 5,
+        "minimumRatingThreshold": 5,
+        "limit": 50
+    },
+    "tipping": {
+        "rideTipLimit": 200,
+        "ridePaymentDelay": 180
+    },
+    "directConnectPhone": "+12013895725",
+    "rideCancellation": {
+        "enabled": false
+    },
+    "womanOnly": {
+        "enabled": false
+    },
+    "driverTypes": [
+                    {
+                    "cityId": 1,
+                    "availableInCategories": [
+                                              "PREMIUM",
+                                              "LUXURY"
+                                              ],
+                    "name": "WOMEN_ONLY",
+                    "createdDate": 1476779565000,
+                    "updatedDate": 1476779565000,
+                    "description": "WOMEN ONLY",
+                    "configuration": "{\"penalizeDeclinedRides\":true}"
+                    }
+                    ],
+    "carTypes": [
+                 {
+                 "carCategory": "REGULAR",
+                 "title": "STANDARD",
+                 "description": "Standard Car",
+                 "iconUrl": "https://media.rideaustin.com/icon/regular_seats.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/regular.png",
+                 "mapIconUrl": "https://media.rideaustin.com/icon/map_regular.png",
+                 "fullIconUrl": "https://media.rideaustin.com/icon/Circle_regular@3x.png",
+                 "configuration": "{\"skipRideAuthorization\":false}",
+                 "maxPersons": 4,
+                 "order": 1,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "5.00",
+                 "baseFare": "1.50",
+                 "bookingFee": "2.00",
+                 "raFixedFee": "0.99",
+                 "ratePerMile": "0.99",
+                 "ratePerMinute": "0.20",
+                 "cancellationFee": "4.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "SUV",
+                 "title": "SUV",
+                 "description": "SUV Car",
+                 "iconUrl": "https://media.rideaustin.com/icon/suv_seats.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/suv.png",
+                 "mapIconUrl": "https://media.rideaustin.com/icon/map_suv.png",
+                 "fullIconUrl": "https://media.rideaustin.com/icon/Circle_suv@3x.png",
+                 "configuration": "{\"skipRideAuthorization\":false}",
+                 "maxPersons": 6,
+                 "order": 2,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "9.00",
+                 "baseFare": "3.00",
+                 "bookingFee": "2.00",
+                 "raFixedFee": "0.99",
+                 "ratePerMile": "2.00",
+                 "ratePerMinute": "0.30",
+                 "cancellationFee": "5.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "PREMIUM",
+                 "title": "PREMIUM",
+                 "description": "Premium Car",
+                 "iconUrl": "https://media.rideaustin.com/icon/premium.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/premium.png",
+                 "mapIconUrl": "https://media.rideaustin.com/icon/map_premium.png",
+                 "fullIconUrl": "https://media.rideaustin.com/icon/Circle_premium@3x.png",
+                 "configuration": "{\"disableTipping\":true,\"skipRideAuthorization\":false}",
+                 "maxPersons": 4,
+                 "order": 3,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "10.00",
+                 "baseFare": "3.00",
+                 "bookingFee": "2.00",
+                 "raFixedFee": "0.99",
+                 "ratePerMile": "2.75",
+                 "ratePerMinute": "0.40",
+                 "cancellationFee": "6.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "LUXURY",
+                 "title": "LUXURY",
+                 "iconUrl": "https://media.rideaustin.com/icon/luxury.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/luxury.png",
+                 "mapIconUrl": "https://media.rideaustin.com/icon/map_luxury.png",
+                 "fullIconUrl": "https://media.rideaustin.com/icon/Circle_luxury@3x.png",
+                 "configuration": "{\"skipRideAuthorization\":false}",
+                 "maxPersons": 4,
+                 "order": 4,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "10.00",
+                 "baseFare": "5.00",
+                 "bookingFee": "2.00",
+                 "raFixedFee": "0.99",
+                 "ratePerMile": "3.75",
+                 "ratePerMinute": "0.50",
+                 "cancellationFee": "10.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 1,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "1.00"
+                 },
+                 {
+                 "carCategory": "VETERANS",
+                 "title": "VETERANS",
+                 "description": "RIDE WITH A VETERAN\n\n\nThank you for your support of RideAustin’s U.S. Military Veteran drivers. By selecting this vehicle class you’ll be paired with one of our drivers who’s served in the U.S. Military and RideAustin will match the driver tips and donate to our local veterans charity partner CodeVI - integratedveteran.org.\n\n\nThis vehicle class is bound by our Terms and Conditions and STANDARD Rate fares apply. Subject to availability, geotagged area limitations and demand.",
+                 "iconUrl": "https://media.rideaustin.com/icon/veterans.png",
+                 "plainIconUrl": "https://media.rideaustin.com/icon/veterans.png",
+                 "mapIconUrl": "https://media.rideaustin.com/icon/map_regular.png",
+                 "fullIconUrl": "https://media.rideaustin.com/icon/circle_honda.png",
+                 "configuration": "{\"supportAreaQueue\":false,\"disableTipping\":false,\"showAlert\":true,\"allowedPolygons\":[{\"name\":\"Veterans Day Service area\",\"boundary\":[{\"lng\":-97.7958298,\"lat\":30.3518425},{\"lng\":-97.8140259,\"lat\":30.3262121},{\"lng\":-97.8166008,\"lat\":30.3229523},{\"lng\":-97.8243256,\"lat\":30.3186551},{\"lng\":-97.8284454,\"lat\":30.3145058},{\"lng\":-97.8267288,\"lat\":30.3067997},{\"lng\":-97.8289604,\"lat\":30.3013161},{\"lng\":-97.8299904,\"lat\":30.2910891},{\"lng\":-97.8191757,\"lat\":30.2750794},{\"lng\":-97.8188324,\"lat\":30.2701871},{\"lng\":-97.8191757,\"lat\":30.2652945},{\"lng\":-97.8111076,\"lat\":30.25625},{\"lng\":-97.8069878,\"lat\":30.2503187},{\"lng\":-97.8083611,\"lat\":30.2461666},{\"lng\":-97.811451,\"lat\":30.2436455},{\"lng\":-97.8166008,\"lat\":30.2408279},{\"lng\":-97.8263855,\"lat\":30.2371203},{\"lng\":-97.8250122,\"lat\":30.2337092},{\"lng\":-97.8186607,\"lat\":30.2323743},{\"lng\":-97.8121376,\"lat\":30.232671},{\"lng\":-97.8049278,\"lat\":30.2311878},{\"lng\":-97.7963448,\"lat\":30.2325227},{\"lng\":-97.7834702,\"lat\":30.2270349},{\"lng\":-97.7716255,\"lat\":30.226145},{\"lng\":-97.7570343,\"lat\":30.2181352},{\"lng\":-97.7517128,\"lat\":30.2150201},{\"lng\":-97.744503,\"lat\":30.2153168},{\"lng\":-97.7087975,\"lat\":30.2116082},{\"lng\":-97.6957512,\"lat\":30.2157618},{\"lng\":-97.6854515,\"lat\":30.2203602},{\"lng\":-97.6809883,\"lat\":30.2251067},{\"lng\":-97.6833916,\"lat\":30.2325227},{\"lng\":-97.6890564,\"lat\":30.2430524},{\"lng\":-97.6899147,\"lat\":30.2466114},{\"lng\":-97.6883698,\"lat\":30.2489841},{\"lng\":-97.680645,\"lat\":30.2513567},{\"lng\":-97.6782417,\"lat\":30.2540258},{\"lng\":-97.668972,\"lat\":30.2685562},{\"lng\":-97.6645088,\"lat\":30.2863457},{\"lng\":-97.6602173,\"lat\":30.3030946},{\"lng\":-97.6609039,\"lat\":30.3102082},{\"lng\":-97.6627922,\"lat\":30.3180623},{\"lng\":-97.6660538,\"lat\":30.321915},{\"lng\":-97.6732635,\"lat\":30.3272493},{\"lng\":-97.681675,\"lat\":30.3315462},{\"lng\":-97.700901,\"lat\":30.3408801},{\"lng\":-97.7050209,\"lat\":30.34488},{\"lng\":-97.7124023,\"lat\":30.3487317},{\"lng\":-97.7187538,\"lat\":30.3708017},{\"lng\":-97.7390099,\"lat\":30.382057},{\"lng\":-97.7441597,\"lat\":30.3904977},{\"lng\":-97.7616692,\"lat\":30.3893131},{\"lng\":-97.7735138,\"lat\":30.381909},{\"lng\":-97.7862167,\"lat\":30.372579},{\"lng\":-97.7905083,\"lat\":30.3660623},{\"lng\":-97.7920532,\"lat\":30.3583602},{\"lng\":-97.7958298,\"lat\":30.3518425}]}],\"skipRideAuthorization\":false}",
+                 "maxPersons": 4,
+                 "order": 5,
+                 "active": true,
+                 "cityId": 1,
+                 "minimumFare": "0.00",
+                 "baseFare": "0.00",
+                 "bookingFee": "0.00",
+                 "raFixedFee": "0.00",
+                 "ratePerMile": "0.00",
+                 "ratePerMinute": "0.00",
+                 "cancellationFee": "0.00",
+                 "tncFeeRate": 0,
+                 "processingFeeRate": 0,
+                 "processingFeeText": "$1.00 Processing fee",
+                 "processingFee": "0.00"
+                 }
+                 ]
+}

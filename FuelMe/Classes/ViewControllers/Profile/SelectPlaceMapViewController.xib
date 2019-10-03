@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectPlaceMapViewController">
+            <connections>
+                <outlet property="googleMapView" destination="d2j-VI-BUQ" id="AMo-ri-9Wp"/>
+                <outlet property="placeTextField" destination="peD-kX-OeV" id="azn-Vg-bR5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2j-VI-BUQ" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fieldBg" translatesAutoresizingMaskIntoConstraints="NO" id="XcT-no-P51">
+                    <rect key="frame" x="8" y="8" width="359" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="euc-4W-ozB"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Location" placeholder="Your place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="peD-kX-OeV" customClass="RideAustinPlaceSearchTextField">
+                    <rect key="frame" x="16" y="13" width="343" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="placeTextField" label="placeTextField"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="j8c-LU-tde"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="a5k-Wh-Ay7"/>
+                        <outlet property="placeSearchDelegate" destination="-1" id="fma-aP-fFJ"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-pa-MT6" userLabel="MyLocation">
+                    <rect key="frame" x="306" y="636" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="S8z-gJ-8Pc"/>
+                        <constraint firstAttribute="width" constant="23" id="yai-Ui-MbM"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="find-current-location-icon"/>
+                    <connections>
+                        <action selector="myLocationButtonPressed:" destination="-1" eventType="touchUpInside" id="mdO-dl-20J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhu-ll-LSY" userLabel="Info">
+                    <rect key="frame" x="345" y="637" width="22" height="22"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="infoButtonPressed:" destination="-1" eventType="touchUpInside" id="aYz-hL-53X"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XcT-no-P51" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="3Dw-Ub-og7"/>
+                <constraint firstItem="yhu-ll-LSY" firstAttribute="leading" secondItem="Os7-pa-MT6" secondAttribute="trailing" constant="16" id="8g3-nB-Vek"/>
+                <constraint firstAttribute="bottom" secondItem="Os7-pa-MT6" secondAttribute="bottom" constant="8" id="DCC-Kd-Ldq"/>
+                <constraint firstItem="peD-kX-OeV" firstAttribute="centerY" secondItem="XcT-no-P51" secondAttribute="centerY" id="QCC-r1-ng1"/>
+                <constraint firstItem="d2j-VI-BUQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QcJ-YP-Ubi"/>
+                <constraint firstItem="peD-kX-OeV" firstAttribute="trailing" secondItem="XcT-no-P51" secondAttribute="trailing" constant="-8" id="Scu-D0-S3o"/>
+                <constraint firstItem="peD-kX-OeV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="WxV-15-XgR"/>
+                <constraint firstAttribute="trailing" secondItem="XcT-no-P51" secondAttribute="trailing" constant="8" id="aPF-uW-cC5"/>
+                <constraint firstItem="d2j-VI-BUQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cwj-U0-FFn"/>
+                <constraint firstItem="peD-kX-OeV" firstAttribute="leading" secondItem="XcT-no-P51" secondAttribute="leading" constant="8" id="d2y-4a-ZsK"/>
+                <constraint firstAttribute="bottom" secondItem="yhu-ll-LSY" secondAttribute="bottom" constant="8" id="f9M-V7-sOX"/>
+                <constraint firstAttribute="trailing" secondItem="d2j-VI-BUQ" secondAttribute="trailing" id="ivf-sR-9P5"/>
+                <constraint firstAttribute="trailing" secondItem="yhu-ll-LSY" secondAttribute="trailing" constant="8" id="rhb-du-dDt"/>
+                <constraint firstAttribute="bottom" secondItem="d2j-VI-BUQ" secondAttribute="bottom" id="uz8-vw-hul"/>
+                <constraint firstItem="peD-kX-OeV" firstAttribute="trailing" secondItem="XcT-no-P51" secondAttribute="trailing" constant="-10" id="wVe-BV-xXq"/>
+                <constraint firstItem="XcT-no-P51" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="zAe-wp-7q8"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="WxV-15-XgR"/>
+                    <exclude reference="wVe-BV-xXq"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="362" y="414"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fieldBg" width="723" height="112"/>
+        <image name="find-current-location-icon" width="28" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,625 @@
+/* 
+  Localizable.strings
+  Ride
+
+  Created by Roberto Abreu on 3/6/18.
+  Copyright © 2018 RideAustin.com. All rights reserved.
+*/
+
+/*HUD success message*/
+"SUCCESS" = "SUCCESS";
+
+/*HUD wait message*/
+"PLEASE WAIT..." = "PLEASE WAIT...";
+
+/*HUD error connection message*/
+"WAITING FOR INTERNET CONNECTION..." = "WAITING FOR INTERNET CONNECTION...";
+
+/*Contact button title*/
+"Contact" = "Contact";
+
+/*Live ETA message*/
+"Live ETA Message" = "I'm on my way!\nCheckout my Ride and Live ETA here: %@";
+
+/*Location not found title*/
+"Location not found" = "Location not found";
+
+/*Invalid alert title*/
+"Invalid" = "Invalid";
+
+/*Invalid location message*/
+"Location is invalid." = "Location is invalid.";
+
+/*Couldn't determine user location message*/
+"Sorry we could not determine your location." = "Sorry we could not determine your location.";
+
+/*Couldn't determine user location message*/
+"Sorry, could not find your current location" = "Sorry, could not find your current location";
+
+/*Missing address alert title*/
+"Missing Address" = "Missing Address";
+
+/*Missing address alert message*/
+"Please enter a pickup address" = "Please enter a pickup address";
+
+/*Pickup location not set*/
+"Sorry something went wrong, please set pick up location again." = "Sorry something went wrong, please set pick up location again.";
+
+/*Cannot cancel while on trip message*/
+"You cannot cancel while on trip." = "You cannot cancel while on trip.";
+
+/*Cancel confirmation message*/
+"Do you really want to cancel the trip?" = "Do you really want to cancel the trip?";
+
+/*Cancel confirmation message*/
+"Do you want to cancel the trip?" = "Do you want to cancel the trip?";
+
+/*Rider will be charged title*/
+"You will be charged" = "You will be charged";
+
+/*Remaining seconds to cancel*/
+"You have %lu seconds to cancel the ride without being charged. After that you will be charged" = "You have %lu seconds to cancel the ride without being charged. After that you will be charged";
+
+/*Cancellation fee*/
+"$%.2f cancellation fee." = "$%.2f cancellation fee.";
+
+/*Cancel trip alert title*/
+"CANCEL TRIP" = "CANCEL TRIP";
+
+/*Contact driver alert message*/
+"How do you want to contact your driver?" = "How do you want to contact your driver?";
+
+/*Contact driver call option*/
+"CALL" = "CALL";
+
+/*Contact driver sms option*/
+"SMS" = "SMS";
+
+/*Cancel alert option*/
+"CANCEL" = "CANCEL";
+
+/*Alert option*/
+"NO" = "NO";
+
+/*Alert option*/
+"YES" = "YES";
+
+/*Alert option*/
+"Ok" = "Ok";
+
+/*Alert option*/
+"Skip" = "Skip";
+
+/*Message to show when requesting price estimated and destination is not set*/
+"Please select a destination location to get estimates." = "Please select a destination location to get estimates.";
+
+/*Message to show when requesting price estimated and pickup is not set*/
+"Please select a pickup location to get estimates." = "Please select a pickup location to get estimates.";
+
+/*Destination has been changed alert message*/
+"Destination has been changed to \"%@\"" = "Destination has been changed to \"%@\"";
+
+/*Version outdated message*/
+"VERSION_OUTDATED" = "The version you are using is outdated. Please download the latest version from the App Store or contact support.";
+
+/*Generic error title*/
+"GENERIC_ERROR_TITLE" = "Oops";
+
+/*Error while trying to cancel a ride already started*/
+"Too Late" = "Too Late";
+
+/*Error message - cannot cancel started trip*/
+"The driver has started the trip. You cannot cancel after the trip has started." = "The driver has started the trip. You cannot cancel after the trip has started.";
+
+/*No Driver Available alert title*/
+"No Driver Available" = "No Driver Available";
+
+/*No Driver Available alert message*/
+"We are sorry currently no driver is available at your location." = "We are sorry currently no driver is available at your location.";
+
+/*No Driver Available alert message - when there are drivers on map*/
+"No drivers available right now, please try again later." = "No drivers available right now, please try again later.";
+
+/*Ride is cancelled by driver message*/
+"Your ride is cancelled by the driver." = "Your ride is cancelled by the driver.";
+
+/*Ride cancellation fee for no show*/
+"Your ride has been cancelled by the driver. You've been charged a $%.2f cancellation fee for no show." = "Your ride has been cancelled by the driver. You've been charged a $%.2f cancellation fee for no show.";
+
+/*Ride cancelled by admin*/
+"Your ride is cancelled by admin." = "Your ride is cancelled by admin.";
+
+/*NavigationBar {Confirmation} title*/
+"Confirmation" = "Confirmation";
+
+/*NavigationBar {Requesting} title*/
+"Requesting" = "Requesting";
+
+/*NavigationBar {Driver On Way} Title*/
+"Driver on way" = "Driver on way";
+
+/*NavigationBar {Driver Arrived} title*/
+"Driver Arrived" = "Driver Arrived";
+
+/*Destionation arrival ETA*/
+"DESTINATION_ARRIVAL_ETA" = "  Arrival: %@";
+
+/*Destionation arrival ETA - Less than one minute*/
+"DESTINATION_ARRIVAL_LESS_THAN_ONE_MINUTE" = "  < 1 Min";
+
+/*Destionation arrival ETA - Minutes*/
+"DESTINATION_ARRIVAL_MINUTES" = "  %ld Min";
+
+/*Pickup time ETA*/
+"Pickup time is approximately %ld mins" = "Pickup time is approximately %ld mins";
+
+/*Pickup comment validation title*/
+"Pick up comment" = "Pick up comment";
+
+/*Validation message for pickup comment length*/
+"Maximum length is 200 characters." = "Maximum length is 200 characters.";
+
+/*No internet connection message*/
+"No internet connection." = "No internet connection.";
+"There is no connection to the internet. The app will continue when a connection is established." =
+"There is no connection to the internet. The app will continue when a connection is established.";
+"No Connection" = "No Connection";
+"Internet Connection is down. Please try again later." = "Internet Connection is down. Please try again later.";
+"Network Offline" = "Network Offline";
+
+/*Far pickup message*/
+"You have chosen to be picked up from a location that is not near your current GPS location. Are you sure you chose the correct pickup location?" = "You have chosen to be picked up from a location that is not near your current GPS location. Are you sure you chose the correct pickup location?";
+
+/*Error message while trying to change destination*/
+"Couldn't change destination, try again later." = "Couldn't change destination, try again later.";
+
+/*Pending balance*/
+"Check Pending Balance" = "Check Pending Balance";
+
+/*Save Payment Method message */
+"Save a payment method to start riding" = "Save a payment method to start riding";
+
+/*Ride cancelled by rider*/
+"Your ride is cancelled." = "Your ride is cancelled.";
+
+/*Ride cancellation fee by rider*/
+"Your ride is cancelled. You've been charged a $%.2f cancellation fee." = "Your ride is cancelled. You've been charged a $%.2f cancellation fee.";
+
+/*Restore Existing Ride*/
+"Appears you have an existing Ride" = "Appears you have an existing Ride";
+
+/*Cancel restore ride alert message*/
+"Do you want to cancel it?" = "Do you want to cancel it?";
+
+/*Trip was cancelled title*/
+"TRIP WAS CANCELLED" = "TRIP WAS CANCELLED";
+
+/*Estimated fare title*/
+"Fare Estimate" = "Fare Estimate";
+
+/*BottomDrawer ETA*/
+"%ld MIN" = "%ld MIN";
+
+/*BottomDrawer Max People*/
+"%d PEOPLE" = "%d PEOPLE";
+
+/*SetPickupLocationView ETA*/
+"<1\nMIN" = "<1\nMIN";
+"%ld\nMIN" = "%ld\nMIN";
+
+/*Menu Options*/
+"Payment" = "Payment";
+"Round Up" = "Round Up";
+"Trip History / Support" = "Trip History / Support";
+"Direct Connect" = "Direct Connect";
+"Promotions" = "Promotions";
+"Drive with %@" = "Drive with %@";
+"Accessibility" = "Accessibility";
+"Female Driver Mode" = "Female Driver Mode";
+"Settings" = "Settings";
+
+/*Accessibility menu alert title*/
+"For Accessible Service rides" = "For Accessible Service rides";
+
+/*DirectConnect screen prevent show message*/
+"You may use direct connect after the trip." = "You may use direct connect after the trip.";
+
+/*Promocode screen prevent show message*/
+"You may enter promo code after the trip." = "You may enter promo code after the trip.";
+
+/*Direct connect - Enter driver id*/
+"Please enter driver id" = "Please enter driver id";
+
+/*Direct connect - Driver not accept request*/
+"Driver did not accept your request" = "Driver did not accept your request";
+
+/*Direct connect - payment method not selected*/
+"Please select payment method" = "Please select payment method";
+
+/*Direct connect - payment method message*/
+"To use Bevo Pay, please add a credit card as payment method" = "To use Bevo Pay, please add a credit card as payment method";
+
+/*Direct connect - request driver button title*/
+"REQUEST DRIVER" = "REQUEST DRIVER";
+
+/*Direct connect - {#} Seats*/
+"%d Seats" = "%d Seats";
+
+/*Direct connect - Car categories title*/
+"Car Categories" = "Car Categories";
+
+/*PickerAddressViewController - Choose Pickup*/
+"Choose Pickup" = "Choose Pickup";
+
+/*PickerAddressViewController - Choose Destination*/
+"Choose Destination" = "Choose Destination";
+
+/*PickerAddressViewController - Enter Pickup*/
+"Enter Pickup" = "Enter Pickup";
+
+/*PickerAddressViewController - Enter Destination*/
+"Enter Destination" = "Enter Destination";
+
+/*PickerAddressViewController - Remove Destination*/
+"Remove Destination" = "Remove Destination";
+
+/*PickerAddressViewController - Home*/
+"Add Home" = "Add Home";
+
+/*PickerAddressViewController - Work*/
+"Add Work" = "Add Work";
+
+/*PickerAddressViewController - Set Location On Map Option*/
+"Set Location On Map" = "Set Location On Map";
+
+/*Map Chooser Title*/
+"Home" = "Home";
+"Work" = "Work";
+"Pickup" = "Pickup";
+"Destination" = "Destination";
+
+/*Support message placeholder*/
+"Please enter your message" = "Please enter your message";
+
+/*Support title*/
+"Support" = "Support";
+"CONTACT %@" = "CONTACT %@";
+
+/*Send button title*/
+"Send" = "Send";
+
+/*Support success message*/
+"SUCCESS\nWe'll be in touch soon." = "SUCCESS\nWe'll be in touch soon.";
+
+/*Create profile title*/
+"CREATE A PROFILE" = "CREATE A PROFILE";
+
+/*Next button title*/
+"Next" = "Next";
+
+/*Privacy policy title*/
+"Privacy Policy" = "Privacy Policy";
+
+/*Terms & Conditions title*/
+"Terms & Conditions" = "Terms & Conditions";
+
+/*Create profile - Validations*/
+"Please enter your firstname." = "Please enter your firstname.";
+"Please enter a valid first name with minimum two letters." = "Please enter a valid first name with minimum two letters.";
+"Please enter a valid first name with english letters only." = "Please enter a valid first name with english letters only.";
+
+"Please enter your lastname." = "Please enter your lastname.";
+"Please enter a valid last name with minimum two letters." = "Please enter a valid last name with minimum two letters.";
+"Please enter a valid last name with english letters only." = "Please enter a valid last name with english letters only.";
+
+"Please enter your phone number." = "Please enter your phone number.";
+"Please enter a valid mobile phone number. i.e Minimum 8 digits." = "Please enter a valid mobile phone number. i.e Minimum 8 digits.";
+
+/*PinVC - Title*/
+"Verify Mobile" = "Verify Mobile";
+
+/*PinVC - SMS sent to number*/
+"that was sent to %@" = "that was sent to %@";
+
+/*RegisterInfoVC - Title*/
+"Create Account" = "Create Account";
+
+/*Email confirmation message*/
+"Please confirm your email address" = "Please confirm your email address";
+
+/*Correct alert option*/
+"Correct" = "Correct";
+
+/*Re-enter alert option*/
+"Re-enter" = "Re-enter";
+
+/*Login alert option*/
+"Login" = "Login";
+
+/*Edit alert option*/
+"Edit" = "Edit";
+
+/*RegisterInfoVC - Validations*/
+"Please enter your email address." = "Please enter your email address.";
+"Please enter a valid email address." = "Please enter a valid email address.";
+"Please enter a valid mobile phone number. i.e Minimum 8 digits and Max 15 digits" = "Please enter a valid mobile phone number. i.e Minimum 8 digits and Max 15 digits";
+"Please enter your mobile phone number." = "Please enter your mobile phone number.";
+"Please enter a valid mobile phone number. i.e Minimum 8 digits and Max 15 digits" = "Please enter a valid mobile phone number. i.e Minimum 8 digits and Max 15 digits";
+"Please enter a password." = "Please enter a password.";
+"Your password needs to be at least %li characters long." = "Your password needs to be at least %li characters long.";
+
+/*Dismiss button title*/
+"Dismiss" = "Dismiss";
+
+/*Placeholder for SupportViewController*/
+"Share Details" = "Share Details";
+
+/*SupportVC subtitle*/
+"Help" = "Help";
+
+/*SupportVC driver's name rated*/
+"You rated %@" = "You rated %@";
+
+/*SupportVC driver name*/
+"Your driver is %@" = "Your driver is %@";
+
+/*Cost detail sections*/
+"BASE FARE" = "BASE FARE";
+"PER MILE" = "PER MILE";
+"PER MIN" = "PER MIN";
+"MINIMUM FARE" = "MINIMUM FARE";
+"BOOKING FEE" = "BOOKING FEE";
+"CITY TNC FEE" = "CITY TNC FEE";
+"PROCESSING FEE" = "PROCESSING FEE";
+
+/*WomanOnlyVC - Share button title*/
+"Share" = "Share";
+
+/*WomanOnlyVC - Temporarily disabled message*/
+"This feature is temporarily disabled" = "This feature is temporarily disabled";
+
+/*WomanOnlyVC - Title*/
+"Female Driver Mode" = "Female Driver Mode";
+
+/*WomanOnlyVC - Subtitle*/
+"You can enable booking Female Drivers" = "You can enable booking Female Drivers";
+
+/*WomanOnlyVC - Request on going message*/
+"Request On going" = "Request On going";
+
+/*WomanOnlyVC - Cancel request to change WM*/
+"Please cancel the request to change your woman only mode" = "Please cancel the request to change your woman only mode";
+
+/*Message for Quality image*/
+"Please upload a High Quality Photo with a minimum size of 190x250 pixels to be readable." = "Please upload a High Quality Photo with a minimum size of 190x250 pixels to be readable.";
+
+/*Invalid image size alert title*/
+"Invalid Size" = "Invalid Size";
+
+/*WhiteSpaceValidator message for empty values*/
+"%@ can't be empty" = "%@ can't be empty";
+
+/*Surge Area updated message*/
+"Surge has been updated. Please review it." = "Surge has been updated. Please review it.";
+
+/*Surge Area disabled title*/
+"Surge Disabled" = "Surge Disabled";
+
+/*Surge Area disabled message*/
+"Surge has been disabled. Do you want to request the ride?" = "Surge has been disabled. Do you want to request the ride?";
+
+/*Priority Fare title*/
+"Priority Fare" = "Priority Fare";
+
+/*Priority confirmation message*/
+"Type (%@.%@)\nTo confirm your priority multiplier" = "Type (%@.%@)\nTo confirm your priority multiplier";
+
+/*Priority confirmation values*/
+"MINIMUM_FARE_PF_TITLE" = "MINIMUM FARE";
+"MINIMUM_FARE_PF_VALUE" = "$%.02f MINIMUM FARE";
+"MIN_PF_TITLE" = "/ MIN";
+"MIN_PF_VALUE" = "$%0.2f / MIN";
+"MILE_PF_TITLE" = "/ MILE";
+"MILE_PF_VALUE" = "$%0.2f / MILE";
+
+/*SplitFare - Enter mobile number*/
+"Please enter mobile number" = "Please enter mobile number";
+
+/*SplitFare title*/
+"SPLIT FARE" = "SPLIT FARE";
+
+/*SplitFare remove confirmation message*/
+"Do you want to remove the split with %@?" = "Do you want to remove the split with %@?";
+
+/*Forgot password screen title*/
+"Forgot Password" = "Forgot Password";
+
+/*Change password screen title*/
+"Change Password" = "Change Password";
+
+/*Password don't match error message*/
+"Passwords do not match" = "Passwords do not match";
+
+/*Password minimun length message*/
+"Please choose a password with at least %d or more characters." = "Please choose a password with at least %d or more characters.";
+
+/*Save button title*/
+"SAVE" = "SAVE";
+
+/*Done button title*/
+"DONE" = "DONE";
+
+/*LoginVC Title*/
+"Sign In" = "Sign In";
+
+/*Sign In failed title*/
+"SIGN IN FAILED" = "SIGN IN FAILED";
+
+/*Sign In error and last sign in was with fb message*/
+". Did you mean to sign in using Facebook?" = ". Did you mean to sign in using Facebook?";
+
+/*Sign In - Not authorized message*/
+"Sorry, your username or password is incorrect" = "Sorry, your username or password is incorrect";
+
+/*Promo code alert title*/
+"Promo Code" = "Promo Code";
+
+/*Promo code success message*/
+"Congratulations!\nThe promo code \"%@\" has been applied.\n$%.2f has been added to your account." =
+"Congratulations!\nThe promo code \"%@\" has been applied.\n$%.2f has been added to your account.";
+
+/*Promo code header title*/
+"Promotions" = "Promotions";
+
+/*Promo code title*/
+"If you have a %@ promo code, enter it and save on your ride." = "If you have a %@ promo code, enter it and save on your ride.";
+
+/*FreeRidesVC title*/
+"Referral Discounts" = "Referral Discounts";
+
+/*Device doesn't allow sending email message*/
+"Your device does not allow sending email. Please send an email using a different device/computer" =
+"Your device does not allow sending email. Please send an email using a different device/computer";
+
+/*Device doesn't allow sending text message*/
+"Your device does not allow sending text messages." = "Your device does not allow sending text messages.";
+
+/*Promo Code Error*/
+"Promo Code Error" = "Promo Code Error";
+"An error occurred. Cannot send the email." = "An error occurred. Cannot send the email.";
+"An error occurred. Cannot send the SMS." = "An error occurred. Cannot send the SMS.";
+
+/*Free Rides title*/
+"Free Rides" = "Free Rides";
+
+/*RedemptionVM*/
+"For your next %@ rides" = "For your next %@ rides";
+"For your next ride" = "For your next ride";
+"Expires in %ld day%@" = "Expires in %ld day%@";
+"Expires today" = "Expires today";
+"Expired" = "Expired";
+
+/*Unrecognize country code message*/
+"We cannot recognize the country code of %@. Please update your phone number." = "We cannot recognize the country code of %@. Please update your phone number.";
+
+/*Settings screen title*/
+"Settings" = "Settings";
+
+/*Settings Options*/
+"Favorite Places" = "Favorite Places";
+"About" = "About";
+"Notifications" = "Notifications";
+"Enable Notifications" = "Enable Notifications";
+"Receive notifications related to your trip" = "Receive notifications related to your trip";
+"Rate us in the app store" = "Rate us in the app store";
+"Like us on Facebook" = "Like us on Facebook";
+"Legal" = "Legal";
+"Contact Support" = "Contact Support";
+"Sign out" = "Sign out";
+
+/*SelectPlaceMapVC - Info title*/
+"Setting Your %@ Address" = "Setting Your %@ Address";
+
+/*SelectPlaceMapVC - Info message*/
+"Enter your address, search the name of your location, or drop a pin on the map. Don’t forget to hit ‘Done’ when you are finished." =
+"Enter your address, search the name of your location, or drop a pin on the map. Don’t forget to hit ‘Done’ when you are finished.";
+
+/*Photo required message*/
+"Please upload your photo to continue." = "Please upload your photo to continue.";
+
+/*Photo required alert title*/
+"Driver Signup" = "Driver Signup";
+
+/*License years alert message*/
+"Have you had your license for at least ONE year?" = "Have you had your license for at least ONE year?";
+
+/*Sign Up driver slogan*/
+"Sign Up to Drive" = "Sign Up to Drive";
+
+/*Sign Up driver title*/
+"Drive with %@" = "Drive with %@";
+
+/*Continue button title*/
+"CONTINUE" = "CONTINUE";
+
+/*Valid date alert message*/
+"Please select a valid date to continue." = "Please select a valid date to continue.";
+
+/*DriverFCRARightsVC - Validation messages*/
+"First name must be at least %i characters" = "First name must be at least %i characters";
+"Middle name must be at least %i characters or confirm you do not have a middle name" = "Middle name must be at least %i characters or confirm you do not have a middle name";
+"Please confirm you do not have a middle name" = "Please confirm you do not have a middle name";
+"Please enter a valid middle name with english letters only." = "Please enter a valid middle name with english letters only.";
+"Please enter a valid Birth Date (MM/DD/YYYY)" = "Please enter a valid Birth Date (MM/DD/YYYY)";
+"Please enter valid SSN number i.e 9 digits number" = "Please enter valid SSN number i.e 9 digits number";
+"Please enter a valid Zip code" = "Please enter a valid Zip code";
+"Please enter a valid Driver's License Number" = "Please enter a valid Driver's License Number";
+"Please enter a valid 2 letter State code" = "Please enter a valid 2 letter State code";
+"Please enter the address to continue" = "Please enter the address to continue";
+"Address must be at least %i characters" = "Address must be at least %i characters";
+"You must acknowledge receipt of the Summary of Your Rights Under the Fair Credit Reporting Act" = "You must acknowledge receipt of the Summary of Your Rights Under the Fair Credit Reporting Act";
+
+/*Acknowledge receipt message*/
+"Please acknowledge receipt of the Disclosure Regarding Background Investigation and certify that You have read and understand this document." =
+"Please acknowledge receipt of the Disclosure Regarding Background Investigation and certify that You have read and understand this document.";
+
+/*DriverFCRAAckVC - title*/
+"FCRA Disclosure" = "FCRA Disclosure";
+
+/*DriverFCRAAckVC - Sign required message*/
+"Please digitally sign with Your full name as entered previously, including first name, middle names and last name." =
+"Please digitally sign with Your full name as entered previously, including first name, middle names and last name.";
+
+/*DisclosureVC - title*/
+"Terms and Conditions" = "Terms and Conditions";
+
+/*Retry alert option title*/
+"Retry" = "Retry";
+
+/*DisclosureVC - Agree to continue message*/
+"Please agree to continue" = "Please agree to continue";
+
+/*DisclosureVC - Success driver application message*/
+"Thank you for your application! We will reach out to you soon regarding next steps." =
+"Thank you for your application! We will reach out to you soon regarding next steps.";
+
+/*Accessibility labels SelectPlaceMapViewController*/
+"Your place." = "Your place.";
+
+/*Accessibility labels LocationVC*/
+"show my location" = "show my location";
+"show menu" = "show menu";
+"Cancel your request" = "Cancel your request";
+"Cancel trip" = "Cancel trip";
+"Fare Split" = "Fare Split";
+"See Fare Estimate" = "See Fare Estimate";
+"Driver Info View" = "Driver Info View";
+"You can see your payment history, round up, promotions or settings" = "You can see your payment history, round up, promotions or settings";
+"You are requesting a ride, please wait while we look for a driver or tap to cancel request" = "You are requesting a ride, please wait while we look for a driver or tap to cancel request";
+
+/*Accessibility labels EstimatedFareViewController*/
+"Back" = "Back";
+
+/*Accessibility labels RequestRideView*/
+"Request Ride" = "Request Ride";
+"See Fare Estimate" = "See Fare Estimate";
+"Enter Promo Code" = "Enter Promo Code";
+"Cancel Request" = "Cancel Request";
+
+/*Accessibility labels BottomDrawerView*/
+"ETA not available" = "ETA not available";
+"ETA %ld minutes" = "ETA %ld minutes";
+"Max Size %d people" = "Max Size %d people";
+
+/*Accessibility labels RAAddressButton*/
+"Tap to change your pickup address." = "Tap to change your pickup address.";
+"Tap to change your destination address." = "Tap to change your destination address.";
+"Your pickup address" = "Your pickup address";
+"Your destination" = "Your destination";
+" is " = " is ";
+" is empty" = " is empty";
+
+/*RAContactViewController*/
+"Contact Driver" = "Contact Driver";
+"Calling turned off because %@ is deaf or hard of hearing" = "Calling turned off because %@ is deaf or hard of hearing";
+"TEXT %@" = "TEXT %@";

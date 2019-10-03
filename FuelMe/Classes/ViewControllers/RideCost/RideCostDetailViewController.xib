@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideCostDetailViewController">
+            <connections>
+                <outlet property="constraintTableViewToBottom" destination="n4T-mh-0f5" id="Jo7-eZ-drT"/>
+                <outlet property="lbCarCategory" destination="vda-av-G60" id="ENy-ir-XdM"/>
+                <outlet property="lbProcessingFee" destination="RW0-9f-PKs" id="bOa-fc-zER"/>
+                <outlet property="lbTitle" destination="yrm-yv-z8u" id="q7s-OV-YeY"/>
+                <outlet property="tableView" destination="kQS-XS-Myf" id="ULq-gK-A9Z"/>
+                <outlet property="view" destination="TOD-L3-Vea" id="jbx-4U-onD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TOD-L3-Vea">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="221.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICING DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrm-yv-z8u">
+                    <rect key="frame" x="77" y="13" width="136" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREMIUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vda-av-G60">
+                    <rect key="frame" x="115" y="41" width="60" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBw-eC-mx5" userLabel="vSeparator">
+                    <rect key="frame" x="25" y="65" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="F0C-CO-X6O"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="15" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-XS-Myf">
+                    <rect key="frame" x="0.0" y="57" width="290" height="129.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="HWp-6h-uNY"/>
+                        <outlet property="delegate" destination="-1" id="3GP-Tz-olf"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.3% processing fee added to all transactions (min. $1.00)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RW0-9f-PKs">
+                    <rect key="frame" x="10" y="199.5" width="270" height="11"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="9"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="pricingDetailsView"/>
+            <constraints>
+                <constraint firstItem="vda-av-G60" firstAttribute="centerX" secondItem="TOD-L3-Vea" secondAttribute="centerX" id="0wu-hL-I9q"/>
+                <constraint firstItem="kQS-XS-Myf" firstAttribute="leading" secondItem="TOD-L3-Vea" secondAttribute="leading" id="8qh-8U-teN"/>
+                <constraint firstAttribute="trailing" secondItem="kQS-XS-Myf" secondAttribute="trailing" id="Fqm-MM-X5E"/>
+                <constraint firstAttribute="bottom" secondItem="RW0-9f-PKs" secondAttribute="bottom" constant="11" id="Smt-GG-KTb"/>
+                <constraint firstItem="bBw-eC-mx5" firstAttribute="top" secondItem="TOD-L3-Vea" secondAttribute="top" constant="65" id="V12-To-Wlz"/>
+                <constraint firstItem="RW0-9f-PKs" firstAttribute="leading" secondItem="TOD-L3-Vea" secondAttribute="leading" constant="10" id="Zn4-Yw-4J2"/>
+                <constraint firstItem="bBw-eC-mx5" firstAttribute="leading" secondItem="TOD-L3-Vea" secondAttribute="leading" constant="25" id="c1H-g8-P9E"/>
+                <constraint firstItem="yrm-yv-z8u" firstAttribute="top" secondItem="TOD-L3-Vea" secondAttribute="top" constant="13" id="dGq-J4-Yvm"/>
+                <constraint firstItem="yrm-yv-z8u" firstAttribute="centerX" secondItem="TOD-L3-Vea" secondAttribute="centerX" id="dh9-6T-itk"/>
+                <constraint firstAttribute="trailing" secondItem="bBw-eC-mx5" secondAttribute="trailing" constant="25" id="iE9-Nc-21T"/>
+                <constraint firstItem="kQS-XS-Myf" firstAttribute="top" secondItem="vda-av-G60" secondAttribute="bottom" id="lcx-ew-7IB"/>
+                <constraint firstAttribute="bottom" secondItem="kQS-XS-Myf" secondAttribute="bottom" constant="35" id="n4T-mh-0f5"/>
+                <constraint firstItem="vda-av-G60" firstAttribute="top" secondItem="yrm-yv-z8u" secondAttribute="bottom" constant="7" id="pdC-Vs-HU0"/>
+                <constraint firstAttribute="trailing" secondItem="RW0-9f-PKs" secondAttribute="trailing" constant="10" id="tGw-1g-UOh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="11" y="-152"/>
+        </view>
+    </objects>
+</document>

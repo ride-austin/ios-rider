@@ -1,0 +1,20 @@
+{
+    "active" : true,
+    "avatars" : [
+       {
+           "active" : true,
+           "id" : 1823,
+           "type" : "RIDER"
+       }
+    ],
+    "email" : "user1@gmail.com",
+    "enabled" : true,
+    "firstname" : "FirstName",
+    "fullName" : "FullName",
+    "gender" : "UNKNOWN",
+    "id" : 1443,
+    "lastname" : "LastName",
+    "phoneNumber" : "+18093212132",
+    "photoUrl" : "http://media-stage.rideaustin.com/user-photos/91be7cb1-c815-4ca4-b68a-4bfcc1cf9274.png",
+    "uuid" : 1443
+}

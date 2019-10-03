@@ -1,0 +1,41 @@
+{
+    "rider": {
+        "type": "RIDER",
+        "id": 1823,
+        "user": {
+            "id": 1823,
+            "photoUrl": "http://media-stage.rideaustin.com/user-photos/c0674365-983e-4e79-b67e-853b8dc5fb8a.png",
+            "email": "anewuser@xo.com",
+            "firstname": "New",
+            "lastname": "User",
+            "phoneNumber": "+112346543211",
+            "gender": "UNKNOWN",
+            "fullName": "New User",
+            "uuid": "8021",
+            "enabled": true,
+            "active": true,
+            "avatars": [
+                        {
+                        "id": 1823,
+                        "type": "RIDER",
+                        "active": true
+                        }
+                        ]
+        },
+        "active": true,
+        "lastLoginDate": 1498838497000,
+        "stripeId": "cus_Ad78FuhZSinFim",
+        "rating": 5,
+        "cityId": 1,
+        "applePayEnabled": false,
+        "email": "anewuser@xo.com",
+        "gender": "UNKNOWN",
+        "firstname": "New",
+        "lastname": "User",
+        "phoneNumber": "+112346543211",
+        "fullName": "New User",
+        "uuid": "8991"
+    },
+    "unpaid": [],
+    "cards": []
+}

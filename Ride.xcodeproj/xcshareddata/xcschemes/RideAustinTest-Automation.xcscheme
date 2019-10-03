@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0930"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "84D30A0C1DB87ECE00595274"
+               BuildableName = "RideAustinTest-Automation.app"
+               BlueprintName = "RideAustinTest-Automation"
+               ReferencedContainer = "container:Ride.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      disableMainThreadChecker = "YES"
+      systemAttachmentLifetime = "keepNever"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "13E6A5C81DCC41C0009E1369"
+               BuildableName = "RideAustinTestUI.xctest"
+               BlueprintName = "RideAustinTestUI"
+               ReferencedContainer = "container:Ride.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "CarCategoryUITest/testDStandardCategoryIsSelectedByDefault_753951()">
+               </Test>
+               <Test
+                  Identifier = "CarCategoryUITest/testE_ETAAndMaxSizeChangesWhileSwitchingThroughCategories_1092447()">
+               </Test>
+               <Test
+                  Identifier = "CarCategoryUITest/testFViewPricingForEachCategory_1092448()">
+               </Test>
+               <Test
+                  Identifier = "CarCategoryUITest/testGSlideIndicatorIsShownAboveCategories_1092443()">
+               </Test>
+               <Test
+                  Identifier = "CarCategoryUITest/testHSlideUpCarCategories_1092444()">
+               </Test>
+            </SkippedTests>
+            <LocationScenarioReference
+               identifier = "../FuelMe/GPX/Austin11629JollyvillRoad.gpx"
+               referenceType = "0">
+            </LocationScenarioReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "13B523A71DE340E000EA1A05"
+               BuildableName = "RideAustinTests.xctest"
+               BlueprintName = "RideAustinTests"
+               ReferencedContainer = "container:Ride.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "84D30A0C1DB87ECE00595274"
+            BuildableName = "RideAustinTest-Automation.app"
+            BlueprintName = "RideAustinTest-Automation"
+            ReferencedContainer = "container:Ride.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      stopOnEveryMainThreadCheckerIssue = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "84D30A0C1DB87ECE00595274"
+            BuildableName = "RideAustinTest-Automation.app"
+            BlueprintName = "RideAustinTest-Automation"
+            ReferencedContainer = "container:Ride.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-FIRDebugEnabled"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <LocationScenarioReference
+         identifier = "../FuelMe/GPX/Austin11629JollyvillRoad.gpx"
+         referenceType = "0">
+      </LocationScenarioReference>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "84D30A0C1DB87ECE00595274"
+            BuildableName = "RideAustinTest-Automation.app"
+            BlueprintName = "RideAustinTest-Automation"
+            ReferencedContainer = "container:Ride.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FreeRidesViewController">
+            <connections>
+                <outlet property="detailsLabel" destination="orq-Vu-XuM" id="kd7-8N-Nwt"/>
+                <outlet property="emailBtn" destination="mb5-pH-mPq" id="3uu-EO-MOj"/>
+                <outlet property="imgLogo" destination="5sc-m0-VXp" id="nwx-Lz-fqu"/>
+                <outlet property="promoLabel" destination="fYZ-g4-PI1" id="G39-Vm-Oj4"/>
+                <outlet property="smsBtn" destination="98a-AG-Rli" id="gA5-fu-fcV"/>
+                <outlet property="socialBtn" destination="IQY-0g-Cay" id="mk4-4c-dx3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="T8w-Mh-CcT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoRideAustin" translatesAutoresizingMaskIntoConstraints="NO" id="5sc-m0-VXp">
+                    <rect key="frame" x="105" y="8" width="165" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="sx4-5m-6Sz"/>
+                        <constraint firstAttribute="height" constant="44" id="yw0-dU-6Ao"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn Discounts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-gg-4Qx">
+                    <rect key="frame" x="20" y="60" width="335" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="WKz-K8-QW9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orq-Vu-XuM">
+                    <rect key="frame" x="20" y="106" width="335" height="0.0"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send your Promo Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUS-zA-L1i">
+                    <rect key="frame" x="20" y="425" width="335" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="3mC-iU-i96"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAAAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYZ-g4-PI1">
+                    <rect key="frame" x="20" y="464" width="335" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="3Vb-la-y4H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-pH-mPq">
+                    <rect key="frame" x="20" y="503" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.66274509800000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="UDr-0i-ROW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Email Invite">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="22.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="emailTouched:" destination="-1" eventType="touchUpInside" id="hz8-Ri-7VY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98a-AG-Rli">
+                    <rect key="frame" x="20" y="556" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.20000000000000001" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5ui-go-5Ey"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Text Invite">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="22.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="smsTouched:" destination="-1" eventType="touchUpInside" id="J5F-WG-Fdb"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promoEmailIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4ig-ZD-Hrh">
+                    <rect key="frame" x="40" y="515.5" width="25" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="T54-KI-GbI"/>
+                        <constraint firstAttribute="width" constant="25" id="jkY-lW-1Lq"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promoChatIcon" translatesAutoresizingMaskIntoConstraints="NO" id="j4r-Ty-cab">
+                    <rect key="frame" x="40" y="568.5" width="25" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="YY4-1T-EyS"/>
+                        <constraint firstAttribute="height" constant="20" id="biF-CG-U9G"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQY-0g-Cay">
+                    <rect key="frame" x="20" y="617" width="335" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="g8u-GW-6Zg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                    <state key="normal" title="Share on social media"/>
+                    <connections>
+                        <action selector="shareOnSocialMedia:" destination="-1" eventType="touchUpInside" id="h6B-5y-fAm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mb5-pH-mPq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="2BM-Mn-Bw8"/>
+                <constraint firstItem="r7f-gg-4Qx" firstAttribute="top" secondItem="5sc-m0-VXp" secondAttribute="bottom" constant="8" id="3Sq-P3-Waj"/>
+                <constraint firstItem="r7f-gg-4Qx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4nn-se-8d1"/>
+                <constraint firstItem="orq-Vu-XuM" firstAttribute="top" secondItem="r7f-gg-4Qx" secondAttribute="bottom" constant="8" id="5lb-Qh-V5K"/>
+                <constraint firstItem="j4r-Ty-cab" firstAttribute="centerY" secondItem="98a-AG-Rli" secondAttribute="centerY" id="7RM-vq-0mq"/>
+                <constraint firstAttribute="trailing" secondItem="orq-Vu-XuM" secondAttribute="trailing" constant="20" id="7e6-bc-reN"/>
+                <constraint firstItem="5sc-m0-VXp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ANN-BG-qeI"/>
+                <constraint firstAttribute="trailing" secondItem="r7f-gg-4Qx" secondAttribute="trailing" constant="20" id="BkM-bX-Iqy"/>
+                <constraint firstAttribute="bottom" secondItem="IQY-0g-Cay" secondAttribute="bottom" constant="20" id="Cff-Hm-eQD"/>
+                <constraint firstItem="IQY-0g-Cay" firstAttribute="top" secondItem="98a-AG-Rli" secondAttribute="bottom" constant="16" id="DOb-qw-pue"/>
+                <constraint firstItem="4ig-ZD-Hrh" firstAttribute="centerY" secondItem="mb5-pH-mPq" secondAttribute="centerY" id="EXC-Tu-eor"/>
+                <constraint firstItem="98a-AG-Rli" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Eiy-vn-rih"/>
+                <constraint firstItem="orq-Vu-XuM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="GJ4-ix-bKW"/>
+                <constraint firstItem="98a-AG-Rli" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="HVd-fL-HCe"/>
+                <constraint firstItem="mb5-pH-mPq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Hfz-SQ-Qbi"/>
+                <constraint firstItem="5sc-m0-VXp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HsR-Su-Gcp"/>
+                <constraint firstItem="mb5-pH-mPq" firstAttribute="top" secondItem="fYZ-g4-PI1" secondAttribute="bottom" constant="8" id="Jub-MY-GTs"/>
+                <constraint firstItem="fYZ-g4-PI1" firstAttribute="top" secondItem="jUS-zA-L1i" secondAttribute="bottom" constant="8" id="MP9-0l-amr"/>
+                <constraint firstAttribute="trailing" secondItem="98a-AG-Rli" secondAttribute="trailing" constant="20" id="Ohe-RA-Oik"/>
+                <constraint firstItem="IQY-0g-Cay" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="RZQ-hA-FD7"/>
+                <constraint firstAttribute="trailing" secondItem="IQY-0g-Cay" secondAttribute="trailing" constant="20" id="YRI-gQ-1f4"/>
+                <constraint firstAttribute="trailing" secondItem="fYZ-g4-PI1" secondAttribute="trailing" constant="20" id="YZ2-5w-f07"/>
+                <constraint firstItem="4ig-ZD-Hrh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="c3p-xS-nvK"/>
+                <constraint firstItem="jUS-zA-L1i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="dTV-El-YL3"/>
+                <constraint firstItem="j4r-Ty-cab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="jN7-Gq-9Iu"/>
+                <constraint firstAttribute="bottom" secondItem="98a-AG-Rli" secondAttribute="bottom" constant="20" id="tzk-fZ-aec"/>
+                <constraint firstAttribute="trailing" secondItem="jUS-zA-L1i" secondAttribute="trailing" constant="20" id="usv-e7-RgD"/>
+                <constraint firstAttribute="trailing" secondItem="mb5-pH-mPq" secondAttribute="trailing" constant="20" id="x48-wq-eWv"/>
+                <constraint firstItem="98a-AG-Rli" firstAttribute="top" secondItem="mb5-pH-mPq" secondAttribute="bottom" constant="8" id="yGn-ZN-JuR"/>
+                <constraint firstItem="fYZ-g4-PI1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="yoE-T8-3aV"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="tzk-fZ-aec"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoRideAustin" width="162" height="44"/>
+        <image name="promoChatIcon" width="32" height="27"/>
+        <image name="promoEmailIcon" width="32" height="25"/>
+    </resources>
+</document>

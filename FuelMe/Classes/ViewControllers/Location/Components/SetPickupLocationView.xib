@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPickupLocationView">
+            <connections>
+                <outlet property="btnSetPickupLocation" destination="YYd-BI-pz7" id="jv7-u8-C0j"/>
+                <outlet property="lblNotAvailableAtYourLocation" destination="aPX-HD-weL" id="Acy-OU-NIc"/>
+                <outlet property="lblPickupTime" destination="1hr-WJ-aWe" id="SVz-aT-E2o"/>
+                <outlet property="viewSetLocationButton" destination="elx-y5-Pwq" id="mQJ-Tq-rYv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="edk-Cg-cqA">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setupPin" translatesAutoresizingMaskIntoConstraints="NO" id="kWd-hN-1qk">
+                    <rect key="frame" x="129" y="22" width="22" height="37"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elx-y5-Pwq" userLabel="subView">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYd-BI-pz7">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-6" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="SET PICKUP LOCATION" backgroundImage="pin-location-dividers">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" backgroundImage="pin-location-dividers"/>
+                            <state key="highlighted" backgroundImage="pin-location-dividers"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hr-WJ-aWe">
+                            <rect key="frame" x="16" y="10" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="FGX-ed-dbq"/>
+                                <constraint firstAttribute="width" constant="28" id="mF4-jG-yPe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET PICKUP LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPX-HD-weL">
+                            <rect key="frame" x="22" y="8" width="236" height="31"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="highlightedColor" red="0.050980392159999999" green="0.054901960780000002" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1hr-WJ-aWe" firstAttribute="centerY" secondItem="elx-y5-Pwq" secondAttribute="centerY" constant="-3" id="Q0B-8r-p6Y"/>
+                        <constraint firstAttribute="trailing" secondItem="aPX-HD-weL" secondAttribute="trailing" constant="22" id="SAz-ZV-pP9"/>
+                        <constraint firstItem="1hr-WJ-aWe" firstAttribute="leading" secondItem="elx-y5-Pwq" secondAttribute="leading" constant="16" id="dGp-Rg-eWC"/>
+                        <constraint firstItem="YYd-BI-pz7" firstAttribute="leading" secondItem="elx-y5-Pwq" secondAttribute="leading" id="g3y-hI-iw2"/>
+                        <constraint firstAttribute="bottom" secondItem="aPX-HD-weL" secondAttribute="bottom" constant="15" id="huA-rF-QDz"/>
+                        <constraint firstAttribute="bottom" secondItem="YYd-BI-pz7" secondAttribute="bottom" id="iwc-7d-rjg"/>
+                        <constraint firstItem="aPX-HD-weL" firstAttribute="leading" secondItem="elx-y5-Pwq" secondAttribute="leading" constant="22" id="jTE-XR-KVc"/>
+                        <constraint firstItem="YYd-BI-pz7" firstAttribute="top" secondItem="elx-y5-Pwq" secondAttribute="top" id="of2-YV-e1x"/>
+                        <constraint firstItem="aPX-HD-weL" firstAttribute="top" secondItem="elx-y5-Pwq" secondAttribute="top" constant="8" id="otS-dV-aQx"/>
+                        <constraint firstAttribute="trailing" secondItem="YYd-BI-pz7" secondAttribute="trailing" id="ryO-Ya-O0r"/>
+                        <constraint firstAttribute="height" constant="54" id="vBX-Rj-r0j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="elx-y5-Pwq" firstAttribute="top" secondItem="edk-Cg-cqA" secondAttribute="top" id="2xc-4S-Bjh"/>
+                <constraint firstAttribute="bottom" secondItem="kWd-hN-1qk" secondAttribute="bottom" id="H4N-2y-ZsP"/>
+                <constraint firstItem="kWd-hN-1qk" firstAttribute="centerX" secondItem="edk-Cg-cqA" secondAttribute="centerX" id="qcY-0R-tuo"/>
+                <constraint firstItem="elx-y5-Pwq" firstAttribute="leading" secondItem="edk-Cg-cqA" secondAttribute="leading" id="r2a-UZ-V4i"/>
+                <constraint firstAttribute="trailing" secondItem="elx-y5-Pwq" secondAttribute="trailing" id="wym-IZ-sBu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pin-location-dividers" width="332" height="63"/>
+        <image name="setupPin" width="22" height="37"/>
+    </resources>
+</document>

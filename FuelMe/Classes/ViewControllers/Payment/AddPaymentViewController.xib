@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPaymentViewController">
+            <connections>
+                <outlet property="stripeView" destination="oV3-84-SOr" id="iuZ-To-rhu"/>
+                <outlet property="view" destination="iN0-l3-epB" id="GMz-Vu-huF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oV3-84-SOr" customClass="STPPaymentCardTextField">
+                    <rect key="frame" x="25" y="24" width="550" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="OsH-De-ZJa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="G9M-bE-27p"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This payment method will only be charged when you request a ride" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkQ-m6-kcB">
+                    <rect key="frame" x="28" y="561" width="544" height="14"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="11"/>
+                    <color key="textColor" red="0.51764705882352935" green="0.52941176470588236" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="oV3-84-SOr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="5Bd-xT-L6b"/>
+                <constraint firstAttribute="bottom" secondItem="JkQ-m6-kcB" secondAttribute="bottom" constant="25" id="L82-Yz-ovL"/>
+                <constraint firstAttribute="trailing" secondItem="JkQ-m6-kcB" secondAttribute="trailing" constant="28" id="NP0-Qx-xC7"/>
+                <constraint firstAttribute="trailing" secondItem="oV3-84-SOr" secondAttribute="trailing" constant="25" id="mn8-Fa-L9H"/>
+                <constraint firstItem="JkQ-m6-kcB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="qDw-wF-pWH"/>
+                <constraint firstItem="oV3-84-SOr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="z1E-ZJ-JKf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

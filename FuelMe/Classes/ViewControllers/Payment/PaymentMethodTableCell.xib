@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentMethodTableCell" id="KGk-i7-Jjw" customClass="PaymentMethodTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr5-W8-c9J">
+                        <rect key="frame" x="286" y="10" width="22" height="22"/>
+                        <connections>
+                            <action selector="didTapInfoButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="thx-wI-8JU"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rax-rY-fhV">
+                        <rect key="frame" x="24" y="12" width="32" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="rVv-sB-eIg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hA-fv-9pE">
+                        <rect key="frame" x="68" y="15" width="29.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rax-rY-fhV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="77n-rx-ufG"/>
+                    <constraint firstAttribute="bottom" secondItem="rax-rY-fhV" secondAttribute="bottom" constant="12" id="Dl7-N3-FZc"/>
+                    <constraint firstAttribute="trailing" secondItem="gr5-W8-c9J" secondAttribute="trailing" constant="12" id="G4v-D5-NmU"/>
+                    <constraint firstItem="0hA-fv-9pE" firstAttribute="leading" secondItem="rax-rY-fhV" secondAttribute="trailing" constant="12" id="V77-IL-qUs"/>
+                    <constraint firstItem="0hA-fv-9pE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VZR-yg-kpL"/>
+                    <constraint firstItem="gr5-W8-c9J" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Z4w-kV-6dm"/>
+                    <constraint firstItem="rax-rY-fhV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="cJU-sL-Bl7"/>
+                    <constraint firstItem="rax-rY-fhV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="e6z-bg-azM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btInfo" destination="gr5-W8-c9J" id="Ftw-MC-vEl"/>
+                <outlet property="ivIcon" destination="rax-rY-fhV" id="V6j-tY-MlY"/>
+                <outlet property="lbTitle" destination="0hA-fv-9pE" id="UaX-iJ-cpD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,307 @@
+COMPLETED
+{
+    activeDriver =     {
+        availableCarCategoriesBitmask = 87;
+        availableDriverTypesBitmask = 0;
+        carCategories =         (
+            REGULAR,
+            SUV,
+            PREMIUM,
+            LUXURY,
+            TOMMY
+        );
+        cityId = 1;
+        directDistanceToRider = 0;
+        driver =         {
+            activationStatus = INACTIVE;
+            active = 1;
+            agreedToLegalTerms = 1;
+            cars =             (
+                                {
+                    carCategories =                     (
+                        REGULAR
+                    );
+                    color = Black;
+                    id = 1138;
+                    inspectionStatus = "NOT_INSPECTED";
+                    inspectionSticker = 0;
+                    license = TESTER;
+                    make = Cadillac;
+                    model = XT7;
+                    photoUrl = "http://media-stage.rideaustin.com/car-photos/5ff8fd58-d966-4f4c-a4a3-528bc5d856b6.png";
+                    removed = 0;
+                    selected = 0;
+                    uuid = 1138;
+                    year = 2018;
+                },
+                                {
+                    carCategories =                     (
+                        REGULAR
+                    );
+                    color = Black;
+                    id = 1139;
+                    inspectionStatus = "NOT_INSPECTED";
+                    inspectionSticker = 0;
+                    insuranceExpiryDate = "2018-02-15";
+                    insurancePictureUrl = "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/42d29866-3071-4a80-a43f-c32caa6d3a27.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1493278140&Signature=%2BM78XBMzIvRTy69YPf8vKevCsAg%3D";
+                    license = TESTER;
+                    make = Cadillac;
+                    model = XT7;
+                    photoUrl = "http://media-stage.rideaustin.com/car-photos/67ed9c83-af79-4a1b-a472-7e748a5157ec.png";
+                    removed = 0;
+                    selected = 0;
+                    uuid = 1139;
+                    year = 2018;
+                },
+                                {
+                    carCategories =                     (
+                        REGULAR,
+                        SUV,
+                        PREMIUM,
+                        LUXURY,
+                        TOMMY
+                    );
+                    color = Blue;
+                    id = 676;
+                    inspectionNotes = "";
+                    inspectionStatus = APPROVED;
+                    inspectionSticker = 0;
+                    insuranceExpiryDate = "2017-02-18";
+                    insurancePictureUrl = "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/f2f0d7af-1245-417b-a90f-fa1afb83153e.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1493278140&Signature=M6Dzc9UfpltXHKVy2bNbJZS7Mps%3D";
+                    license = CADILLAC;
+                    make = Cadillac;
+                    model = "CTS Wagon";
+                    photoUrl = "http://media-stage.rideaustin.com/car-photos/6ac70261-d026-4d75-92f7-fb6fcc69a70c.png";
+                    removed = 0;
+                    selected = 1;
+                    uuid = 676;
+                    year = 2010;
+                },
+                                {
+                    carCategories =                     (
+                        REGULAR,
+                        SUV,
+                        LUXURY
+                    );
+                    color = Gray;
+                    id = 772;
+                    inspectionStatus = APPROVED;
+                    inspectionSticker = 0;
+                    insurancePictureUrl = "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/30e94d4c-13be-4737-a896-89171b4cb010.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1493278141&Signature=65P3Smo4DVaPA6SMmVM46xI%2FAu0%3D";
+                    license = 123BMWX3;
+                    make = BMW;
+                    model = X3;
+                    photoUrl = "http://media-stage.rideaustin.com/car-photos/be112cb0-9841-481f-8c4b-7ebca1380cef.png";
+                    removed = 0;
+                    selected = 0;
+                    uuid = 772;
+                    year = 2017;
+                },
+                                {
+                    carCategories =                     (
+                        REGULAR,
+                        SUV,
+                        PREMIUM,
+                        LUXURY,
+                        TOMMY
+                    );
+                    color = Black;
+                    id = 216;
+                    inspectionStatus = APPROVED;
+                    inspectionSticker = 0;
+                    insurancePictureUrl = "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/a2aa58e6-b69e-4368-a520-84b6f5c83169.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1493278141&Signature=JMSHay%2BAFQ0%2BXUo8yQfzRWZqu8c%3D";
+                    license = ABCDEF;
+                    make = Cadillac;
+                    model = XT7;
+                    photoUrl = "http://media-stage.rideaustin.com/car-photos/7fddb153-ca76-4937-9b56-15d7798e3bd5.png";
+                    removed = 0;
+                    selected = 0;
+                    uuid = 216;
+                    year = 2018;
+                }
+            );
+            checkrReports =             (
+            );
+            cityApprovalStatus = PENDING;
+            cityId = 1;
+            email = "ride15@test.com";
+            enabledRequestTypes =             (
+            );
+            fingerprintCleared = 0;
+            firstname = Ride15;
+            fullName = "Ride15 ";
+            gender = UNKNOWN;
+            grantedDriverTypes =             (
+                "WOMEN_ONLY"
+            );
+            id = 1247;
+            lastname = "";
+            licenseExpiryDate = "2026-02-24";
+            licensePictureUrl = "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-licenses/e141cdb4-7509-4dda-8155-d8ae0da3d4fd.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1493278140&Signature=xYiWK69rFW9K5Nqko7xUHpiOtUc%3D";
+            onboardingPendingSince = 1493277960955;
+            onboardingStatus = PENDING;
+            payoneerId = 1247;
+            payoneerStatus = Inactive;
+            phoneNumber = "+48784062443";
+            photoUrl = "http://media-stage.rideaustin.com/driver-photos/58d4b1ef-b529-4329-aa20-17adc7de8c54.png";
+            rating = 5;
+            type = DRIVER;
+            user =             {
+                address =                 {
+                };
+                avatars =                 (
+                );
+                dateOfBirth = "1995-09-27";
+                email = "ride15@test.com";
+                enabled = 1;
+                firstname = Ride15;
+                fullName = "Ride15 ";
+                gender = UNKNOWN;
+                id = 886;
+                lastname = "";
+                phoneNumber = "+48784062443";
+                photoUrl = "http://media-stage.rideaustin.com/user-photos/d31536a9-81ba-4690-a133-9e06ba76112a.png";
+                uuid = 886;
+            };
+            uuid = 1247;
+        };
+        drivingDistanceToRider = 0;
+        drivingTimeToRider = 0;
+        id = 28196;
+        latitude = "30.271318";
+        longitude = "-97.749334";
+        selectedCar =         {
+            carCategories =             (
+                REGULAR,
+                SUV,
+                PREMIUM,
+                LUXURY,
+                TOMMY
+            );
+            color = Blue;
+            id = 676;
+            inspectionNotes = "";
+            inspectionStatus = APPROVED;
+            inspectionSticker = 0;
+            insuranceExpiryDate = "2017-02-18";
+            insurancePictureUrl = "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/f2f0d7af-1245-417b-a90f-fa1afb83153e.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1493278141&Signature=CxyOBkvuoAr6eTjywSM5hhVDh1Q%3D";
+            license = CADILLAC;
+            make = Cadillac;
+            model = "CTS Wagon";
+            photoUrl = "http://media-stage.rideaustin.com/car-photos/6ac70261-d026-4d75-92f7-fb6fcc69a70c.png";
+            removed = 0;
+            selected = 1;
+            uuid = 676;
+            year = 2010;
+        };
+        status = AVAILABLE;
+        uuid = 28196;
+    };
+    airportFee = "0.00";
+    baseFare = "1.50";
+    bookingFee = "2.00";
+    cityFee = "0.07";
+    cityId = 1;
+    completedOn = 1493277960000;
+    createdDate = 1493277820000;
+    distanceFare = "0.00";
+    distanceTravelled = 0;
+    driverAcceptedOn = 1493277827000;
+    driverPayment = "5.00";
+    driverReachedOn = 1493277827000;
+    end =     {
+        address = "700-710 W 7th St, Austin";
+        zipCode = 78701;
+    };
+    endAddress = "700-710 W 7th St, Austin";
+    endLocationLat = "30.271318";
+    endLocationLong = "-97.749334";
+    estimatedFare = "21.26";
+    estimatedTimeArrive = 120;
+    fareTotal = "5.00";
+    freeCreditCharged = "0.00";
+    id = 1225338;
+    minimumFare = "5.00";
+    normalFare = "5.00";
+    processingFee = "1.00";
+    raPayment = "0.00";
+    ratePerMile = "0.99";
+    ratePerMinute = "0.25";
+    requestedCarType =     {
+        active = 1;
+        baseFare = "1.50";
+        bookingFee = "2.00";
+        cancellationFee = "4.00";
+        carCategory = REGULAR;
+        cityId = 1;
+        description = "Standard Car";
+        iconUrl = "https://media.rideaustin.com/icon/regular.png";
+        maxPersons = 4;
+        minimumFare = "5.00";
+        order = 1;
+        processingFee = "1.00";
+        processingFeeRate = 1;
+        processingFeeText = "$1.00 Processing fee";
+        raFeeFactor = 0;
+        ratePerMile = "0.99";
+        ratePerMinute = "0.25";
+        title = STANDARD;
+        tncFeeRate = 1;
+    };
+    rideCost = "7.07";
+    rider =     {
+        active = 1;
+        charity =         {
+            cityBitmask = 1;
+            id = 8;
+            imageUrl = "https://media.rideaustin.com/images/roundup/austin-parks-foundation@2x.png";
+            name = "Austin Parks Foundation";
+            order = 1;
+        };
+        cityId = 1;
+        email = "ride129@test.com";
+        firstname = RideOneTwoNine;
+        fullName = "RideOneTwoNine Test";
+        gender = UNKNOWN;
+        id = 2982;
+        lastname = Test;
+        phoneNumber = "+971565362129";
+        rating = 5;
+        type = RIDER;
+        user =         {
+            avatars =             (
+            );
+            email = "ride129@test.com";
+            enabled = 1;
+            firstname = RideOneTwoNine;
+            fullName = "RideOneTwoNine Test";
+            gender = UNKNOWN;
+            id = 2245;
+            lastname = Test;
+            phoneNumber = "+971565362129";
+            photoUrl = "http://media-stage.rideaustin.com/user-photos/153c343b-98d7-464f-974f-dbe6b7e174b7.png";
+            uuid = 2245;
+        };
+        uuid = 2982;
+    };
+    roundUpAmount = "0.93";
+    start =     {
+        address = "702 Rio Grande Street, Austin, Texas";
+        zipCode = 73781;
+    };
+    startAddress = "702 Rio Grande Street, Austin, Texas";
+    startAreaId = 1899;
+    startLocationLat = "30.271318";
+    startLocationLong = "-97.749334";
+    startedOn = 1493277876000;
+    status = COMPLETED;
+    subTotal = "5.00";
+    surgeFactor = 1;
+    surgeFare = "0.00";
+    timeFare = "0.35";
+    totalCharge = "9.00";
+    totalFare = "9.00";
+    updatedDate = 1493277960000;
+    uuid = 1225338;
+    comment = "A ride comment.";
+}

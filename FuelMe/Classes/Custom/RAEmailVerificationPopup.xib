@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RAEmailVerificationPopup">
+            <connections>
+                <outlet property="btnSendEmailVerification" destination="19e-aI-GC4" id="Vm6-CD-BHH"/>
+                <outlet property="constraintBtnSendEmailHeight" destination="JiY-hW-X3p" id="Bbu-B5-g9Y"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="4eE-aS-gvM"/>
+                <outlet property="imgStatusVerification" destination="pcL-c8-JQs" id="OHt-ts-R3C"/>
+                <outlet property="lblMessage" destination="m3S-uV-rYr" id="shE-44-avM"/>
+                <outlet property="lblTitle" destination="xzL-f5-fDH" id="DGw-mp-BwC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="395"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="SPa-Rv-iAY">
+                    <rect key="frame" x="0.0" y="41" width="318" height="267"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Verify your Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzL-f5-fDH">
+                            <rect key="frame" x="8" y="49" width="302" height="34.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34.5" id="YL1-ED-71Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" red="0.23529411764705882" green="0.2627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3S-uV-rYr">
+                            <rect key="frame" x="16" y="91.5" width="286" height="87.5"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">We'll send you an email verification to
+thomaswatson@gmail.com
+Please click on the link on the email to confirm it's you. </string>
+                                    <attributes>
+                                        <font key="NSFont" size="16" name="AvenirNext-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19e-aI-GC4">
+                            <rect key="frame" x="12" y="194" width="294" height="45"/>
+                            <color key="backgroundColor" red="0.0078431372549019607" green="0.65490196078431373" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="JiY-hW-X3p"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <state key="normal" title="SEND EMAIL VERIFICATION">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="22.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sendEmailVerificationTapped:" destination="-1" eventType="touchUpInside" id="TDT-aQ-HFE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="19e-aI-GC4" firstAttribute="top" secondItem="m3S-uV-rYr" secondAttribute="bottom" constant="15" id="4pg-dv-hj9"/>
+                        <constraint firstItem="19e-aI-GC4" firstAttribute="leading" secondItem="SPa-Rv-iAY" secondAttribute="leading" constant="12" id="5Lb-yZ-mvD"/>
+                        <constraint firstAttribute="trailing" secondItem="m3S-uV-rYr" secondAttribute="trailing" constant="16" id="Fmt-PI-Ih8"/>
+                        <constraint firstAttribute="bottom" secondItem="19e-aI-GC4" secondAttribute="bottom" constant="28" id="Lum-Zp-w1X"/>
+                        <constraint firstItem="m3S-uV-rYr" firstAttribute="top" secondItem="xzL-f5-fDH" secondAttribute="bottom" constant="8" id="MgN-qj-L9t"/>
+                        <constraint firstItem="xzL-f5-fDH" firstAttribute="top" secondItem="SPa-Rv-iAY" secondAttribute="top" constant="49" id="OqW-lx-Vv0"/>
+                        <constraint firstAttribute="trailing" secondItem="19e-aI-GC4" secondAttribute="trailing" constant="12" id="R0R-Yl-zah"/>
+                        <constraint firstAttribute="trailing" secondItem="xzL-f5-fDH" secondAttribute="trailing" constant="8" id="TGx-gd-Lpp"/>
+                        <constraint firstItem="m3S-uV-rYr" firstAttribute="leading" secondItem="SPa-Rv-iAY" secondAttribute="leading" constant="16" id="UAF-4A-9d5"/>
+                        <constraint firstAttribute="width" constant="318" id="bMg-yH-MJf"/>
+                        <constraint firstItem="xzL-f5-fDH" firstAttribute="leading" secondItem="SPa-Rv-iAY" secondAttribute="leading" constant="8" id="f9e-d3-gpm"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-unverified-icon" translatesAutoresizingMaskIntoConstraints="NO" id="pcL-c8-JQs">
+                    <rect key="frame" x="118" y="0.0" width="82" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="EU3-EO-v1p"/>
+                        <constraint firstAttribute="height" constant="82" id="jon-2G-IA5"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-Pc-Qvj">
+                    <rect key="frame" x="142" y="334" width="34" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="h4l-tN-UDT"/>
+                        <constraint firstAttribute="height" constant="35" id="pl0-oo-GTz"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="whiteCancel"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="KlO-W8-2g0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B5O-Pc-Qvj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5jr-Xu-7Nh"/>
+                <constraint firstItem="pcL-c8-JQs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7ra-dN-KAz"/>
+                <constraint firstItem="B5O-Pc-Qvj" firstAttribute="top" secondItem="SPa-Rv-iAY" secondAttribute="bottom" constant="26" id="ZaE-qw-TSj"/>
+                <constraint firstItem="pcL-c8-JQs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bK4-8d-8HC"/>
+                <constraint firstAttribute="trailing" secondItem="SPa-Rv-iAY" secondAttribute="trailing" id="eFs-Rz-OUw"/>
+                <constraint firstItem="SPa-Rv-iAY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fZT-Q5-sv5"/>
+                <constraint firstItem="SPa-Rv-iAY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="41" id="sra-xO-0dv"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="B5O-Pc-Qvj" secondAttribute="bottom" constant="26" id="vgL-nq-GgV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="-82.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="email-unverified-icon" width="82" height="82"/>
+        <image name="whiteCancel" width="34" height="35"/>
+    </resources>
+</document>

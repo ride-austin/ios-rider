@@ -1,0 +1,41 @@
+ [
+  {
+      "latitude": 30.275865559732495,
+      "longitude": -97.755099087953568,
+      "course": -1,
+      "status": "AVAILABLE",
+      "driver": {
+          "id": 991,
+          "user": {
+            "id": 2187
+          }
+      },
+      "drivingTimeToRider": 180
+  },
+  {
+      "latitude": 30.27608793168665,
+      "longitude": -97.752209343016147,
+      "course": -1,
+      "status": "AVAILABLE",
+      "driver": {
+      "id": 992,
+          "user": {
+            "id": 2188
+          }
+      },
+      "drivingTimeToRider": 300
+  },
+  {
+      "latitude": 30.275843843694339,
+      "longitude": -97.752484939992427,
+      "course": -1,
+      "status": "AVAILABLE",
+      "driver": {
+          "id": 993,
+          "user": {
+              "id": 2189
+          }
+      },
+      "drivingTimeToRider": 450
+  }
+]

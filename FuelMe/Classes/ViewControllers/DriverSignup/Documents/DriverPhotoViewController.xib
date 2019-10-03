@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverPhotoViewController">
+            <connections>
+                <outlet property="imagePhoto" destination="Dya-Q8-9qp" id="CWF-u0-eJu"/>
+                <outlet property="vHelpBar" destination="Jsg-aR-93o" id="bPX-Wx-cpc"/>
+                <outlet property="view" destination="DYA-1V-orc" id="tSD-aa-v0f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DYA-1V-orc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIr-Rr-uKn">
+                    <rect key="frame" x="0.0" y="40" width="375" height="552"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pE-jy-zBX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-license" translatesAutoresizingMaskIntoConstraints="NO" id="Dya-Q8-9qp" userLabel="photoImage">
+                                    <rect key="frame" x="-0.5" y="0.0" width="375" height="190"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="driverPhoto">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="190" id="sDB-ly-Fcl"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="190" id="JRv-wo-Btd"/>
+                                <constraint firstItem="Dya-Q8-9qp" firstAttribute="centerY" secondItem="2pE-jy-zBX" secondAttribute="centerY" id="qno-Oo-Cgj"/>
+                                <constraint firstItem="Dya-Q8-9qp" firstAttribute="centerX" secondItem="2pE-jy-zBX" secondAttribute="centerX" id="zaO-29-ZDe"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Take Driver User photo" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahi-EQ-ZLE">
+                            <rect key="frame" x="20" y="200" width="335" height="45"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-3A-7TJ">
+                            <rect key="frame" x="20" y="255" width="335" height="61"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <string key="text">- Shows your face clearly (no dark shadows, not blurry)
+- No sunglasses (but regular glasses are fine)
+- Only has yourself (no group photos)</string>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CMO-3A-7TJ" secondAttribute="trailing" constant="20" id="26l-tO-tv7"/>
+                        <constraint firstAttribute="trailing" secondItem="Ahi-EQ-ZLE" secondAttribute="trailing" constant="20" id="7MJ-pC-P1P"/>
+                        <constraint firstItem="2pE-jy-zBX" firstAttribute="leading" secondItem="HIr-Rr-uKn" secondAttribute="leading" id="Tgr-xX-i91"/>
+                        <constraint firstAttribute="bottom" secondItem="CMO-3A-7TJ" secondAttribute="bottom" constant="20" id="adi-Fe-2Sh"/>
+                        <constraint firstItem="Ahi-EQ-ZLE" firstAttribute="leading" secondItem="HIr-Rr-uKn" secondAttribute="leading" constant="20" id="j5b-0Y-mtL"/>
+                        <constraint firstItem="Ahi-EQ-ZLE" firstAttribute="top" secondItem="2pE-jy-zBX" secondAttribute="bottom" constant="10" id="kuU-sw-tef"/>
+                        <constraint firstItem="CMO-3A-7TJ" firstAttribute="leading" secondItem="HIr-Rr-uKn" secondAttribute="leading" constant="20" id="qFy-UQ-KYJ"/>
+                        <constraint firstItem="CMO-3A-7TJ" firstAttribute="top" secondItem="Ahi-EQ-ZLE" secondAttribute="bottom" constant="10" id="sJE-hV-fs1"/>
+                        <constraint firstItem="2pE-jy-zBX" firstAttribute="top" secondItem="HIr-Rr-uKn" secondAttribute="top" id="uJw-Tj-TWy"/>
+                        <constraint firstAttribute="trailing" secondItem="2pE-jy-zBX" secondAttribute="trailing" id="xrw-UE-BoN"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0y-DL-jjp" customClass="FlatButton">
+                    <rect key="frame" x="20" y="592" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.0078431372549019607" green="0.65490196078431373" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="takePhotoButton"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uv5-aP-F3O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                    <color key="tintColor" red="0.97254901959999995" green="0.32549019610000002" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="TAKE PHOTO" image="icon-camera">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="takePhotoAction:" destination="-1" eventType="touchUpInside" id="1Fy-ga-4bQ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsg-aR-93o" customClass="RAHelpBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" identifier="helpBar">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9zs-pZ-zOk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HIr-Rr-uKn" firstAttribute="width" secondItem="DYA-1V-orc" secondAttribute="width" id="0JJ-i5-ARv"/>
+                <constraint firstAttribute="trailing" secondItem="Jsg-aR-93o" secondAttribute="trailing" id="7AN-Ov-MO9"/>
+                <constraint firstItem="Jsg-aR-93o" firstAttribute="top" secondItem="DYA-1V-orc" secondAttribute="top" id="DGf-Cn-jdO"/>
+                <constraint firstAttribute="trailing" secondItem="HIr-Rr-uKn" secondAttribute="trailing" id="GtE-M2-cf0"/>
+                <constraint firstItem="D0y-DL-jjp" firstAttribute="top" secondItem="HIr-Rr-uKn" secondAttribute="bottom" id="JgI-9i-xsx"/>
+                <constraint firstItem="2pE-jy-zBX" firstAttribute="width" secondItem="DYA-1V-orc" secondAttribute="width" id="LAO-1a-Qct"/>
+                <constraint firstItem="D0y-DL-jjp" firstAttribute="leading" secondItem="DYA-1V-orc" secondAttribute="leading" constant="20" id="bE1-Ij-jBk"/>
+                <constraint firstItem="Jsg-aR-93o" firstAttribute="leading" secondItem="DYA-1V-orc" secondAttribute="leading" id="gZu-nX-EDI"/>
+                <constraint firstAttribute="bottom" secondItem="D0y-DL-jjp" secondAttribute="bottom" constant="25" id="h3V-Za-YA2"/>
+                <constraint firstItem="HIr-Rr-uKn" firstAttribute="top" secondItem="Jsg-aR-93o" secondAttribute="bottom" id="jYl-Bg-XLp"/>
+                <constraint firstItem="HIr-Rr-uKn" firstAttribute="leading" secondItem="DYA-1V-orc" secondAttribute="leading" id="om6-4B-nEB"/>
+                <constraint firstAttribute="trailing" secondItem="D0y-DL-jjp" secondAttribute="trailing" constant="20" id="s83-xo-mg5"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="152" y="200"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon-license" width="375" height="190"/>
+        <image name="icon-camera" width="19" height="17"/>
+    </resources>
+</document>

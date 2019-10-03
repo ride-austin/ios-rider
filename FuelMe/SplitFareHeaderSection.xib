@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SplitFareHeaderSection">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-1K-uGO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FARE SPLITTING &quot;X&quot; WAYS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wso-Jw-dMx">
+                            <rect key="frame" x="16" y="17.5" width="343" height="16"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                            <color key="textColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Wso-Jw-dMx" firstAttribute="centerY" secondItem="ll1-1K-uGO" secondAttribute="centerY" id="074-n5-Ihq"/>
+                        <constraint firstAttribute="trailing" secondItem="Wso-Jw-dMx" secondAttribute="trailing" constant="16" id="hJg-dO-o2h"/>
+                        <constraint firstItem="Wso-Jw-dMx" firstAttribute="leading" secondItem="ll1-1K-uGO" secondAttribute="leading" constant="16" id="m0q-Qf-gmY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ll1-1K-uGO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3A7-4z-8UR"/>
+                <constraint firstAttribute="bottom" secondItem="ll1-1K-uGO" secondAttribute="bottom" id="5dY-6q-99t"/>
+                <constraint firstItem="ll1-1K-uGO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PrH-C6-PKd"/>
+                <constraint firstAttribute="trailing" secondItem="ll1-1K-uGO" secondAttribute="trailing" id="QDL-9f-AFJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblSectionTitle" destination="Wso-Jw-dMx" id="lDY-IO-Vsh"/>
+            </connections>
+            <point key="canvasLocation" x="-191.5" y="51"/>
+        </view>
+    </objects>
+</document>

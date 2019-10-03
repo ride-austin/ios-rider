@@ -1,0 +1,8 @@
+{
+    "upgradeRequest": {
+        "source":"REGULAR",
+        "target":"SUV",
+        "status":"CANCELLED",
+        "surgeFactor":2.5
+    }
+}

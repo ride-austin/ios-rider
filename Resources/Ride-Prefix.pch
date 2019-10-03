@@ -1,0 +1,14 @@
+//
+// Prefix header for all source files of the 'Ride' target in the 'RideAustin.com' project
+//
+#ifdef __OBJC__
+    #import <QuartzCore/QuartzCore.h>
+    #import <Availability.h>
+    #if __IPHONE_OS_VERSION_MIN_REQUIRED
+        #import <MobileCoreServices/MobileCoreServices.h>
+    #else
+        #import <CoreServices/CoreServices.h>
+    #endif
+#endif
+
+

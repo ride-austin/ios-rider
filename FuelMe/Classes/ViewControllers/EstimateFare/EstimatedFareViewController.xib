@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-UltraLight.otf">
+            <string>Montserrat-UltraLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EstimatedFareViewController">
+            <connections>
+                <outlet property="btnCancel" destination="Mjs-0h-GHg" id="q1P-xj-Vb1"/>
+                <outlet property="lblDestinationAddress" destination="15a-eH-gx2" id="MuQ-lP-pxK"/>
+                <outlet property="lblEstimate" destination="Khv-Pz-gQQ" id="bmG-Zj-HTv"/>
+                <outlet property="lblStartAddress" destination="exo-V2-tV1" id="4EJ-gd-tW8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="585" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bH1-8Z-qeO">
+                    <rect key="frame" x="11" y="26" width="563" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Way" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-zs-l5g">
+                            <rect key="frame" x="12" y="26" width="10" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="TYq-bN-wtq"/>
+                                <constraint firstAttribute="height" constant="76" id="rra-bR-qAb"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nal-e7-E65">
+                            <rect key="frame" x="0.0" y="64" width="563" height="1"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="N27-Kj-q4C"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exo-V2-tV1">
+                            <rect key="frame" x="39" y="3" width="516" height="53"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15a-eH-gx2">
+                            <rect key="frame" x="39" y="68" width="516" height="52"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Wp4-zs-l5g" firstAttribute="leading" secondItem="bH1-8Z-qeO" secondAttribute="leading" constant="12" id="8aP-HB-2GV"/>
+                        <constraint firstItem="15a-eH-gx2" firstAttribute="leading" secondItem="Wp4-zs-l5g" secondAttribute="trailing" constant="17" id="9Oi-5z-A6e"/>
+                        <constraint firstItem="Wp4-zs-l5g" firstAttribute="top" secondItem="bH1-8Z-qeO" secondAttribute="top" constant="26" id="HWN-w2-mzA"/>
+                        <constraint firstItem="Nal-e7-E65" firstAttribute="leading" secondItem="bH1-8Z-qeO" secondAttribute="leading" id="JDd-9w-r6U"/>
+                        <constraint firstAttribute="trailing" secondItem="exo-V2-tV1" secondAttribute="trailing" constant="8" id="Jzk-dI-pu2"/>
+                        <constraint firstAttribute="bottom" secondItem="Wp4-zs-l5g" secondAttribute="bottom" constant="26" id="MAZ-Bb-Upk"/>
+                        <constraint firstAttribute="bottom" secondItem="15a-eH-gx2" secondAttribute="bottom" constant="8" id="O29-8V-85W"/>
+                        <constraint firstItem="exo-V2-tV1" firstAttribute="top" secondItem="bH1-8Z-qeO" secondAttribute="top" constant="3" id="OSl-pY-63s"/>
+                        <constraint firstAttribute="trailing" secondItem="15a-eH-gx2" secondAttribute="trailing" constant="8" id="P6c-cd-8dc"/>
+                        <constraint firstAttribute="trailing" secondItem="Nal-e7-E65" secondAttribute="trailing" id="a6j-pd-sb4"/>
+                        <constraint firstAttribute="height" constant="128" id="evD-eu-LaS"/>
+                        <constraint firstItem="Nal-e7-E65" firstAttribute="top" secondItem="bH1-8Z-qeO" secondAttribute="top" constant="64" id="hoe-CD-FQD"/>
+                        <constraint firstItem="15a-eH-gx2" firstAttribute="top" secondItem="Nal-e7-E65" secondAttribute="bottom" constant="3" id="qTA-5j-Gk2"/>
+                        <constraint firstItem="exo-V2-tV1" firstAttribute="leading" secondItem="Wp4-zs-l5g" secondAttribute="trailing" constant="17" id="tjG-ls-Wjp"/>
+                        <constraint firstItem="Nal-e7-E65" firstAttribute="top" secondItem="exo-V2-tV1" secondAttribute="bottom" constant="8" id="uzd-4Z-VXu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-Pz-gQQ">
+                    <rect key="frame" x="293" y="173" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="40"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-vg-INA">
+                    <rect key="frame" x="11" y="187" width="563" height="44"/>
+                    <string key="text">Fares may vary due to traffic, weather and other factors. Estimate does not include discounts or promotions. Routes displayed are examples only and may not effect the route on which estimates are based.</string>
+                    <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcu-eQ-dlQ">
+                    <rect key="frame" x="36" y="548" width="512" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vY3-ZF-5I1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                    <state key="normal" title="Enter a new destination">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnEnterANewLocationPressed:" destination="-1" eventType="touchUpInside" id="Js9-Xe-KTV"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enterNewDestination" translatesAutoresizingMaskIntoConstraints="NO" id="rlP-fw-fFk">
+                    <rect key="frame" x="188" y="561" width="9" height="14"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2Ff-vg-INA" secondAttribute="trailing" constant="11" id="8Y9-pD-dPA"/>
+                <constraint firstItem="2Ff-vg-INA" firstAttribute="top" secondItem="Khv-Pz-gQQ" secondAttribute="bottom" constant="14" id="Eum-RT-f9V"/>
+                <constraint firstItem="2Ff-vg-INA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="Fgg-xz-Vtb"/>
+                <constraint firstItem="rlP-fw-fFk" firstAttribute="centerX" secondItem="Mcu-eQ-dlQ" secondAttribute="centerX" constant="-100" id="H6D-LR-Wzf"/>
+                <constraint firstItem="Khv-Pz-gQQ" firstAttribute="top" secondItem="bH1-8Z-qeO" secondAttribute="bottom" constant="19" id="QaW-22-wQ7"/>
+                <constraint firstItem="Mcu-eQ-dlQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="SEW-Ht-LKB"/>
+                <constraint firstAttribute="bottom" secondItem="Mcu-eQ-dlQ" secondAttribute="bottom" constant="15" id="ShZ-Jc-3Hb"/>
+                <constraint firstItem="Khv-Pz-gQQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UW4-Ew-FU8"/>
+                <constraint firstAttribute="trailing" secondItem="Mcu-eQ-dlQ" secondAttribute="trailing" constant="37" id="eVN-Jw-aO2"/>
+                <constraint firstItem="rlP-fw-fFk" firstAttribute="centerY" secondItem="Mcu-eQ-dlQ" secondAttribute="centerY" id="ipx-fq-WmA"/>
+                <constraint firstAttribute="trailing" secondItem="bH1-8Z-qeO" secondAttribute="trailing" constant="11" id="qQs-cA-iaV"/>
+                <constraint firstItem="bH1-8Z-qeO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="uRV-WM-Asx"/>
+                <constraint firstItem="bH1-8Z-qeO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="y3I-sn-2C7"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="193.5" y="53.5"/>
+        </view>
+        <barButtonItem image="Close-1" id="Mjs-0h-GHg">
+            <connections>
+                <action selector="btnClosePressed:" destination="-1" id="AY9-8g-6WV"/>
+            </connections>
+        </barButtonItem>
+    </objects>
+    <resources>
+        <image name="Close-1" width="11" height="11"/>
+        <image name="Way" width="10" height="76"/>
+        <image name="enterNewDestination" width="9" height="14"/>
+    </resources>
+</document>

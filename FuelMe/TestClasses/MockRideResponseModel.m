@@ -1,0 +1,312 @@
+//
+//  MockRideResponseModel.m
+//  Ride
+//
+//  Created by Theodore Gonzalez on 4/27/17.
+//  Copyright © 2017 RideAustin.com. All rights reserved.
+//
+
+#import "MockRideResponseModel.h"
+#import "DBRideDataModel.h"
+#import "DBDriverLocationDataModel.h"
+
+static NSMutableArray<NSDictionary*> *rideInjections = nil;
+
+@implementation MockRideResponseModel
+
++(void)resetInjections{
+    rideInjections = nil;
+}
+
++ (NSDictionary *)dictionaryWithRide:(DBRideDataModel *)ride
+                              status:(MockRideStatus)status
+                            location:(DBDriverLocationDataModel *)location
+                           injections:(NSArray<NSDictionary *> *)injections{
+    
+    NSMutableDictionary *rideObject = [NSMutableDictionary dictionaryWithDictionary:
+    @{
+        @"cityId" : @1,
+        @"createdDate" : @(1493217232000),
+        @"driverAcceptedOn" : @(1493217248000),
+        @"freeCancellationExpiresOn": @(1493174070000),
+        @"estimatedTimeArrive" : @(147),
+        @"id" : ride.modelID,
+        @"raPayment" : @"0.00",
+        @"requestedCarType" : [self requestedCarType],
+        @"rideCost"         : @"0.00",
+        @"rider"            : [self rider],
+        @"end" : @{
+            @"address"  : ride.endAddress,
+            @"zipCode"  : ride.endZipCode
+        },
+        @"endAddress"       : ride.endAddress,
+        @"endLocationLat"   : ride.endLocationLat,
+        @"endLocationLong"  : ride.endLocationLong,
+        @"start" : @{
+            @"address"  : ride.startAddress,
+            @"zipCode"  : ride.startZipCode,
+        },
+        @"startAddress"     : ride.startAddress,
+        @"startLocationLat" : ride.startLocationLat,
+        @"startLocationLong": ride.startLocationLong,
+        @"startAreaId" : @(1899),
+        @"surgeFactor" : @(1),
+        @"totalCharge" : @"0.00",
+        @"totalFare" : @"9.09",
+        @"updatedDate" : @(1493218017265),
+        @"uuid" : ride.modelID,
+        @"comment": @"A ride comment."
+    }];
+    rideObject[@"activeDriver"] = [self activeDriverWithRide:ride status:status location:location];
+    rideObject[@"status"] = [self stringForRideStatus:status];
+    
+    if (injections.count > 0) {
+        if (!rideInjections) {
+            rideInjections = [NSMutableArray array];
+        }
+        
+        [rideInjections addObjectsFromArray:injections];
+    }
+    
+    if (rideInjections.count > 0) {
+        for (NSDictionary *injection in rideInjections) {
+            [rideObject addEntriesFromDictionary:injection];
+        }
+    }
+    
+    return rideObject;
+}
+
++ (NSDictionary *)activeDriverWithRide:(DBRideDataModel *)ride
+                                status:(MockRideStatus)status
+                              location:(DBDriverLocationDataModel *)location {
+    switch (status) {
+        case MockRideStatusRequested:
+        case MockRideStatusNotAvailableDriver:
+            return nil;
+        case MockRideStatusDriverAssigned:
+        case MockRideStatusDriverReached:
+        case MockRideStatusCompleted:
+        case MockRideStatusActive:
+        case MockRideStatusCancelledByRider:
+        case MockRideStatusCancelledByDriver:
+            break;
+    }
+    return
+    @{
+      @"availableCarCategoriesBitmask" : @1,
+      @"availableDriverTypesBitmask" : @0,
+      @"carCategories" : @[ @"REGULAR" ],
+      @"cityId" : @1,
+      @"directDistanceToRider" : @"14214936.05181779",
+      @"driver" :         @{
+              @"activationStatus" : @"ACTIVE",
+              @"active" : @1,
+              @"agreedToLegalTerms" : @1,
+              @"agreementDate" : @"2016-06-13 11:38:55",
+              @"cars" :            @[
+                      @{
+                          @"carCategories" :                     @[
+                                  @"REGULAR"
+                                  ],
+                          @"color" : @"Blue",
+                          @"id" : @(12),
+                          @"inspectionStatus" : @"NOT_INSPECTED",
+                          @"inspectionSticker" : @0,
+                          @"insurancePictureUrl" : @"https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/2c063534-ff53-4b1a-a773-21cdde58def9.png?AWSAccessKeyId:AKIAJRZKPEUYYX2JFKEA&Expires:1493217552&Signature:hSrNgl46fLduQZA%2Fu9yYHDuIe2U%3D",
+                          @"license" : @"GC96ZK",
+                          @"make" : @"Lexus",
+                          @"model" : @"LC 500",
+                          @"removed" : @0,
+                          @"selected" : @1,
+                          @"uuid" : @(12),
+                          @"year" : @"2018",
+                          }
+                      ],
+              @"checkrReports" :             @[
+                      ],
+              @"checkrStatus" : @"PENDING",
+              @"cityApprovalStatus" : @"NOT_PROVIDED",
+              @"cityId" : @1,
+              @"email" : @"aghishi@yahoo.es",
+              @"enabledRequestTypes" : @[
+                      ],
+              @"facebookId" : @"1747128938835717",
+              @"fingerprintCleared" : @0,
+              @"firstname" : @"Kitos",
+              @"fullName" : @"Kitos Test",
+              @"gender" : @"UNKNOWN",
+              @"grantedDriverTypes" : @[
+                      ],
+              @"id" : @(52),
+              @"lastname" : @"Test",
+              @"licenseExpiryDate" : @"2019-03-22",
+              @"licenseNumber" : @"12345678",
+              @"licensePictureUrl" : @"https://s3.amazonaws.com/media-stage.rideaustin.com/driver-licenses/59b0005f-56de-4d9f-b108-e3d20235fd38.png?AWSAccessKeyId:AKIAJRZKPEUYYX2JFKEA&Expires:1493217552&Signature:dfAx7JHL6sTs%2FqT%2BgosNKhDEKO8%3D",
+              @"licenseState" : @"TX",
+              @"onboardingPendingSince" : @(1493217372635),
+              @"onboardingStatus" : @"ACTIVE",
+              @"payoneerId" : @0,
+              @"payoneerStatus" : @"Active",
+              @"phoneNumber" : @"+48784062443",
+              @"photoUrl" : @"https://graph.facebook.com/1747128938835717/picture?type:large",
+              @"rating" : @(5),
+              @"ssn" : @"123-22-1234",
+              @"type" : @"DRIVER",
+              @"user" :            @{
+                      @"address" :                @{
+                              @"address" : @"10600 Zeus Cove Austin, TX 78759, US",
+                              },
+                      @"avatars" : @[
+                              ],
+                      @"dateOfBirth" : @"1995-08-30",
+                      @"email" : @"aghishi@yahoo.es",
+                      @"enabled" : @1,
+                      @"facebookId" : @"1747128938835717",
+                      @"firstname" : @"Kitos",
+                      @"fullName" : @"Kitos Test",
+                      @"gender" : @"UNKNOWN",
+                      @"id" : @(22),
+                      @"lastname" : @"Test",
+                      @"phoneNumber" : @"+48784062443",
+                      @"photoUrl" : @"https://graph.facebook.com/1747128938835717/picture?type:large",
+                      @"uuid" : @(22),
+                      },
+              @"uuid" : @(52),
+              },
+      @"drivingTimeToRider" : @(120),
+      @"id" : @(27869),
+      @"latitude" : location.latitude,
+      @"longitude" : location.longitude,
+      @"course" : location.course,
+      @"speed" : location.speed,
+      @"selectedCar" :        @{
+              @"carCategories" :             @[
+                      @"REGULAR"
+                      ],
+              @"color" : @"Blue",
+              @"id" : @(12),
+              @"inspectionStatus" : @"NOT_INSPECTED",
+              @"inspectionSticker" : @0,
+              @"insurancePictureUrl" : @"https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/2c063534-ff53-4b1a-a773-21cdde58def9.png?AWSAccessKeyId:AKIAJRZKPEUYYX2JFKEA&Expires:1493217552&Signature:hSrNgl46fLduQZA%2Fu9yYHDuIe2U%3D",
+              @"license" : @"GC96ZK",
+              @"make" : @"Lexus",
+              @"model" : @"LC 500",
+              @"removed" : @0,
+              @"selected" : @1,
+              @"uuid" : @(12),
+              @"year" : @"2018",
+              },
+      @"status" : @"RIDING",
+      @"uuid" : @(27869),
+      };
+}
++ (NSString *)stringForRideStatus:(MockRideStatus)status {
+    switch (status) {
+        case MockRideStatusRequested:
+            return @"REQUESTED";
+        case MockRideStatusDriverAssigned:
+            return @"DRIVER_ASSIGNED";
+        case MockRideStatusDriverReached:
+            return @"DRIVER_REACHED";
+        case MockRideStatusActive:
+            return @"ACTIVE";
+        case MockRideStatusCompleted:
+            return @"COMPLETED";
+        case MockRideStatusCancelledByRider:
+            return @"RIDER_CANCELLED";
+        case MockRideStatusCancelledByDriver:
+            return @"DRIVER_CANCELLED";
+        case MockRideStatusNotAvailableDriver:
+            return @"NO_AVAILABLE_DRIVER";
+    }
+}
++ (NSString *)driverStatusForRideStatus:(MockRideStatus)status {
+    switch (status) {
+        case MockRideStatusRequested:
+        case MockRideStatusNotAvailableDriver:
+            return nil; //Requested shouldn't have an active driver
+        case MockRideStatusDriverAssigned:
+        case MockRideStatusDriverReached:
+        case MockRideStatusActive:
+            return @"RIDING";
+        case MockRideStatusCompleted:
+        case MockRideStatusCancelledByRider:
+        case MockRideStatusCancelledByDriver:
+            return @"AVAILABLE";
+    }
+}
++ (NSDictionary *)requestedCarType {
+    return
+    @{
+      @"active" : @1,
+      @"baseFare" : @"1.50",
+      @"bookingFee" : @"2.00",
+      @"cancellationFee" : @"4.00",
+      @"carCategory" : @"REGULAR",
+      @"cityId" : @1,
+      @"description" : @"Standard Car",
+      @"iconUrl" : @"https://media.rideaustin.com/icon/regular.png",
+      @"maxPersons" : @(4),
+      @"minimumFare" : @"5.00",
+      @"order" : @1,
+      @"processingFee" : @"1.00",
+      @"processingFeeRate" : @1,
+      @"processingFeeText" : @"$1.00 Processing fee",
+      @"raFeeFactor" : @0,
+      @"ratePerMile" : @"0.99",
+      @"ratePerMinute" : @"0.25",
+      @"title" : @"STANDARD",
+      @"tncFeeRate" : @1,
+      };
+}
+
+//constant on all states
++ (NSDictionary *)rider {
+    return
+    @{
+      @"active" : @1,
+      @"charity" :    @{
+              @"cityBitmask": @(2),
+              @"id" : @(51),
+              @"imageUrl" : @"https://media.rideaustin.com/images/roundup/blue-santa@2x.png",
+              @"name" : @"Blue Santa Houston",
+              @"order" : @1
+              },
+      @"cityId" : @1,
+      @"email" : @"user1@gmail.com",
+      @"firstname" : @"Jose",
+      @"fullName" : @"Jose Abreu",
+      @"gender" : @"UNKNOWN",
+      @"id" : @(1823),
+      @"lastLoginDate" : @(1493091484000),
+      @"lastname" : @"Abreu",
+      @"phoneNumber" : @"+18093212132",
+      @"rating" : @(5),
+      @"stripeId" : @"cus_AXMCEJ2Lr0D0gp",
+      @"type" : @"RIDER",
+      @"user" :    @{
+              @"active" : @1,
+              @"avatars" :  @[
+                      @{
+                          @"active" : @1,
+                          @"id" : @(1823),
+                          @"type" : @"RIDER"
+                          }
+                      ],
+              @"email" : @"user1@gmail.com",
+              @"enabled" : @1,
+              @"firstname" : @"Jose",
+              @"fullName" : @"Jose Abreu",
+              @"gender" : @"UNKNOWN",
+              @"id" : @(1443),
+              @"lastname" : @"Abreu",
+              @"phoneNumber" : @"+18093212132",
+              @"photoUrl" : @"http://media-stage.rideaustin.com/user-photos/91be7cb1-c815-4ca4-b68a-4bfcc1cf9274.png",
+              @"uuid" : @(1443),
+              },
+      @"uuid": @(1823)
+      };
+}
+
+@end

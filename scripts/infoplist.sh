@@ -1,14 +1,14 @@
-if [ -f $SRCROOT/fastlane/.env.default ]
+if [ -f fastlane/.env.default ]
 then
-	source $SRCROOT/fastlane/.env.default
+	source fastlane/.env.default
 elif test -z "$CIRCLECI"
 then
-	echo "Please provide missing ${SRCROOT}/fastlane/.env.default file"
+	echo "Please provide missing fastlane/.env.default file"
 	exit 1
 fi
 
-TEMPLATE_FILE=$SRCROOT/scripts/templates/RideAustin-Info.plist.template
-OUTPUT_FILE=$SRCROOT/Resources/Plists/RideAustin-Info.plist
+TEMPLATE_FILE=scripts/templates/RideAustin-Info.plist.template
+OUTPUT_FILE=Resources/Plists/RideAustin-Info.plist
 
 cp $TEMPLATE_FILE $OUTPUT_FILE
 

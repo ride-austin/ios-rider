@@ -11,6 +11,7 @@ jobs:
       FL_OUTPUT_DIR: output
     steps:
       - checkout
+      - run: scripts/infoplist.sh
       - run:
           name: pre-start simulator
           command: xcrun instruments -w "iPhone 6 (12.2) [" || true
@@ -50,6 +51,7 @@ jobs:
       xcode: "11.0.0"
     steps:
       - checkout
+      - run: scripts/infoplist.sh
       - restore_cache:
           key: 1-gems-{{ checksum "Gemfile.lock" }}
       - run: 
@@ -88,6 +90,7 @@ jobs:
       xcode: "11.0.0"
     steps:
       - checkout
+      - run: scripts/infoplist.sh
       - restore_cache:
           key: 1-gems-{{ checksum "Gemfile.lock" }}
       - run: 
@@ -126,6 +129,7 @@ jobs:
       xcode: "11.0.0"
     steps:
       - checkout
+      - run: scripts/infoplist.sh
       - restore_cache:
           key: 1-gems-{{ checksum "Gemfile.lock" }}
       - run: 

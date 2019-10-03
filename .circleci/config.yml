@@ -11,6 +11,7 @@ jobs:
       FL_OUTPUT_DIR: output
     steps:
       - checkout
+      - run: scripts/infoplist.sh
       - run:
           name: pre-start simulator
           command: xcrun instruments -w "iPhone 6 (12.2) [" || true

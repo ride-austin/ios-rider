@@ -22,8 +22,6 @@
 
 @property (nonatomic, strong) UIAlertController *alert;
 @property (nonatomic, strong) UIViewController *rootController;
-
-//Properties
 @property (strong, nonatomic) NSMutableDictionary *userData;
 @property (strong, nonatomic) RACityDropDown *dropDown;
 @property (strong, nonatomic) RACity *selectedCity;

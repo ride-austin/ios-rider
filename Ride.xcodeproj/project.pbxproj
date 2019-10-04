@@ -13,7 +13,6 @@
 			buildPhases = (
 				A0FC71EB229181DE004C6BCD /* Print Configuration */,
 				A07D46D722A41DB2001C2618 /* Create AppConfig.m */,
-				A07EB5E82345180600D79792 /* Create Info.plist */,
 				A062110322DBB9AA008E7A97 /* Swiftgen */,
 				A062110422DC5720008E7A97 /* Swiftlint */,
 			);
@@ -8847,26 +8846,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/scripts/appconfig.sh\"\n";
-		};
-		A07EB5E82345180600D79792 /* Create Info.plist */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/fastlane/.env.default",
-			);
-			name = "Create Info.plist";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/Resources/Plists/RideAustin-Info.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/scripts/infoplist.sh\"\n";
 		};
 		A0FC71EB229181DE004C6BCD /* Print Configuration */ = {
 			isa = PBXShellScriptBuildPhase;

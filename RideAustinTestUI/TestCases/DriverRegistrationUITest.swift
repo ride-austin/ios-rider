@@ -878,7 +878,7 @@ class DriverRegistrationUITest: XCTestCase {
         goToInsuranceScreen(testFlow: testFlow)
         goToFCRADisclosureScreen(testFlow: testFlow)
         
-        XCTAssertEqual(testFlow.app.staticTexts["lawTitle"].label, "RideAustin (the \"Company\") has engaged Checkr, Inc. to obtain a consumer report. Checkr Inc. will provide a background investigation as a pre-condition of your engagement with the Company and in compliance with federal and state laws.\n\nIf you have any questions related to the screening process, please contact us at applicant.checkr.com.")
+        XCTAssertEqual(testFlow.app.staticTexts["lawTitle"].label, "RideAustin (the \"Company\") has engaged Checkr, Inc. to obtain a consumer report. Checkr Inc. will provide a background investigation as a pre-condition of your engagement with the Company and in compliance with federal and state laws.\n\nIf you have any questions related to the screening process, please contact us at candidate.checkr.com.")
         XCTAssertEqual(testFlow.app.staticTexts["summaryTitle"].label, "Summary of Your Rights Under the Fair Credit Reporting Act")
         XCTAssertEqual(testFlow.app.staticTexts["summaryDetail"].label.trimmingCharacters(in: .whitespacesAndNewlines), "The FCRA is a complex piece of legislation and contains numerous provisions not discussed on this page. Below are several important features of how the FCRA is designed to help consumers (for the complete text, visit the Federal Trade Commission). The FCRA protects you by requiring consumer reporting agencies.")
     }

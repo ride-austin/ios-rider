@@ -13,6 +13,7 @@
 @interface DriverFCRAAckViewController ()
 
 @property (weak, nonatomic) UITextField *activeField;
+@property (weak, nonatomic) IBOutlet UILabel *lblDetails;
 
 @end
 
@@ -32,6 +33,8 @@
     
     self.fullNameTextField.leftView= paddingView8;
     self.fullNameTextField.leftViewMode = UITextFieldViewModeAlways;
+    
+    self.lblDetails.text = @"I acknowledge receipt of the separate document entitled DISCLOSURE REGARDING BACKGROUND INVESTIGATION and A SUMMARY OF YOUR RIGHTS UNDER THE FAIR CREDIT REPORTING ACT and certify that I have read and understand both of those documents.  I hereby authorize the obtaining of “consumer reports” and/or “investigative consumer reports” by the Company at any time after receipt of this authorization and throughout my contract, if applicable.  To this end, I hereby authorize, without reservation, any law enforcement agency, administrator, state or federal agency, institution, school or university (public or private), information service bureau, employer, or insurance company to furnish any and all background information requested by Checkr, Inc., One Montgomery Street, Suite 2400, San Francisco, CA 94104 | (844) 824-3257 | candidate.checkr.com.  I agree that an electronic copy of this Authorization shall be as valid as the original.";
 }
 
 - (void)dismissKeyBoard {

@@ -44,6 +44,8 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblInformationLawTitle;
+@property (weak, nonatomic) IBOutlet UITextView *txtFCRADetails;
+
 @property (nonatomic,assign)BOOL checkMiddleName;
 @property (nonatomic,assign)BOOL checkAck;
 @property (weak, nonatomic) UITextField *activeField;
@@ -71,10 +73,9 @@
     [self.scrollView setCanCancelContentTouches:YES];
     [self.scrollView setUserInteractionEnabled:YES];
     [self configureDatePicker];
+    [self configureFCRATexts];
     self.navigationController.navigationBarHidden = NO;
     self.txtSSN.secureTextEntry = NO;
-    
-    self.lblInformationLawTitle.text = [self.lblInformationLawTitle.text stringByReplacingOccurrencesOfString:@"RideAustin" withString:super.regConfig.appName];
 }
 
 - (void)configureDatePicker {
@@ -88,6 +89,25 @@
     [self.dobPicker setDate:twentyOneYearsAgo];
     self.dobPicker.minimumDate = seventyYearsAgo;
     self.dobPicker.maximumDate = twentyOneYearsAgo;
+}
+
+-(void)configureFCRATexts {
+    
+    UIFont *font = [UIFont fontWithName:FontTypeRegular size:14.0];
+    NSDictionary *fontAttribute =
+            [NSDictionary dictionaryWithObject:font
+                                        forKey:NSFontAttributeName];
+    NSDictionary *linkColor = [NSDictionary dictionaryWithObject:[UIColor blueColor] forKey:NSForegroundColorAttributeName];
+    NSDictionary * link = [NSDictionary dictionaryWithObject:[NSURL URLWithString:@"https://www.consumer.ftc.gov/articles/pdf-0111-fair-credit-reporting-act.pdf"] forKey:NSLinkAttributeName];
+    NSString * text = @"The FCRA is a complex piece of legislation and contains numerous provisions not discussed on this page. Below are several important features of how the FCRA is designed to help consumers (for the complete text, visit the Federal Trade Commission). The FCRA protects you by requiring consumer reporting agencies.";
+    NSMutableAttributedString * atributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:fontAttribute];
+    NSRange range = [text rangeOfString:@"FCRA"];
+    [atributedString addAttributes:linkColor range:range];
+    [atributedString addAttributes:link range:range];
+    self.txtFCRADetails.attributedText = atributedString;
+    
+    self.lblInformationLawTitle.text = @"RideAustin (the \"Company\") has engaged Checkr, Inc. to obtain a consumer report. Checkr Inc. will provide a background investigation as a pre-condition of your engagement with the Company and in compliance with federal and state laws.\n If you have any questions related to the screening process, please contact us at candidate.checkr.com.";
+    self.lblInformationLawTitle.text = [self.lblInformationLawTitle.text stringByReplacingOccurrencesOfString:@"RideAustin" withString:super.regConfig.appName];
 }
 
 - (void)dismissKeyBoard {
@@ -109,7 +129,6 @@
         [self.txtSSN setText:capturedSSN];
     }
     [self addEdgeInsetsToTextFields];
-
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardDidShow:)
                                                  name:UIKeyboardDidShowNotification

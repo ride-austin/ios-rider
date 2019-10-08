@@ -105,6 +105,9 @@ final class SideMenuCoordinator: NSObject, Coordinator {
             case .tripHistory:
                 showTripHistoryVC()
                 return true
+            case .openCheckr(let driverId):
+                showFingerprintingScreenWithDriverId(driverId: driverId)
+                return true
             }
             
         default:
@@ -490,6 +493,17 @@ final class SideMenuCoordinator: NSObject, Coordinator {
             }
         }
     }
+    
+    func showFingerprintingScreenWithDriverId(driverId: String) {
+        fingerprintsCoordinator = FingerprintsCoordinator(
+            appContainer: appContainer,
+            driverId: Int(driverId)!,
+            navigationController: navigationController
+        )
+        
+        fingerprintsCoordinator?.delegate = self
+        fingerprintsCoordinator?.setup()
+    }
 }
 
 extension SideMenuCoordinator: VKSideMenuDataSource {
@@ -613,4 +627,16 @@ extension SideMenuCoordinator: DirectConnectViewControllerDelegate {
     func hdirectConnectViewController(_: DirectConnectViewController?, didTapSubmit model: RADriverDirectConnectDataModel) {
         showDirectConnectDetailVC(model: model)
     }
+}
+
+extension SideMenuCoordinator: FingerprintsCoordinatorDelegate {
+    
+    func didTapNotNow() {
+        fingerprintsCoordinator = nil
+    }
+    
+    func didFinishSuccessfully() {
+        fingerprintsCoordinator = nil
+    }
+    
 }

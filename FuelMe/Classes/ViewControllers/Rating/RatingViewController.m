@@ -165,6 +165,9 @@ static CGFloat const kProviderContainerExpanded  = 60.0;
     [self.btnTip setTitleTextAttributes:attNormal forState:UIControlStateNormal];
     NSDictionary *attSelected = @{ NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor whiteColor]};
     [self.btnTip setTitleTextAttributes:attSelected forState:UIControlStateSelected];
+    if (@available(iOS 13.0, *)) {
+        self.btnTip.selectedSegmentTintColor = UIColor.azureBlue;
+    }
 }
 
 - (void)updateMapForRideID:(NSString *)rideID {

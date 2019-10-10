@@ -22,7 +22,9 @@ RideAustin is a non-profit rideshare built for the Austin community. It is power
 
 ## Installation
 
-- Install Bundler to manage ruby gems [Bundler guide](https://bundler.io) after installation successful run:
+- Install Bundler 2.0.1 to manage ruby gems [Bundler guide](https://bundler.io) 
+
+after installation successful run:
 
 ```
 bundle install
@@ -31,6 +33,11 @@ bundle install
 
 ```
 bundle exec pod install
+```
+
+- After adding environment variables, generate the app plist by running
+```
+scripts/infoplist.sh
 ```
 
 ## Troubleshooting

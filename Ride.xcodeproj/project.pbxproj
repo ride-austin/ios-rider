@@ -13,7 +13,6 @@
 			buildPhases = (
 				A0FC71EB229181DE004C6BCD /* Print Configuration */,
 				A07D46D722A41DB2001C2618 /* Create AppConfig.m */,
-				A07EB5E82345180600D79792 /* Create Info.plist */,
 				A062110322DBB9AA008E7A97 /* Swiftgen */,
 				A062110422DC5720008E7A97 /* Swiftlint */,
 			);
@@ -2531,6 +2530,10 @@
 		B5ED913F21A18B9900FAA530 /* HintsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED913D21A18B9900FAA530 /* HintsService.swift */; };
 		B5ED914021A18B9900FAA530 /* HintsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED913D21A18B9900FAA530 /* HintsService.swift */; };
 		B5ED914321A18B9900FAA530 /* HintsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED913D21A18B9900FAA530 /* HintsService.swift */; };
+		B5EDAA74234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
+		B5EDAA75234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
+		B5EDAA76234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
+		B5EDAA77234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
 		B5F4C3F822E1040400919D62 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */; };
 		B5F4C3F922E1040400919D62 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */; };
 		B5F4C3FA22E1040400919D62 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */; };
@@ -4019,6 +4022,7 @@
 		B5EBE8082333C11200109F6C /* FingerprintsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FingerprintsViewController.xib; sourceTree = "<group>"; };
 		B5EBE81223340ADE00109F6C /* FingerprintsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintsCoordinator.swift; sourceTree = "<group>"; };
 		B5ED913D21A18B9900FAA530 /* HintsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintsService.swift; sourceTree = "<group>"; };
+		B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckrLinkParser.swift; sourceTree = "<group>"; };
 		B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Utility.m"; sourceTree = "<group>"; };
 		B5F4C3ED22E1040200919D62 /* RAAlertOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAAlertOption.h; sourceTree = "<group>"; };
 		B5F4C3EE22E1040200919D62 /* RAAlertConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAAlertConstant.h; sourceTree = "<group>"; };
@@ -6693,6 +6697,7 @@
 				A0B276382168A30900415B53 /* RequestTokenLinkParser.swift */,
 				A023CC45216D19440025E304 /* SettingsLinkParser.swift */,
 				A061B351214D98E600043A56 /* TripHistoryLinkParser.swift */,
+				B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -8848,26 +8853,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/scripts/appconfig.sh\"\n";
 		};
-		A07EB5E82345180600D79792 /* Create Info.plist */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/fastlane/.env.default",
-			);
-			name = "Create Info.plist";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/Resources/Plists/RideAustin-Info.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/scripts/infoplist.sh\"\n";
-		};
 		A0FC71EB229181DE004C6BCD /* Print Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -9340,6 +9325,7 @@
 				A06253461EDBD5EB000025A0 /* BaseXLTextViewCell.m in Sources */,
 				A0B276392168A30900415B53 /* RequestTokenLinkParser.swift in Sources */,
 				E10873C51E4B6C2F00E5D285 /* TripHistoryAPI.m in Sources */,
+				B5EDAA74234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				A073EFFB1F5D36BA001A3F0B /* ConfigGenderSelection.m in Sources */,
 				5B1D001F1F72C59600B405B4 /* RAPlaceSpotlightManager.m in Sources */,
 				A0804A7F20A495270011A0B4 /* RAFont.m in Sources */,
@@ -9896,6 +9882,7 @@
 				611759F61EBB46E1002983DB /* DriverTNCFrontViewController.m in Sources */,
 				611759F71EBB46E1002983DB /* UIView+Loading.m in Sources */,
 				611759F81EBB46E1002983DB /* PasswordViewController.m in Sources */,
+				B5EDAA77234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				611759F91EBB46E1002983DB /* DriverCarDetailsViewController.m in Sources */,
 				611759FA1EBB46E1002983DB /* WebViewController.m in Sources */,
 				611759FB1EBB46E1002983DB /* DriverInspectionStickerViewController.m in Sources */,
@@ -10349,6 +10336,7 @@
 				619BBAA21DD5A73A00DD1F1B /* GCDTimer.m in Sources */,
 				A0B2763B2168A30900415B53 /* RequestTokenLinkParser.swift in Sources */,
 				A06253481EDBD5EB000025A0 /* BaseXLTextViewCell.m in Sources */,
+				B5EDAA76234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				E10873C71E4B6C2F00E5D285 /* TripHistoryAPI.m in Sources */,
 				A073EFFD1F5D36BA001A3F0B /* ConfigGenderSelection.m in Sources */,
 				A0804A8120A495270011A0B4 /* RAFont.m in Sources */,
@@ -10812,6 +10800,7 @@
 				61EBB4661DD465F200FF01E9 /* RARideAPI.m in Sources */,
 				A0B2763A2168A30900415B53 /* RequestTokenLinkParser.swift in Sources */,
 				A06251B71ED6BF80000025A0 /* BaseXLPickerCell.m in Sources */,
+				B5EDAA75234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				5B1D00201F72C59600B405B4 /* RAPlaceSpotlightManager.m in Sources */,
 				A073EFFC1F5D36BA001A3F0B /* ConfigGenderSelection.m in Sources */,
 				A0804A8020A495270011A0B4 /* RAFont.m in Sources */,
@@ -11301,7 +11290,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RideAustin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 730;
+				CURRENT_PROJECT_VERSION = 736;
 				DEVELOPMENT_TEAM = 4BLQPGYVGS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -11359,7 +11348,7 @@
 				CODE_SIGN_ENTITLEMENTS = RideAustin.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 730;
+				CURRENT_PROJECT_VERSION = 736;
 				DEVELOPMENT_TEAM = 4BLQPGYVGS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -11773,7 +11762,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RideAustinTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 730;
+				CURRENT_PROJECT_VERSION = 736;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11831,7 +11820,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RideAustinTest.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 730;
+				CURRENT_PROJECT_VERSION = 736;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

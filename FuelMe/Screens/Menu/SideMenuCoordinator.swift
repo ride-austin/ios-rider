@@ -495,6 +495,12 @@ final class SideMenuCoordinator: NSObject, Coordinator {
     }
     
     func showFingerprintingScreenWithDriverId(driverId: String) {
+        
+        let localDriverID = RASessionManager.shared().currentRider?.user.driverID()
+        if Int(driverId)! != localDriverID?.intValue {
+            showAlert("Fingerprints", "Please login with your driver account to continue fingerprinting.")
+            return
+        }
         fingerprintsCoordinator = FingerprintsCoordinator(
             appContainer: appContainer,
             driverId: Int(driverId)!,

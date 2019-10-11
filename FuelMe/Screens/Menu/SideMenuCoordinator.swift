@@ -105,8 +105,8 @@ final class SideMenuCoordinator: NSObject, Coordinator {
             case .tripHistory:
                 showTripHistoryVC()
                 return true
-            case .openCheckr(let driverId, let email):
-                showFingerprintingScreenWithDriverId(driverId: driverId, email: email)
+            case .openCheckr(let driverId):
+                showFingerprintingScreenWithDriverId(driverId: driverId)
                 return true
             }
             
@@ -494,15 +494,10 @@ final class SideMenuCoordinator: NSObject, Coordinator {
         }
     }
     
-    func showFingerprintingScreenWithDriverId(driverId: String, email: String) {
+    func showFingerprintingScreenWithDriverId(driverId: String) {
         
-        guard let localDriverID = RASessionManager.shared().currentRider?.user.driverID(), let driverId = Int(driverId) else {
-            showAlert("Fingerprints", "Please login with \(email) to continue fingerprinting.")
-            return
-        }
-        
-        if localDriverID.intValue != driverId {
-            showAlert("Fingerprints", "Please login with \(email) to continue fingerprinting.")
+        guard let localDriverID = RASessionManager.shared().currentRider?.user.driverID(), let driverId = Int(driverId), localDriverID.intValue == driverId else {
+            showAlert("Fingerprints", "Please login with with your driver account to continue fingerprinting.")
             return
         }
         

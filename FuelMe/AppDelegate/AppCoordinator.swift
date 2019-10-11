@@ -53,6 +53,7 @@ final class AppCoordinator: Coordinator {
     func open(deepLink: DeepLink, type: DeepLinkType, animated: Bool) -> Bool {
         guard appContainer.sessionManager.isSignedIn else {
             unopenedDeepLink = (deepLink, type, animated)
+            showAlert(errorMessage: "Please login to continue")
             return false
         }
         

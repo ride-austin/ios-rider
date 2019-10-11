@@ -13,7 +13,7 @@ enum SideMenuDeepLink: DeepLink {
     case editProfile
     case rateRide(rideId: String)
     case tripHistory
-    case openCheckr(driverId: String)
+    case openCheckr(driverId: String, email: String)
 }
 
 /// Used by the `AppDelegate` to parse URLs, notifications and

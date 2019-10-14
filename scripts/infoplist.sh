@@ -34,7 +34,7 @@ then
 fi
 if test -z "$BRANCH_KEY_PRODUCTION"
 then
-	echo "Please provide missing \$BRANCH_KEY_LIVE"
+	echo "Please provide missing \$BRANCH_KEY_PRODUCTION"
 fi
 
 sed -i '' -e "s|{{branchKeyProduction}}|$BRANCH_KEY_PRODUCTION|g" $OUTPUT_FILE

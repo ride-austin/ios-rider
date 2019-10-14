@@ -643,6 +643,7 @@ extension SideMenuCoordinator: FingerprintsCoordinatorDelegate {
     
     func didFinishSuccessfully() {
         fingerprintsCoordinator = nil
+        showAlert("FINGERPRINT", "Checkr payment successful")
     }
     
 }

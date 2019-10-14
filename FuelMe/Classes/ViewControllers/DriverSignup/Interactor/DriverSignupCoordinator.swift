@@ -366,6 +366,7 @@ extension DSFlowController {
             navigationController.pushViewController(vc, animated: true)
             
         case .none where fromScreen == .termsAndConditions:
+            clearContext()
             coordinator = FingerprintsCoordinator(
                 appContainer: appContainer,
                 driverId: driver.modelID!.intValue,

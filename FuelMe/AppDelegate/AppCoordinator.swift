@@ -12,7 +12,8 @@ final class AppCoordinator: Coordinator {
     private var sideMenuCoordinator: SideMenuCoordinator?
     private let navigationController: UINavigationController
     private let disposeBag = DisposeBag()
-    
+    private var fingerprintsCoordinator: FingerprintsCoordinator?
+
     // MARK: Coordinator
     let appContainer: AppContainer
     var rootViewController: UIViewController
@@ -84,8 +85,22 @@ final class AppCoordinator: Coordinator {
             return true
         }
         
-        unopenedDeepLink = nil
-        return false
+        switch deepLink {
+        case let deepLink as SideMenuDeepLink:
+            switch deepLink {
+            case .openCheckr(let driverId):
+                showFingerprintingScreenWithDriverId(driverId: driverId)
+                return true
+            default:
+                unopenedDeepLink = nil
+                return false
+            }
+            
+        default:
+            unopenedDeepLink = nil
+            return false
+        }
+        
     }
     
 }
@@ -130,6 +145,22 @@ extension AppCoordinator {
         addLoginCoordinator()
     }
     
+    func showFingerprintingScreenWithDriverId(driverId: String) {
+        
+        guard let localDriverID = RASessionManager.shared().currentRider?.user.driverID(), let driverId = Int(driverId), localDriverID.intValue == driverId else {
+            showAlert("Fingerprints", "Please login with with your driver account to continue fingerprinting.")
+            return
+        }
+        
+        fingerprintsCoordinator = FingerprintsCoordinator(
+            appContainer: appContainer,
+            driverId: driverId,
+            navigationController: navigationController
+        )
+        
+        fingerprintsCoordinator?.delegate = self
+        fingerprintsCoordinator?.setup()
+    }
 }
 
 extension AppCoordinator {
@@ -167,6 +198,20 @@ extension AppCoordinator: FakeLaunchProtocol {
         else {
             addLoginCoordinator()
         }
+    }
+    
+}
+
+
+extension AppCoordinator: FingerprintsCoordinatorDelegate {
+    
+    func didTapNotNow() {
+        fingerprintsCoordinator = nil
+    }
+    
+    func didFinishSuccessfully() {
+        fingerprintsCoordinator = nil
+        showAlert("FINGERPRINT", "Checkr payment successful")
     }
     
 }

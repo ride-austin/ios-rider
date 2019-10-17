@@ -110,3 +110,9 @@
 #import "LicenseDocumentViewController.h"
 #import "DriverDisclosureViewController.h"
 #import "DriverFCRAAckViewController.h"
+
+// PaymentListController
+#import "PaymentMethodTableCell.h"
+#import "PaymentSectionFooterCell.h"
+#import "PaymentSectionHeaderCell.h"
+#import "PaymentSectionItem.h"

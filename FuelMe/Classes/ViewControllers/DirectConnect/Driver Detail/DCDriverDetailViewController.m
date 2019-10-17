@@ -15,7 +15,7 @@
 #import "LocationService.h"
 #import "NSNotificationCenterConstants.h"
 #import "NSString+Utils.h"
-#import "PaymentViewController.h"
+#import "Ride-Swift.h"
 #import "RAButton.h"
 #import "RADirectConnectRideRequest.h"
 #import "RAPaymentHelper.h"

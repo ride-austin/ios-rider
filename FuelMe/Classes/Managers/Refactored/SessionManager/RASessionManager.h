@@ -71,7 +71,7 @@ typedef void(^RAUpdateUserCompletionBlock)(RAUserDataModel * _Nullable user, NSE
 
 @interface RASessionManager (User)
 
--(void)reloadCurrentRiderWithCompletion:(void (^ _Nullable)(RARiderDataModel *rider, NSError *error))completion;
+-(void)reloadCurrentRiderWithCompletion:(void (^ _Nullable)(RARiderDataModel * _Nullable rider, NSError * _Nullable error))completion;
 
 -(void)updateUserEmail:(NSString*)email firstname:(NSString*)firstname lastname:(NSString*)lastname phoneNumber:(NSString*)phoneNumber withCompletion:(RAUpdateUserCompletionBlock)handler;
 -(void)updateUserGender:(NSString *)gender withCompletion:(RAUpdateUserCompletionBlock)completion;

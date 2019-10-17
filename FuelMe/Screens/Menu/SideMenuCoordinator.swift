@@ -445,7 +445,7 @@ final class SideMenuCoordinator: NSObject, Coordinator {
     func showPaymentFlow() {
         if ApplePayHelper.canMakePayment() ||
             currentRider?.hasValidCard() == true {
-            let vc = PaymentViewController()
+            let vc = PaymentViewController(mode: .showAll)
             navigationController.pushViewController(vc, animated: true)
         }
         else {

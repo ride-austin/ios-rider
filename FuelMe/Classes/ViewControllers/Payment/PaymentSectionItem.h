@@ -14,6 +14,6 @@
 @property (nonatomic) NSArray *rowItems;
 @property (nonatomic) NSString *footer;
 
-+ (instancetype)itemWithHeader:(NSString *)header footer:(NSString *)footer andRowItems:(NSArray *)rowItems;
++ (instancetype _Nonnull)itemWithHeader:(NSString *)header footer:(NSString *)footer andRowItems:(NSArray *)rowItems;
 
 @end

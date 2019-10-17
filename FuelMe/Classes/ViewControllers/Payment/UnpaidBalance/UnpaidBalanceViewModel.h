@@ -19,10 +19,10 @@
 @property (nonatomic, readonly) NSString *title;
 @property (nonatomic, readonly) PaymentItem *selectedPaymentMethod;
 
-+ (instancetype)modelWithBalance:(RAUnpaidBalance *)unpaidBalance
++ (instancetype _Nonnull)modelWithBalance:(RAUnpaidBalance *)unpaidBalance
                    paymentMethod:(PaymentItem *)paymentItem
                           config:(ConfigUnpaidBalance *)config;
-
+- (instancetype _Nonnull)initWithBalance:(RAUnpaidBalance *)unpaidBalance paymentMethod:(PaymentItem *)paymentItem config:(ConfigUnpaidBalance *)config;
 - (NSString *)displayAmount;
 - (NSString *)amount;
 - (NSString *)headerText;

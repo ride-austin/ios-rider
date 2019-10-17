@@ -78,6 +78,7 @@ extension UIColor {
 }
 
 extension UIColor {
+    ///r/255, g/255, b/255
     convenience init(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, alpha: CGFloat = 1) {
         self.init(red: r/255, green: g/255, blue: b/255, alpha: alpha)
     }

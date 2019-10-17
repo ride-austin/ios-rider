@@ -93,6 +93,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.isIdleTimerDisabled = true
         if let url = launchUrl, let deepLink = appContainer?.deepLinkService.parse(url: url) {
             appCoordinator?.open(deepLink: deepLink, type: .url, animated: false)
+            launchUrl = nil
         }
     }
     

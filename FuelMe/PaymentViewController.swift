@@ -3,16 +3,31 @@ import UIKit
 
 final class PaymentViewController: BaseViewController {
     
+    enum Mode {
+        case showCardsOnly
+        case showAll
+    }
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var tableFooterView: UIView!
     
-    private var paymentMethods: [PaymentItem]!
-    private var sections: [PaymentSectionItem]!
+    private let mode: Mode
+    private var paymentMethods: [PaymentItem] = []
+    private var sections: [PaymentSectionItem] = []
     private var applePayPaymentItem: PaymentItem?
     private var popup: RAPaymentProviderInformationPopup?
     
     private static let kTitleApplePay = "Apple Pay"
     private static let kTitleSetupApplePay = "Set up Apple Pay"
+    
+    init(mode: Mode) {
+        self.mode = mode
+        super.init(nibName: "PaymentViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +53,7 @@ final class PaymentViewController: BaseViewController {
     // MARK: - Private
     
     private func addObservers() {
-        if ApplePayHelper.canMakePayment() {
+        if mode == .showAll && ApplePayHelper.canMakePayment() {
             NotificationCenter.default.addObserver(
                 self,
                 selector: #selector(updateApplePayButton),
@@ -55,7 +70,7 @@ final class PaymentViewController: BaseViewController {
     }
     
     private func removeObservers() {
-        if ApplePayHelper.canMakePayment() {
+        if mode == .showAll && ApplePayHelper.canMakePayment() {
             NotificationCenter.default.removeObserver(
                 self,
                 name: UIApplication.willEnterForegroundNotification,
@@ -145,80 +160,81 @@ final class PaymentViewController: BaseViewController {
     private func configurePaymentMethods() -> [PaymentItem] {
         var paymentItems: [PaymentItem] = []
         
-        if ApplePayHelper.canMakePayment() {
-            let text = ApplePayHelper.hasApplePaySetup() ? PaymentViewController.kTitleApplePay : PaymentViewController.kTitleSetupApplePay
-            let textColor = UIColor(60, 67, 80)
-            if self.applePayPaymentItem == nil {
-                let item = PaymentItem(
-                    text: text,
-                    textColor: textColor,
-                    andIconItem: UIImage(named: "apple_pay")
+        if mode == .showAll {
+            if ApplePayHelper.canMakePayment() {
+                let text = ApplePayHelper.hasApplePaySetup() ? PaymentViewController.kTitleApplePay : PaymentViewController.kTitleSetupApplePay
+                let textColor = UIColor(60, 67, 80)
+                if self.applePayPaymentItem == nil {
+                    let item = PaymentItem(
+                        text: text,
+                        textColor: textColor,
+                        andIconItem: UIImage(named: "apple_pay")
+                    )
+                    item.didSelectItem = { [weak self] paymentItem in
+                        guard let self = self else { return }
+                        guard self.canChangePaymentMethod() else {
+                            self.showCantChangePaymentMethodAlert()
+                            return
+                        }
+                        guard let rider = RASessionManager.shared().currentRider else { return }
+                        
+                        if rider.preferredPaymentMethod == .applePay {
+                            rider.preferredPaymentMethod = .primaryCreditCard
+                            self.tableView.reloadData()
+                        }
+                        else {
+                            if ApplePayHelper.hasApplePaySetup() {
+                                rider.preferredPaymentMethod = .applePay
+                                if paymentItem?.text == PaymentViewController.kTitleSetupApplePay {
+                                    self.updateApplePayButton()
+                                }
+                                else {
+                                    self.tableView.reloadData()
+                                }
+                            }
+                            else {
+                                ApplePayHelper.openSettingsApplePay()
+                            }
+                        }
+                    }
+                    self.applePayPaymentItem = item
+                }
+                applePayPaymentItem!.updateText(text)
+                paymentItems.append(applePayPaymentItem!)
+            }
+            
+            if let payWithBevoBucks = ConfigurationManager.shared().global.ut?.payWithBevoBucks,
+                payWithBevoBucks.enabled {
+                let title = "Bevo Pay"
+                let bevoPay = PaymentItem(
+                    text: title,
+                    textColor: UIColor(60, 67, 80),
+                    andIconItem: UIImage(named: "bevoPay")
                 )
-                item.didSelectItem = { [weak self] paymentItem in
+                bevoPay.didSelectItem = { [weak self] paymentItem in
                     guard let self = self else { return }
                     guard self.canChangePaymentMethod() else {
                         self.showCantChangePaymentMethodAlert()
                         return
                     }
                     guard let rider = RASessionManager.shared().currentRider else { return }
-                    
-                    if rider.preferredPaymentMethod == .applePay {
-                        rider.preferredPaymentMethod = .primaryCreditCard
-                        self.tableView.reloadData()
-                    }
-                    else {
-                        if ApplePayHelper.hasApplePaySetup() {
-                            rider.preferredPaymentMethod = .applePay
-                            if paymentItem?.text == PaymentViewController.kTitleSetupApplePay {
-                                self.updateApplePayButton()
-                            }
-                            else {
-                                self.tableView.reloadData()
-                            }
-                        }
-                        else {
-                            ApplePayHelper.openSettingsApplePay()
-                        }
-                    }
+                    rider.preferredPaymentMethod = (rider.preferredPaymentMethod == .bevoBucks) ? .primaryCreditCard : .bevoBucks
+                    self.tableView.reloadData()
                 }
-                self.applePayPaymentItem = item
-            }
-            applePayPaymentItem!.updateText(text)
-            paymentItems.append(applePayPaymentItem!)
-        }
-        
-        if let payWithBevoBucks = ConfigurationManager.shared().global.ut?.payWithBevoBucks,
-            payWithBevoBucks.enabled {
-            let title = "Bevo Pay"
-            let bevoPay = PaymentItem(
-                text: title,
-                textColor: UIColor(60, 67, 80),
-                andIconItem: UIImage(named: "bevoPay")
-            )
-            bevoPay.didSelectItem = { [weak self] paymentItem in
-                guard let self = self else { return }
-                guard self.canChangePaymentMethod() else {
-                    self.showCantChangePaymentMethodAlert()
-                    return
+                
+                bevoPay.didTapInfoButton = { [weak self] in
+                    guard let self = self else { return }
+                    self.popup = RAPaymentProviderInformationPopup.paymentProvider(
+                        withPhotoURL: payWithBevoBucks.iconLargeUrl,
+                        name: title,
+                        detail: payWithBevoBucks.shortDescription
+                    )
+                    self.popup?.show()
                 }
-                guard let rider = RASessionManager.shared().currentRider else { return }
-                rider.preferredPaymentMethod = (rider.preferredPaymentMethod == .bevoBucks) ? .primaryCreditCard : .bevoBucks
-                self.tableView.reloadData()
+                paymentItems.append(bevoPay)
             }
-            
-            bevoPay.didTapInfoButton = { [weak self] in
-                guard let self = self else { return }
-                self.popup = RAPaymentProviderInformationPopup.paymentProvider(
-                    withPhotoURL: payWithBevoBucks.iconLargeUrl,
-                    name: title,
-                    detail: payWithBevoBucks.shortDescription
-                )
-                self.popup?.show()
-            }
-            paymentItems.append(bevoPay)
         }
 
-        //Configure Credit Cards
         if let cards = RASessionManager.shared().currentRider?.cards {
             var creditCardPaymentItems: [PaymentItem] = []
             for card in cards {

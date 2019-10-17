@@ -47,7 +47,7 @@ import UIKit
 extension FingerprintsCoordinator: FingerprintsViewControllerDelegate {
     
     func didTapPayment(_: FingerprintsViewController) {
-        let paymentVC: PaymentViewController = PaymentViewController()
+        let paymentVC: PaymentViewController = PaymentViewController(mode: .showCardsOnly)
         secondaryNavigationController.pushViewController(paymentVC, animated: true)
     }
     

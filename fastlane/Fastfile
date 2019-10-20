@@ -18,17 +18,6 @@ platform :ios do
   SLACK_URL_XOCHAT = ENV["SLACK_URL_XOCHAT"]
   TEAM_ID_PRODUCTION = ENV["TEAM_ID_PRODUCTION"]
 
-  desc "Increment Build Number and Commit"
-  lane :increment do |values|
-    ensure_git_status_clean
-    increment_build_number
-    build   = get_build_number
-    version = get_version_number(target:TARGETVERSION)
-
-    commit_message = "Version " +  version + " (" + build + ")"
-    sh("git add -A && git commit -m '#{commit_message}'")
-  end
-
   desc "Create Archive, Upload to hockey for QA"
   lane :qa do |values|
     ####################################################
@@ -46,6 +35,8 @@ platform :ios do
 
     increment_build_number
     build   = get_build_number
+    plist_command = "Set :CFBundleVersion " + build
+    sh("/usr/libexec/PlistBuddy", "-c", plist_command, "../scripts/templates/RideAustin-Info.plist.template")
     version = get_version_number(target:TARGETVERSION)
     commit_message = "Version #{version} (#{build})"
     message = "#{TARGETVERSION} #{commit_message} uploaded by:#{ENV["DELIVER_USERNAME"]}"

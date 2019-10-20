@@ -22,7 +22,7 @@
 /**
  not part of Rider object from response
  */
-@property (nonatomic, strong) RAUnpaidBalance *unpaidBalance;
+@property (nonatomic, strong, nullable) RAUnpaidBalance *unpaidBalance;
 @property (nonatomic, strong) NSNumber *remainingCredit;
 
 @end

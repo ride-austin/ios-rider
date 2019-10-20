@@ -16,6 +16,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var appContainer: AppContainer!
     var appCoordinator: AppCoordinator!
     var deviceTokenString: String?
+    var launchUrl: URL?
     
     @objc func registerForNotifications() {
         let application = UIApplication.shared
@@ -63,6 +64,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             launchOptions: launchOptions
         )
         appCoordinator.setup()
+        
+        if let url = launchOptions?[UIApplication.LaunchOptionsKey.url] as? URL {
+            self.launchUrl = url
+        }
+       
         return true
     }
     
@@ -85,6 +91,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         AppEvents.activateApp()
         UIApplication.shared.isIdleTimerDisabled = true
+        if let url = launchUrl, let deepLink = appContainer?.deepLinkService.parse(url: url) {
+            appCoordinator?.open(deepLink: deepLink, type: .url, animated: false)
+            launchUrl = nil
+        }
     }
     
     func applicationWillTerminate(_ application: UIApplication) {

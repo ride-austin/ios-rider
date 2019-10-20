@@ -34,10 +34,8 @@ import UIKit
     func setup() {
         let fingerprintController = FingerprintsViewController(delegate: self)
         fingerprintController.title = "Fingerprints"
-        if #available(iOS 13.0, *) {
-            fingerprintController.isModalInPresentation = true
-        }
         secondaryNavigationController.setViewControllers([fingerprintController], animated: false)
+        secondaryNavigationController.modalPresentationStyle = .fullScreen
         primaryNavigationController.present(secondaryNavigationController, animated: true)
     }
     
@@ -49,7 +47,7 @@ import UIKit
 extension FingerprintsCoordinator: FingerprintsViewControllerDelegate {
     
     func didTapPayment(_: FingerprintsViewController) {
-        let paymentVC: PaymentViewController = PaymentViewController()
+        let paymentVC: PaymentViewController = PaymentViewController(mode: .showCardsOnly)
         secondaryNavigationController.pushViewController(paymentVC, animated: true)
     }
     

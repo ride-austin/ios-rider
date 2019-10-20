@@ -38,7 +38,7 @@ final class FingerprintsViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupPaymentItem()
+        updatePaymentItem()
     }
 }
 
@@ -69,11 +69,12 @@ extension FingerprintsViewController {
         backgroundCheckTextArea.textColor = .grayText
     }
     
-    private func setupPaymentItem() {
-        let paymentItem: PaymentItem?  = RAPaymentHelper.selectedPaymentMethod()
-        if let item = paymentItem, item.iconItem != nil {
-            paymentIcon.image = item.iconItem
-            cardNumber.text = item.text
+    private func updatePaymentItem() {
+        let paymentItem: PaymentItem
+        if let primaryCard = RASessionManager.shared().currentRider?.primaryCard() {
+            paymentItem = PaymentItem(card: primaryCard)
+            paymentIcon.image = paymentItem.iconItem
+            cardNumber.text = paymentItem.text
             saveButton.isEnabled = true
             noPaymentLabel.text = nil
         }

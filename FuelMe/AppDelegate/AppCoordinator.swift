@@ -12,7 +12,8 @@ final class AppCoordinator: Coordinator {
     private var sideMenuCoordinator: SideMenuCoordinator?
     private let navigationController: UINavigationController
     private let disposeBag = DisposeBag()
-    
+    private var fingerprintsCoordinator: FingerprintsCoordinator?
+
     // MARK: Coordinator
     let appContainer: AppContainer
     var rootViewController: UIViewController
@@ -53,6 +54,7 @@ final class AppCoordinator: Coordinator {
     func open(deepLink: DeepLink, type: DeepLinkType, animated: Bool) -> Bool {
         guard appContainer.sessionManager.isSignedIn else {
             unopenedDeepLink = (deepLink, type, animated)
+            showAlert(errorMessage: "Please login to continue")
             return false
         }
         
@@ -83,8 +85,9 @@ final class AppCoordinator: Coordinator {
             return true
         }
         
-        unopenedDeepLink = nil
+        unopenedDeepLink = (deepLink, type, animated)
         return false
+        
     }
     
 }
@@ -112,14 +115,14 @@ extension AppCoordinator {
         sideMenuCoordinator?.mainCoordinator = mapCoordinator
         mapCoordinator?.sideMenuCoordinator = sideMenuCoordinator
         mapCoordinator?.setup()
-    }
-    
-    private func handleSignIn() {
-        addMapCoordinator()
         
         if let link = unopenedDeepLink {
             open(deepLink: link.link, type: link.type, animated: link.animated)
         }
+    }
+    
+    private func handleSignIn() {
+        addMapCoordinator()
     }
     
     @objc
@@ -128,7 +131,6 @@ extension AppCoordinator {
         RAQuickActionsManager.cleanQuickActions()
         addLoginCoordinator()
     }
-    
 }
 
 extension AppCoordinator {

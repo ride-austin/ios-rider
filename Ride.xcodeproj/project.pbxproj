@@ -13,7 +13,6 @@
 			buildPhases = (
 				A0FC71EB229181DE004C6BCD /* Print Configuration */,
 				A07D46D722A41DB2001C2618 /* Create AppConfig.m */,
-				A07EB5E82345180600D79792 /* Create Info.plist */,
 				A062110322DBB9AA008E7A97 /* Swiftgen */,
 				A062110422DC5720008E7A97 /* Swiftlint */,
 			);
@@ -25,7 +24,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0201497F17CD443200E464FF /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0201497E17CD443200E464FF /* PaymentViewController.m */; };
 		020E497F161CD83E00C28141 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020E497E161CD83E00C28141 /* CoreLocation.framework */; };
 		0213741C19C22545005A2CED /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0213741B19C22544005A2CED /* CoreText.framework */; };
 		0213741E19C22552005A2CED /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0213741D19C22552005A2CED /* GLKit.framework */; };
@@ -794,7 +792,6 @@
 		61175A971EBB46E1002983DB /* RARecentPlacesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C742831D6A721E00D328C6 /* RARecentPlacesManager.m */; };
 		61175A981EBB46E1002983DB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0282DC6317A1AA99008C002F /* BaseViewController.m */; };
 		61175A991EBB46E1002983DB /* RideCostDetailSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = A0611FDB1E506B8900F1D173 /* RideCostDetailSeparator.m */; };
-		61175A9A1EBB46E1002983DB /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0201497E17CD443200E464FF /* PaymentViewController.m */; };
 		61175A9B1EBB46E1002983DB /* RASessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FC6FD31E52E21800629FBC /* RASessionManager.m */; };
 		61175A9D1EBB46E1002983DB /* RACity.m in Sources */ = {isa = PBXBuildFile; fileRef = 13743B251DE0A05F0021FED7 /* RACity.m */; };
 		61175A9E1EBB46E1002983DB /* RideAustinPlaceSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9673961D1314DD00457AFF /* RideAustinPlaceSearchTextField.m */; };
@@ -1450,7 +1447,6 @@
 		84D30A9B1DB87ECE00595274 /* RACustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BF4BD41D2D5051003EEE27 /* RACustomTextField.m */; };
 		84D30A9C1DB87ECE00595274 /* RARecentPlacesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C742831D6A721E00D328C6 /* RARecentPlacesManager.m */; };
 		84D30A9D1DB87ECE00595274 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0282DC6317A1AA99008C002F /* BaseViewController.m */; };
-		84D30A9E1DB87ECE00595274 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0201497E17CD443200E464FF /* PaymentViewController.m */; };
 		84D30AA21DB87ECE00595274 /* RideAustinPlaceSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9673961D1314DD00457AFF /* RideAustinPlaceSearchTextField.m */; };
 		84D30AA31DB87ECE00595274 /* PaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B53CE4381CEA15430088C585 /* PaddedTextField.m */; };
 		84D30AA61DB87ECE00595274 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EB477916BB643500811200 /* AddressBookUI.framework */; };
@@ -2162,6 +2158,9 @@
 		A094FE1D1F502F9500945FDA /* SplitFare.m in Sources */ = {isa = PBXBuildFile; fileRef = A094FE1B1F502F9500945FDA /* SplitFare.m */; };
 		A094FE1E1F502F9500945FDA /* SplitFare.m in Sources */ = {isa = PBXBuildFile; fileRef = A094FE1B1F502F9500945FDA /* SplitFare.m */; };
 		A094FE211F502F9500945FDA /* SplitFare.m in Sources */ = {isa = PBXBuildFile; fileRef = A094FE1B1F502F9500945FDA /* SplitFare.m */; };
+		A09818C62358D06C00A3B4AA /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09818C52358D06C00A3B4AA /* PaymentViewController.swift */; };
+		A09818C72358D06C00A3B4AA /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09818C52358D06C00A3B4AA /* PaymentViewController.swift */; };
+		A09818C82358D06C00A3B4AA /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09818C52358D06C00A3B4AA /* PaymentViewController.swift */; };
 		A09DAED720A32BEE00F049B2 /* RAMargins.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DAED620A32BEE00F049B2 /* RAMargins.m */; };
 		A09DAED820A32BEE00F049B2 /* RAMargins.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DAED620A32BEE00F049B2 /* RAMargins.m */; };
 		A09DAED920A32BEE00F049B2 /* RAMargins.m in Sources */ = {isa = PBXBuildFile; fileRef = A09DAED620A32BEE00F049B2 /* RAMargins.m */; };
@@ -2531,6 +2530,10 @@
 		B5ED913F21A18B9900FAA530 /* HintsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED913D21A18B9900FAA530 /* HintsService.swift */; };
 		B5ED914021A18B9900FAA530 /* HintsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED913D21A18B9900FAA530 /* HintsService.swift */; };
 		B5ED914321A18B9900FAA530 /* HintsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED913D21A18B9900FAA530 /* HintsService.swift */; };
+		B5EDAA74234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
+		B5EDAA75234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
+		B5EDAA76234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
+		B5EDAA77234CC67300B25F42 /* CheckrLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */; };
 		B5F4C3F822E1040400919D62 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */; };
 		B5F4C3F922E1040400919D62 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */; };
 		B5F4C3FA22E1040400919D62 /* UIAlertController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */; };
@@ -2599,7 +2602,6 @@
 		CB64A2331AC0D724003870A5 /* FlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 028FFB3B1889D7170067A11A /* FlatButton.m */; };
 		CB64A2371AC0D724003870A5 /* UIColor+LightAndDark.m in Sources */ = {isa = PBXBuildFile; fileRef = 022F5F6F19E04AA700E49654 /* UIColor+LightAndDark.m */; };
 		CB64A2381AC0D724003870A5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0282DC6317A1AA99008C002F /* BaseViewController.m */; };
-		CB64A2391AC0D724003870A5 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0201497E17CD443200E464FF /* PaymentViewController.m */; };
 		CB64A23D1AC0D724003870A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E8085D160A706700617299 /* QuartzCore.framework */; };
 		CB64A23E1AC0D724003870A5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02968D0B1623DF8900A06CC1 /* OpenGLES.framework */; };
 		CB64A23F1AC0D724003870A5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02253CDD174FD8E600FF4E5B /* libz.dylib */; };
@@ -2829,8 +2831,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0201497D17CD443100E464FF /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentViewController.h; path = Classes/ViewControllers/Payment/PaymentViewController.h; sourceTree = "<group>"; };
-		0201497E17CD443200E464FF /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentViewController.m; path = Classes/ViewControllers/Payment/PaymentViewController.m; sourceTree = "<group>"; };
 		020E497E161CD83E00C28141 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0213741B19C22544005A2CED /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		0213741D19C22552005A2CED /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -3827,6 +3827,7 @@
 		A094FE121F50020B00945FDA /* PushNotificationAPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationAPS.m; sourceTree = "<group>"; };
 		A094FE1A1F502F9500945FDA /* SplitFare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitFare.h; sourceTree = "<group>"; };
 		A094FE1B1F502F9500945FDA /* SplitFare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitFare.m; sourceTree = "<group>"; };
+		A09818C52358D06C00A3B4AA /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		A09DAED520A32BEE00F049B2 /* RAMargins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAMargins.h; sourceTree = "<group>"; };
 		A09DAED620A32BEE00F049B2 /* RAMargins.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAMargins.m; sourceTree = "<group>"; };
 		A0AC98B020763262007E2811 /* DriverInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriverInfoView.h; sourceTree = "<group>"; };
@@ -4019,6 +4020,7 @@
 		B5EBE8082333C11200109F6C /* FingerprintsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FingerprintsViewController.xib; sourceTree = "<group>"; };
 		B5EBE81223340ADE00109F6C /* FingerprintsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintsCoordinator.swift; sourceTree = "<group>"; };
 		B5ED913D21A18B9900FAA530 /* HintsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintsService.swift; sourceTree = "<group>"; };
+		B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckrLinkParser.swift; sourceTree = "<group>"; };
 		B5F4C3EC22E1040200919D62 /* UIAlertController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Utility.m"; sourceTree = "<group>"; };
 		B5F4C3ED22E1040200919D62 /* RAAlertOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAAlertOption.h; sourceTree = "<group>"; };
 		B5F4C3EE22E1040200919D62 /* RAAlertConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAAlertConstant.h; sourceTree = "<group>"; };
@@ -4335,31 +4337,30 @@
 		0201497C17CD440200E464FF /* Payment */ = {
 			isa = PBXGroup;
 			children = (
-				A040475D1F4B13B200B455F5 /* UnpaidBalance */,
-				5B12B23C1EBF9E8D00550624 /* PaymentItem.h */,
-				5B12B23D1EBF9E8D00550624 /* PaymentItem.m */,
-				0201497D17CD443100E464FF /* PaymentViewController.h */,
-				0201497E17CD443200E464FF /* PaymentViewController.m */,
-				02EF222A17F10A7C00133355 /* PaymentViewController.xib */,
 				CBD73C3D1CED9714006DDE33 /* AddPaymentViewController.h */,
 				CBD73C3E1CED9714006DDE33 /* AddPaymentViewController.m */,
 				CBD73C3A1CED96E4006DDE33 /* AddPaymentViewController.xib */,
+				5BEBD0071D64A9440070749E /* CardIcon.xcassets */,
 				5B24B81C2051B41800F09BB3 /* EditPaymentViewController.h */,
 				5B24B81D2051B41800F09BB3 /* EditPaymentViewController.m */,
 				5B24B81E2051B41800F09BB3 /* EditPaymentViewController.xib */,
-				5BEBD0071D64A9440070749E /* CardIcon.xcassets */,
+				A04047751F4B15DD00B455F5 /* Payment.storyboard */,
+				5B12B23C1EBF9E8D00550624 /* PaymentItem.h */,
+				5B12B23D1EBF9E8D00550624 /* PaymentItem.m */,
 				A058648B1F45BC8100D2FDB6 /* PaymentMethodTableCell.h */,
 				A058648C1F45BC8100D2FDB6 /* PaymentMethodTableCell.m */,
 				A058648D1F45BC8100D2FDB6 /* PaymentMethodTableCell.xib */,
-				A04047181F4AFF4700B455F5 /* PaymentSectionItem.h */,
-				A04047191F4AFF4700B455F5 /* PaymentSectionItem.m */,
-				A04047281F4B053C00B455F5 /* PaymentSectionHeaderCell.h */,
-				A04047291F4B053C00B455F5 /* PaymentSectionHeaderCell.m */,
-				A040472A1F4B053C00B455F5 /* PaymentSectionHeaderCell.xib */,
 				A04047371F4B055700B455F5 /* PaymentSectionFooterCell.h */,
 				A04047381F4B055700B455F5 /* PaymentSectionFooterCell.m */,
 				A04047391F4B055700B455F5 /* PaymentSectionFooterCell.xib */,
-				A04047751F4B15DD00B455F5 /* Payment.storyboard */,
+				A04047281F4B053C00B455F5 /* PaymentSectionHeaderCell.h */,
+				A04047291F4B053C00B455F5 /* PaymentSectionHeaderCell.m */,
+				A040472A1F4B053C00B455F5 /* PaymentSectionHeaderCell.xib */,
+				A04047181F4AFF4700B455F5 /* PaymentSectionItem.h */,
+				A04047191F4AFF4700B455F5 /* PaymentSectionItem.m */,
+				A09818C52358D06C00A3B4AA /* PaymentViewController.swift */,
+				02EF222A17F10A7C00133355 /* PaymentViewController.xib */,
+				A040475D1F4B13B200B455F5 /* UnpaidBalance */,
 			);
 			name = Payment;
 			sourceTree = "<group>";
@@ -6693,6 +6694,7 @@
 				A0B276382168A30900415B53 /* RequestTokenLinkParser.swift */,
 				A023CC45216D19440025E304 /* SettingsLinkParser.swift */,
 				A061B351214D98E600043A56 /* TripHistoryLinkParser.swift */,
+				B5EDAA73234CC67300B25F42 /* CheckrLinkParser.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -8848,26 +8850,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/scripts/appconfig.sh\"\n";
 		};
-		A07EB5E82345180600D79792 /* Create Info.plist */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/fastlane/.env.default",
-			);
-			name = "Create Info.plist";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/Resources/Plists/RideAustin-Info.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/scripts/infoplist.sh\"\n";
-		};
 		A0FC71EB229181DE004C6BCD /* Print Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -9340,6 +9322,7 @@
 				A06253461EDBD5EB000025A0 /* BaseXLTextViewCell.m in Sources */,
 				A0B276392168A30900415B53 /* RequestTokenLinkParser.swift in Sources */,
 				E10873C51E4B6C2F00E5D285 /* TripHistoryAPI.m in Sources */,
+				B5EDAA74234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				A073EFFB1F5D36BA001A3F0B /* ConfigGenderSelection.m in Sources */,
 				5B1D001F1F72C59600B405B4 /* RAPlaceSpotlightManager.m in Sources */,
 				A0804A7F20A495270011A0B4 /* RAFont.m in Sources */,
@@ -9395,6 +9378,7 @@
 				A073EF9C1F533B66001A3F0B /* RASideMenuHeaderView.m in Sources */,
 				A0551C401FB5CBD200D621AA /* DSCacheConstants.m in Sources */,
 				A05933121FB9DA180037EEF5 /* DSChauffeurViewModel.m in Sources */,
+				A09818C62358D06C00A3B4AA /* PaymentViewController.swift in Sources */,
 				A06417991ECDA3D300EE99AC /* XLFormRowDescriptor+factory.m in Sources */,
 				A0150ED71FBB5B5D00347761 /* DSCarInsuranceViewModel.m in Sources */,
 				B9F6A5171D2D830E0042BFBB /* DriverFCRADisclosureViewController.m in Sources */,
@@ -9634,7 +9618,6 @@
 				A061FE851F681CCD004FC36E /* GenderViewModel.m in Sources */,
 				A0F2D99920AEB0650008127D /* RACampaignProvider.m in Sources */,
 				13BC149B1DE3599200DB86C7 /* RACity.m in Sources */,
-				0201497F17CD443200E464FF /* PaymentViewController.m in Sources */,
 				A06417C31ECDBC3A00EE99AC /* BaseXLButtonCell.m in Sources */,
 				5B389E9D1DE4CF5100D98E83 /* AssetCityManager.m in Sources */,
 				A014C92D1FAC7C2C00776525 /* RAPaymentHelper.m in Sources */,
@@ -9896,6 +9879,7 @@
 				611759F61EBB46E1002983DB /* DriverTNCFrontViewController.m in Sources */,
 				611759F71EBB46E1002983DB /* UIView+Loading.m in Sources */,
 				611759F81EBB46E1002983DB /* PasswordViewController.m in Sources */,
+				B5EDAA77234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				611759F91EBB46E1002983DB /* DriverCarDetailsViewController.m in Sources */,
 				611759FA1EBB46E1002983DB /* WebViewController.m in Sources */,
 				611759FB1EBB46E1002983DB /* DriverInspectionStickerViewController.m in Sources */,
@@ -10164,7 +10148,6 @@
 				61175A971EBB46E1002983DB /* RARecentPlacesManager.m in Sources */,
 				61175A981EBB46E1002983DB /* BaseViewController.m in Sources */,
 				61175A991EBB46E1002983DB /* RideCostDetailSeparator.m in Sources */,
-				61175A9A1EBB46E1002983DB /* PaymentViewController.m in Sources */,
 				61175A9B1EBB46E1002983DB /* RASessionManager.m in Sources */,
 				A02E582A1EDD78FF00AAC435 /* RACarCategoryConfigurationModel.m in Sources */,
 				A06253421EDBD5A5000025A0 /* TextFieldOptions.m in Sources */,
@@ -10349,6 +10332,7 @@
 				619BBAA21DD5A73A00DD1F1B /* GCDTimer.m in Sources */,
 				A0B2763B2168A30900415B53 /* RequestTokenLinkParser.swift in Sources */,
 				A06253481EDBD5EB000025A0 /* BaseXLTextViewCell.m in Sources */,
+				B5EDAA76234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				E10873C71E4B6C2F00E5D285 /* TripHistoryAPI.m in Sources */,
 				A073EFFD1F5D36BA001A3F0B /* ConfigGenderSelection.m in Sources */,
 				A0804A8120A495270011A0B4 /* RAFont.m in Sources */,
@@ -10404,6 +10388,7 @@
 				A0551C421FB5CBD200D621AA /* DSCacheConstants.m in Sources */,
 				A05933141FB9DA180037EEF5 /* DSChauffeurViewModel.m in Sources */,
 				A073EF9E1F533B66001A3F0B /* RASideMenuHeaderView.m in Sources */,
+				A09818C82358D06C00A3B4AA /* PaymentViewController.swift in Sources */,
 				A0150ED91FBB5B5D00347761 /* DSCarInsuranceViewModel.m in Sources */,
 				A064179B1ECDA3D300EE99AC /* XLFormRowDescriptor+factory.m in Sources */,
 				84F04E9D1DDB2883007871CB /* TestManager.m in Sources */,
@@ -10627,7 +10612,6 @@
 				84D30A9C1DB87ECE00595274 /* RARecentPlacesManager.m in Sources */,
 				84D30A9D1DB87ECE00595274 /* BaseViewController.m in Sources */,
 				A0611FDE1E506B8900F1D173 /* RideCostDetailSeparator.m in Sources */,
-				84D30A9E1DB87ECE00595274 /* PaymentViewController.m in Sources */,
 				61FC6FD61E52E21800629FBC /* RASessionManager.m in Sources */,
 				A02E58251EDD78FF00AAC435 /* RACarCategoryConfigurationModel.m in Sources */,
 				A062533D1EDBD5A5000025A0 /* TextFieldOptions.m in Sources */,
@@ -10812,6 +10796,7 @@
 				61EBB4661DD465F200FF01E9 /* RARideAPI.m in Sources */,
 				A0B2763A2168A30900415B53 /* RequestTokenLinkParser.swift in Sources */,
 				A06251B71ED6BF80000025A0 /* BaseXLPickerCell.m in Sources */,
+				B5EDAA75234CC67300B25F42 /* CheckrLinkParser.swift in Sources */,
 				5B1D00201F72C59600B405B4 /* RAPlaceSpotlightManager.m in Sources */,
 				A073EFFC1F5D36BA001A3F0B /* ConfigGenderSelection.m in Sources */,
 				A0804A8020A495270011A0B4 /* RAFont.m in Sources */,
@@ -10867,6 +10852,7 @@
 				A0551C411FB5CBD200D621AA /* DSCacheConstants.m in Sources */,
 				A05933131FB9DA180037EEF5 /* DSChauffeurViewModel.m in Sources */,
 				A073EF9D1F533B66001A3F0B /* RASideMenuHeaderView.m in Sources */,
+				A09818C72358D06C00A3B4AA /* PaymentViewController.swift in Sources */,
 				A0150ED81FBB5B5D00347761 /* DSCarInsuranceViewModel.m in Sources */,
 				84F04E9C1DDB2883007871CB /* TestManager.m in Sources */,
 				A040471B1F4AFF4700B455F5 /* PaymentSectionItem.m in Sources */,
@@ -11091,7 +11077,6 @@
 				61C742851D6A721E00D328C6 /* RARecentPlacesManager.m in Sources */,
 				A0611FDD1E506B8900F1D173 /* RideCostDetailSeparator.m in Sources */,
 				CB64A2381AC0D724003870A5 /* BaseViewController.m in Sources */,
-				CB64A2391AC0D724003870A5 /* PaymentViewController.m in Sources */,
 				A02E58241EDD78FF00AAC435 /* RACarCategoryConfigurationModel.m in Sources */,
 				A062533C1EDBD5A5000025A0 /* TextFieldOptions.m in Sources */,
 				5B2333AE1F41E2B400669C9E /* CategoryBoundaryPolygon.m in Sources */,
@@ -11209,6 +11194,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 744;
 				DEVELOPMENT_TEAM = 4BLQPGYVGS;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -11265,6 +11251,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 744;
 				DEVELOPMENT_TEAM = 4BLQPGYVGS;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -11301,7 +11288,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RideAustin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 730;
 				DEVELOPMENT_TEAM = 4BLQPGYVGS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -11359,7 +11345,6 @@
 				CODE_SIGN_ENTITLEMENTS = RideAustin.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 730;
 				DEVELOPMENT_TEAM = 4BLQPGYVGS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -11773,7 +11758,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RideAustinTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 730;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11831,7 +11815,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RideAustinTest.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 730;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

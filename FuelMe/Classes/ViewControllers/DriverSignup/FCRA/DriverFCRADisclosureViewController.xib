@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,6 +19,8 @@
             <connections>
                 <outlet property="confirmAcknowledgementCheckBoxButton" destination="qYL-zt-Lmg" id="rUV-xX-pCS"/>
                 <outlet property="contentView" destination="6jz-K7-tOi" id="BfB-tr-BOl"/>
+                <outlet property="lblAcknowlege" destination="pYr-6r-cOr" id="Cfy-40-AIM"/>
+                <outlet property="lblDetails" destination="QdO-Vk-I4x" id="lD8-46-78t"/>
                 <outlet property="lblLawTitle" destination="n2F-qv-RXz" id="nxl-Ra-jUG"/>
                 <outlet property="scrollView" destination="KLv-fH-cNW" id="gDy-M2-xrI"/>
                 <outlet property="vHelpBar" destination="8NZ-59-u5R" id="x1k-s4-WK1"/>
@@ -46,33 +46,33 @@
                     <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jz-K7-tOi">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclosure regarding background check investigation" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-Lb-61H">
-                                    <rect key="frame" x="20" y="8" width="335" height="19.5"/>
+                                    <rect key="frame" x="20" y="8" width="335" height="38.5"/>
                                     <accessibility key="accessibilityConfiguration" identifier="lblTitle"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2F-qv-RXz">
-                                    <rect key="frame" x="20" y="35.5" width="335" height="158.5"/>
+                                    <rect key="frame" x="20" y="54.5" width="335" height="158.5"/>
                                     <accessibility key="accessibilityConfiguration" identifier="lblLawFirstSummary"/>
-                                    <mutableString key="text">RideAustin (“the Company”) may obtain information about you from a third party consumer reporting agency for contract purposes.  Thus, you may be the subject of a “consumer report” and/or an “investigative consumer report” which may include information about your character, general reputation, personal characteristics, and/or mode of living, and which can involve personal interviews with sources such as your neighbors, friends, or associates.  These reports may contain information regarding your criminal history, social security verification, motor vehicle records (“driving records”), verification of your education or employment history, or other background checks.</mutableString>
+                                    <string key="text">RideAustin (“the Company”) may obtain information about you from a third party consumer reporting agency for contract purposes.  Thus, you may be the subject of a “consumer report” and/or an “investigative consumer report” which may include information about your character, general reputation, personal characteristics, and/or mode of living, and which can involve personal interviews with sources such as your neighbors, friends, or associates.  These reports may contain information regarding your criminal history, social security verification, motor vehicle records (“driving records”), verification of your education or employment history, or other background checks.</string>
                                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="11"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-Vk-I4x">
-                                    <rect key="frame" x="20" y="202" width="335" height="172"/>
+                                    <rect key="frame" x="20" y="221" width="335" height="185"/>
                                     <accessibility key="accessibilityConfiguration" identifier="lblLawSecondSummary"/>
-                                    <string key="text">You have the right, upon written request made within a reasonable time, to request whether a consumer report has been run about you, and disclosure of the nature and scope of any investigative consumer report and to request a copy of your report.  Please be advised that the nature and scope of the most common form of investigative consumer report is an employment history or verification.  These searches will be conducted by Checkr, Inc., 2505 Mariposa St. San Francisco, CA 94110 | 844-824-3247 | applicant.checkr.com.  The scope of this disclosure is all-encompassing, however, allowing the Company to obtain from any outside organization all manner of consumer reports throughout the course of your contract to the extent permitted by law.</string>
+                                    <string key="text">You have the right, upon written request made within a reasonable time, to request whether a consumer report has been run about you, and disclosure of the nature and scope of any investigative consumer report and to request a copy of your report.  Please be advised that the nature and scope of the most common form of investigative consumer report is an employment history or verification.  These searches will be conducted by Checkr, Inc., One Montgomery Street, Suite 2400, San Francisco, CA 94104 | (844) 824-3257 | candidate.checkr.com.  The scope of this disclosure is all-encompassing, however, allowing the Company to obtain from any outside organization all manner of consumer reports throughout the course of your contract to the extent permitted by law.</string>
                                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="11"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYL-zt-Lmg">
-                                    <rect key="frame" x="20" y="382" width="30" height="30"/>
+                                    <rect key="frame" x="20" y="414" width="30" height="30"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <accessibility key="accessibilityConfiguration" identifier="checkBox"/>
                                     <constraints>
@@ -95,7 +95,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="pYr-6r-cOr">
-                                    <rect key="frame" x="58" y="382" width="297" height="30"/>
+                                    <rect key="frame" x="58" y="414" width="297" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="lblCheckBoxDescription"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="G2h-bS-euA"/>

@@ -105,6 +105,9 @@ final class SideMenuCoordinator: NSObject, Coordinator {
             case .tripHistory:
                 showTripHistoryVC()
                 return true
+            case .openCheckr(let driverId):
+                showFingerprintingScreenWithDriverId(driverId: driverId)
+                return true
             }
             
         default:
@@ -442,7 +445,7 @@ final class SideMenuCoordinator: NSObject, Coordinator {
     func showPaymentFlow() {
         if ApplePayHelper.canMakePayment() ||
             currentRider?.hasValidCard() == true {
-            let vc = PaymentViewController()
+            let vc = PaymentViewController(mode: .showAll)
             navigationController.pushViewController(vc, animated: true)
         }
         else {
@@ -489,6 +492,23 @@ final class SideMenuCoordinator: NSObject, Coordinator {
                 }
             }
         }
+    }
+    
+    func showFingerprintingScreenWithDriverId(driverId: String) {
+        
+        guard let localDriverID = RASessionManager.shared().currentRider?.user.driverID(), let driverId = Int(driverId), localDriverID.intValue == driverId else {
+            showAlert("Fingerprints", "Please login with with your driver account to continue fingerprinting.")
+            return
+        }
+        
+        fingerprintsCoordinator = FingerprintsCoordinator(
+            appContainer: appContainer,
+            driverId: driverId,
+            navigationController: navigationController
+        )
+        
+        fingerprintsCoordinator?.delegate = self
+        fingerprintsCoordinator?.setup()
     }
 }
 
@@ -613,4 +633,17 @@ extension SideMenuCoordinator: DirectConnectViewControllerDelegate {
     func hdirectConnectViewController(_: DirectConnectViewController?, didTapSubmit model: RADriverDirectConnectDataModel) {
         showDirectConnectDetailVC(model: model)
     }
+}
+
+extension SideMenuCoordinator: FingerprintsCoordinatorDelegate {
+    
+    func didTapNotNow() {
+        fingerprintsCoordinator = nil
+    }
+    
+    func didFinishSuccessfully() {
+        fingerprintsCoordinator = nil
+        showAlert("FINGERPRINT", "Checkr payment successful")
+    }
+    
 }

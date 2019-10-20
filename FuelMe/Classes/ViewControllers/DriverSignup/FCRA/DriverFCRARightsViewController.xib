@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,6 +27,7 @@
                 <outlet property="txtCurrentZip" destination="ZLP-do-5BG" id="vdR-E4-aVD"/>
                 <outlet property="txtDL" destination="A3E-EZ-fsc" id="dkw-Eb-BJH"/>
                 <outlet property="txtDOB" destination="0kB-cY-0Px" id="VaS-Kl-1FZ"/>
+                <outlet property="txtFCRADetails" destination="bYG-RI-a5U" id="LZE-PD-4ED"/>
                 <outlet property="txtFirstName" destination="T8D-bp-uoS" id="pzy-8N-1Ni"/>
                 <outlet property="txtLastName" destination="9xQ-kq-peq" id="1WP-31-vlJ"/>
                 <outlet property="txtMiddleName" destination="pdb-0o-LfN" id="ENH-qn-bWw"/>
@@ -58,10 +57,10 @@
                     <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYC-vs-wov">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" First Name" textAlignment="natural" minimumFontSize="17" background="Field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="T8D-bp-uoS">
-                                    <rect key="frame" x="20" y="131" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="115" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtFirstName"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="srK-1x-Jli"/>
@@ -73,7 +72,7 @@
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Middle Name(s)" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-0o-LfN">
-                                    <rect key="frame" x="20" y="169" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="153" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtMiddleName"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="u90-He-FRY"/>
@@ -85,7 +84,7 @@
                                     </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I confirm that I do not have a Middle Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hco-KH-FgD">
-                                    <rect key="frame" x="58" y="207" width="297" height="21"/>
+                                    <rect key="frame" x="58" y="191" width="297" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="0n4-pZ-7Y3"/>
                                     </constraints>
@@ -94,7 +93,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8n-BH-Q6h">
-                                    <rect key="frame" x="20" y="205" width="30" height="30"/>
+                                    <rect key="frame" x="20" y="189" width="30" height="30"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <accessibility key="accessibilityConfiguration" identifier="checkBoxMiddleName"/>
                                     <constraints>
@@ -109,7 +108,7 @@
                                     </connections>
                                 </button>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Last Name" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="9xQ-kq-peq">
-                                    <rect key="frame" x="20" y="239" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="223" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtLastName"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="vl7-Z4-sQf"/>
@@ -121,7 +120,7 @@
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Social Security Number" textAlignment="natural" minimumFontSize="17" background="Field-unactive" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-la-ZrE">
-                                    <rect key="frame" x="20" y="315" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="299" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtSSN"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="3OR-2I-YMd"/>
@@ -133,7 +132,7 @@
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Date of Birth (MM/DD/YYYY)" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="0kB-cY-0Px">
-                                    <rect key="frame" x="20" y="277" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="261" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtDateOfBirth"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="fZ8-Eq-li6"/>
@@ -145,7 +144,7 @@
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Current Zipcode" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-do-5BG">
-                                    <rect key="frame" x="20" y="353" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="337" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtZipCode"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="rTG-3X-mSK"/>
@@ -157,7 +156,7 @@
                                     </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary of Your Rights Under the Fair Credit Reporting Act" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSb-xi-o8j">
-                                    <rect key="frame" x="20" y="456" width="335" height="39"/>
+                                    <rect key="frame" x="20" y="440" width="335" height="39"/>
                                     <accessibility key="accessibilityConfiguration" identifier="summaryTitle"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="39" id="o2W-Ja-Bxz"/>
@@ -166,16 +165,8 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guT-pC-YLq">
-                                    <rect key="frame" x="20" y="492" width="335" height="64"/>
-                                    <accessibility key="accessibilityConfiguration" identifier="summaryDetail"/>
-                                    <string key="text">The FCRA is a complex piece of legislation and contains numerous provisions not discussed on this page. Below are several important features of how the FCRA is designed to help consumers (for the complete text, visit the Federal Trade Commission). The FCRA protects you by requiring consumer reporting agencies.                                                                            </string>
-                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="11"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYL-zt-Lmg">
-                                    <rect key="frame" x="20" y="564" width="30" height="30"/>
+                                    <rect key="frame" x="20" y="548" width="30" height="30"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <accessibility key="accessibilityConfiguration" identifier="checkBoxAckReceipt"/>
                                     <constraints>
@@ -190,23 +181,23 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I acknowledge receipt of the Summary of Your Rights Under the Fair Credit Reporting Act" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYr-6r-cOr">
-                                    <rect key="frame" x="58" y="566" width="297" height="28"/>
+                                    <rect key="frame" x="58" y="554" width="297" height="24"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2F-qv-RXz">
-                                    <rect key="frame" x="20" y="10" width="335" height="106"/>
+                                    <rect key="frame" x="20" y="10" width="335" height="90"/>
                                     <accessibility key="accessibilityConfiguration" identifier="lawTitle"/>
                                     <string key="text">RideAustin (the "Company") has engaged Checkr, Inc. to obtain a consumer report. Checkr Inc. will provide a background investigation as a pre-condition of your engagement with the Company and in compliance with federal and state laws.
 
-If you have any questions related to the screening process, please contact us at applicant.checkr.com.</string>
+If you have any questions related to the screening process, please contact us at candidate.checkr.com.</string>
                                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="11"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Driver License Number" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="A3E-EZ-fsc">
-                                    <rect key="frame" x="20" y="391" width="247" height="30"/>
+                                    <rect key="frame" x="20" y="375" width="247" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtDriverLicense"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="kpo-oG-RWX"/>
@@ -218,7 +209,7 @@ If you have any questions related to the screening process, please contact us at
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Address" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-Tl-R5q">
-                                    <rect key="frame" x="20" y="428" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="412" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtAddress"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="Xwf-OH-HXc"/>
@@ -230,7 +221,7 @@ If you have any questions related to the screening process, please contact us at
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" D.L. State" textAlignment="natural" minimumFontSize="17" background="Field-Box" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-jO-rEq">
-                                    <rect key="frame" x="275" y="391" width="80" height="30"/>
+                                    <rect key="frame" x="275" y="375" width="80" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtStateCode"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="PGD-Zz-tkK"/>
@@ -242,13 +233,29 @@ If you have any questions related to the screening process, please contact us at
                                         <outlet property="delegate" destination="-1" id="zpQ-pG-iYw"/>
                                     </connections>
                                 </textField>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYG-RI-a5U">
+                                    <rect key="frame" x="20" y="482" width="335" height="64"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <string key="content">The FCRA is a complex piece of legislation and contains numerous provisions not discussed on this page. Below are several important features of how the FCRA is designed to help consumers (for the complete text, visit the Federal Trade Commission). The FCRA protects you by requiring consumer reporting agencies.    </string>
+                                            <attributes>
+                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" metaFont="system" size="14"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                </textView>
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
+                                <constraint firstItem="DSb-xi-o8j" firstAttribute="trailing" secondItem="bYG-RI-a5U" secondAttribute="trailing" id="06L-vz-iXs"/>
                                 <constraint firstAttribute="bottom" secondItem="qYL-zt-Lmg" secondAttribute="bottom" constant="20" id="279-Pg-TVn"/>
-                                <constraint firstItem="pYr-6r-cOr" firstAttribute="top" secondItem="guT-pC-YLq" secondAttribute="bottom" constant="10" id="2gc-YI-TQg"/>
                                 <constraint firstAttribute="trailing" secondItem="Hco-KH-FgD" secondAttribute="trailing" constant="20" id="3l9-R5-MH2"/>
                                 <constraint firstItem="PAj-jO-rEq" firstAttribute="trailing" secondItem="DSb-xi-o8j" secondAttribute="trailing" id="4BC-Iy-r34"/>
+                                <constraint firstItem="bYG-RI-a5U" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="4bn-Bs-8wS"/>
                                 <constraint firstItem="pdb-0o-LfN" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="52W-iR-qdA"/>
                                 <constraint firstItem="0kB-cY-0Px" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="5xD-lm-Bj5"/>
                                 <constraint firstAttribute="trailing" secondItem="pYr-6r-cOr" secondAttribute="trailing" constant="20" id="5z2-RI-Bcj"/>
@@ -256,17 +263,16 @@ If you have any questions related to the screening process, please contact us at
                                 <constraint firstItem="PAj-jO-rEq" firstAttribute="baseline" secondItem="A3E-EZ-fsc" secondAttribute="baseline" id="7aw-e8-XIU"/>
                                 <constraint firstItem="ZLP-do-5BG" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="BWO-Df-m9g"/>
                                 <constraint firstItem="GT4-Tl-R5q" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="BX8-ML-8oi"/>
-                                <constraint firstAttribute="trailing" secondItem="guT-pC-YLq" secondAttribute="trailing" constant="20" id="Bms-Kn-DWu"/>
                                 <constraint firstAttribute="trailing" secondItem="VvY-la-ZrE" secondAttribute="trailing" constant="20" id="CnA-Oe-jA9"/>
                                 <constraint firstItem="0kB-cY-0Px" firstAttribute="top" secondItem="9xQ-kq-peq" secondAttribute="bottom" constant="8" id="Ddl-hO-atV"/>
                                 <constraint firstItem="GT4-Tl-R5q" firstAttribute="top" secondItem="A3E-EZ-fsc" secondAttribute="bottom" constant="7" id="Dpg-iy-5BD"/>
-                                <constraint firstItem="DSb-xi-o8j" firstAttribute="trailing" secondItem="guT-pC-YLq" secondAttribute="trailing" id="ERf-7x-YJM"/>
                                 <constraint firstItem="VvY-la-ZrE" firstAttribute="top" secondItem="0kB-cY-0Px" secondAttribute="bottom" constant="8" id="Etn-An-g4l"/>
                                 <constraint firstAttribute="trailing" secondItem="0kB-cY-0Px" secondAttribute="trailing" constant="20" id="FUf-cl-9aU"/>
                                 <constraint firstItem="DSb-xi-o8j" firstAttribute="top" secondItem="PAj-jO-rEq" secondAttribute="bottom" constant="35" id="GR9-lh-a4D"/>
                                 <constraint firstItem="9xQ-kq-peq" firstAttribute="top" secondItem="Hco-KH-FgD" secondAttribute="bottom" constant="11" id="Hs2-Ii-cOs"/>
+                                <constraint firstItem="pYr-6r-cOr" firstAttribute="top" secondItem="bYG-RI-a5U" secondAttribute="bottom" constant="8" id="J4L-3f-ABh"/>
+                                <constraint firstItem="qYL-zt-Lmg" firstAttribute="top" secondItem="bYG-RI-a5U" secondAttribute="bottom" constant="2" id="Jf1-ih-dvh"/>
                                 <constraint firstAttribute="bottom" secondItem="pYr-6r-cOr" secondAttribute="bottom" constant="20" id="M7I-Nz-hgw"/>
-                                <constraint firstItem="guT-pC-YLq" firstAttribute="top" secondItem="DSb-xi-o8j" secondAttribute="bottom" constant="-3" id="NDl-g1-JMP"/>
                                 <constraint firstItem="A8n-BH-Q6h" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="NhF-OD-Tfk"/>
                                 <constraint firstItem="A3E-EZ-fsc" firstAttribute="leading" secondItem="ZLP-do-5BG" secondAttribute="leading" id="Q6p-Ya-z25"/>
                                 <constraint firstItem="qYL-zt-Lmg" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="QRu-dO-szg"/>
@@ -278,7 +284,6 @@ If you have any questions related to the screening process, please contact us at
                                 <constraint firstAttribute="trailing" secondItem="9xQ-kq-peq" secondAttribute="trailing" constant="20" id="Yw7-Um-VMO"/>
                                 <constraint firstItem="pYr-6r-cOr" firstAttribute="leading" secondItem="qYL-zt-Lmg" secondAttribute="trailing" constant="8" id="Zva-Ig-7w0"/>
                                 <constraint firstItem="A8n-BH-Q6h" firstAttribute="top" secondItem="pdb-0o-LfN" secondAttribute="bottom" constant="6" id="cBt-9R-r9i"/>
-                                <constraint firstItem="guT-pC-YLq" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="d1D-tN-wHc"/>
                                 <constraint firstItem="pdb-0o-LfN" firstAttribute="top" secondItem="T8D-bp-uoS" secondAttribute="bottom" constant="8" id="eIm-gA-BkG"/>
                                 <constraint firstItem="PAj-jO-rEq" firstAttribute="trailing" secondItem="ZLP-do-5BG" secondAttribute="trailing" id="eU0-oU-yCO"/>
                                 <constraint firstItem="Hco-KH-FgD" firstAttribute="top" secondItem="pdb-0o-LfN" secondAttribute="bottom" constant="8" id="ec4-7O-TWr"/>
@@ -286,14 +291,15 @@ If you have any questions related to the screening process, please contact us at
                                 <constraint firstItem="T8D-bp-uoS" firstAttribute="top" secondItem="n2F-qv-RXz" secondAttribute="bottom" constant="15" id="gX3-63-B1A"/>
                                 <constraint firstItem="VvY-la-ZrE" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="h9U-pu-1EO"/>
                                 <constraint firstItem="T8D-bp-uoS" firstAttribute="leading" secondItem="AYC-vs-wov" secondAttribute="leading" constant="20" id="hcs-14-cHe"/>
+                                <constraint firstAttribute="trailing" secondItem="bYG-RI-a5U" secondAttribute="trailing" constant="20" id="hdi-u9-sHd"/>
                                 <constraint firstAttribute="trailing" secondItem="n2F-qv-RXz" secondAttribute="trailing" constant="20" id="inc-dz-NfC"/>
                                 <constraint firstAttribute="bottom" secondItem="PAj-jO-rEq" secondAttribute="bottom" constant="193" id="j7q-NA-Ru7"/>
                                 <constraint firstItem="n2F-qv-RXz" firstAttribute="top" secondItem="AYC-vs-wov" secondAttribute="top" constant="10" id="nfo-z7-d1u"/>
                                 <constraint firstItem="Hco-KH-FgD" firstAttribute="leading" secondItem="A8n-BH-Q6h" secondAttribute="trailing" constant="8" id="pba-fJ-EqP"/>
+                                <constraint firstItem="bYG-RI-a5U" firstAttribute="top" secondItem="DSb-xi-o8j" secondAttribute="bottom" constant="3" id="py9-tu-Qno"/>
                                 <constraint firstAttribute="trailing" secondItem="GT4-Tl-R5q" secondAttribute="trailing" constant="20" id="rXH-30-cXh"/>
                                 <constraint firstItem="A3E-EZ-fsc" firstAttribute="top" secondItem="ZLP-do-5BG" secondAttribute="bottom" constant="8" symbolic="YES" id="tYV-cS-zt2"/>
                                 <constraint firstItem="ZLP-do-5BG" firstAttribute="top" secondItem="VvY-la-ZrE" secondAttribute="bottom" constant="8" id="ugd-wX-ZAu"/>
-                                <constraint firstItem="qYL-zt-Lmg" firstAttribute="top" secondItem="guT-pC-YLq" secondAttribute="bottom" constant="8" id="wI3-Fs-v7E"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -322,18 +328,15 @@ If you have any questions related to the screening process, please contact us at
                 <constraint firstAttribute="trailing" secondItem="F8A-a1-leI" secondAttribute="trailing" id="onr-H2-een"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
-            <point key="canvasLocation" x="499.5" y="347.5"/>
+            <point key="canvasLocation" x="498.39999999999998" y="346.77661169415296"/>
         </view>
         <view contentMode="scaleToFill" id="Xa8-KO-qYn">
             <rect key="frame" x="0.0" y="0.0" width="259" height="155"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XPa-XM-MXM">
+                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="XPa-XM-MXM">
                     <rect key="frame" x="0.0" y="0.0" width="259" height="155"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <date key="date" timeIntervalSinceReferenceDate="490631076.45256799">
-                        <!--2016-07-19 14:24:36 +0000-->
-                    </date>
                     <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
                         <!--1970-01-01 11:00:00 +0000-->
                     </date>

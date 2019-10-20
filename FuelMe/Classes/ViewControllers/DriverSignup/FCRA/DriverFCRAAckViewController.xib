@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,6 +19,7 @@
             <connections>
                 <outlet property="contentView" destination="tq3-TY-KgY" id="8m1-49-aQz"/>
                 <outlet property="fullNameTextField" destination="7aL-vq-1hl" id="Dhz-YC-cVp"/>
+                <outlet property="lblDetails" destination="n2F-qv-RXz" id="ySz-sV-ujS"/>
                 <outlet property="scrollView" destination="Pk2-yC-el3" id="KLB-59-Ocm"/>
                 <outlet property="vHelpBar" destination="rmT-qB-XDW" id="TNL-Ie-xkj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -45,7 +44,7 @@
                     <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tq3-TY-KgY">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="336.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acknowledgment and Authorization for background check" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-Lb-61H">
                                     <rect key="frame" x="20" y="8" width="335" height="36"/>
@@ -63,13 +62,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronic Signature" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kG-xM-wc4">
-                                    <rect key="frame" x="20" y="271" width="335" height="19"/>
+                                    <rect key="frame" x="20" y="271.5" width="335" height="19.5"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Full name" textAlignment="natural" minimumFontSize="17" background="Field" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-vq-1hl">
-                                    <rect key="frame" x="20" y="310" width="335" height="30"/>
+                                    <rect key="frame" x="20" y="311" width="335" height="30"/>
                                     <accessibility key="accessibilityConfiguration" identifier="txtElectronicSignature"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="9nu-bi-yfU"/>
@@ -89,7 +88,7 @@
                                     </variation>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Full Name i.e FirstName LastName)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-uB-cZ6">
-                                    <rect key="frame" x="20" y="290" width="173" height="12"/>
+                                    <rect key="frame" x="20" y="291" width="173" height="12"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>

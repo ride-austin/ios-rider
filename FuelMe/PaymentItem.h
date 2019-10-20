@@ -18,18 +18,18 @@
 @property (nonatomic, readonly) UIColor *textColor;
 @property (nonatomic, readonly) UIImage *iconItem;
 @property (nonatomic, readonly) UITableViewCellAccessoryType accessoryType;
-@property (nonatomic, readonly) RACardDataModel *card;
+@property (nonatomic, readonly, nullable) RACardDataModel *card;
 
 @property (nonatomic, copy) void(^didSelectItem)(PaymentItem* paymentItem);
 @property (nonatomic, copy) void(^didTapInfoButton)(void);
 
-+ (instancetype)paymentItemWithCard:(RACardDataModel*)card;
-+ (instancetype)paymentItemWithText:(NSString*)text textColor:(UIColor*)textColor andIconItem:(UIImage*)iconItem;
-+ (instancetype)paymentItemWithText:(NSString*)text textColor:(UIColor*)textColor andIconItem:(UIImage*)iconItem accessoryType:(UITableViewCellAccessoryType)accessoryType;
++ (instancetype _Nonnull)paymentItemWithCard:(RACardDataModel*)card;
++ (instancetype _Nonnull)paymentItemWithText:(NSString*)text textColor:(UIColor*)textColor andIconItem:(UIImage*)iconItem;
++ (instancetype _Nonnull)paymentItemWithText:(NSString*)text textColor:(UIColor*)textColor andIconItem:(UIImage*)iconItem accessoryType:(UITableViewCellAccessoryType)accessoryType;
 
 //Convenience Initilizers
-- (instancetype)initWithCard:(RACardDataModel*)card;
-- (instancetype)initWithText:(NSString*)text textColor:(UIColor*)textColor iconItem:(UIImage*)iconItem accessoryType:(UITableViewCellAccessoryType)accessoryType;
+- (instancetype _Nonnull)initWithCard:(RACardDataModel*)card;
+- (instancetype _Nonnull)initWithText:(NSString*)text textColor:(UIColor*)textColor iconItem:(UIImage*)iconItem accessoryType:(UITableViewCellAccessoryType)accessoryType;
 
 - (BOOL)isCreditCard;
 - (BOOL)isApplePay;

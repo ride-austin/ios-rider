@@ -188,7 +188,7 @@ typedef void(^RequestRideBlock)(NSString *applePayToken);
 }
 
 - (IBAction)paymentMethodTapped:(id)sender {
-    PaymentViewController *paymentViewController = [[PaymentViewController alloc] init];
+    PaymentViewController *paymentViewController = [[PaymentViewController alloc] initWithNibName:@"PaymentViewController" bundle:nil];
     [self.navigationController pushViewController:paymentViewController animated:YES];
 }
 

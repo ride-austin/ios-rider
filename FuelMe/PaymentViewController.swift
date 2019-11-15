@@ -20,6 +20,11 @@ final class PaymentViewController: BaseViewController {
     private static let kTitleApplePay = "Apple Pay"
     private static let kTitleSetupApplePay = "Set up Apple Pay"
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        self.mode = .showAll
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
     init(mode: Mode) {
         self.mode = mode
         super.init(nibName: "PaymentViewController", bundle: nil)

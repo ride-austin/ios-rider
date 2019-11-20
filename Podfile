@@ -15,7 +15,6 @@ abstract_target 'rider_pods' do
     pod 'FBSDKShareKit'
     pod 'FBSDKLoginKit'
     pod 'Mantle'
-    pod 'GoogleAnalytics'
     pod 'GoogleMaps', '~> 3.2.0'
     pod 'GooglePlaces', '~> 3.2.0'
     pod 'Stripe'

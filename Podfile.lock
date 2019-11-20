@@ -86,7 +86,6 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 6.2)
     - Protobuf (~> 3.1)
   - FLAnimatedImage (1.0.12)
-  - GoogleAnalytics (3.17.0)
   - GoogleAppMeasurement (6.0.4):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -202,7 +201,6 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/InAppMessagingDisplay
   - Firebase/Messaging
-  - GoogleAnalytics
   - GoogleMaps (~> 3.2.0)
   - GooglePlaces (~> 3.2.0)
   - KVOController
@@ -248,7 +246,6 @@ SPEC REPOS:
     - FirebaseInstanceID
     - FirebaseMessaging
     - FLAnimatedImage
-    - GoogleAnalytics
     - GoogleAppMeasurement
     - GoogleMaps
     - GooglePlaces
@@ -317,7 +314,6 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 662b8108a09fe9ed01aafdedba100fde8536b0f6
   FirebaseMessaging: 6bb0bdaf64c55fef7a219b7bb1e94e94a0855ced
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleAppMeasurement: 183bd916af7f80deb67c01888368f1108d641832
   GoogleMaps: 5046d7edfe381c1a0b20fdaf293915a375c3122b
   GooglePlaces: 41bc2e480816b1234a48f4bec92e1c886f37cfe1
@@ -350,6 +346,6 @@ SPEC CHECKSUMS:
   XLForm: b8d47a9a00fb6166981cb40de7169d70d611e9be
   ZLPeoplePickerViewController: 0666f4153ba3086e462cfc8a73ad20cdf39da908
 
-PODFILE CHECKSUM: 64d5e4f315a723e41e506c8cb16f407604cbf009
+PODFILE CHECKSUM: 85e7305bbf0dd17932a50feef9c011fe93b4e882
 
 COCOAPODS: 1.5.3

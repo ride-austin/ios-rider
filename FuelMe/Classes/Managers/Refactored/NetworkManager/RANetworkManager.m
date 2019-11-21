@@ -19,8 +19,6 @@
 #import "UIDevice+Model.h"
 #import "URLFactory.h"
 
-#import "GAI.h"
-#import "GAIDictionaryBuilder.h"
 #import <BugfenderSDK/BugfenderSDK.h>
 
 static NSString *const kAuthTokenHttpHeaderField = @"X-Auth-Token";
@@ -284,17 +282,6 @@ BOOL isJailbroken()
             [client DELETE:path parameters:parameters success:success failure:failure];
             break;
     }
-}
-
-@end
-
-#pragma mark - Tracker
-
-@implementation RANetworkManager (Tracker)
-
-+ (void)trackResponse:(NSString*)path {
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"Network" action:@"NetworkResponse" label:path value:nil] build]];
 }
 
 @end

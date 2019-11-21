@@ -167,7 +167,6 @@
 }
 
 - (IBAction)cancel:(id)sender {
-    [self trackButtonUI:@"CancelButton"];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

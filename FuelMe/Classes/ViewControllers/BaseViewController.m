@@ -11,7 +11,6 @@
 #import "SMessageViewController.h"
 #import "UIDevice+VersionCheck.h"
 
-#import "GAIDictionaryBuilder.h"
 #import <MessageUI/MessageUI.h>
 
 @interface BaseViewController ()
@@ -22,20 +21,13 @@
 
 @implementation BaseViewController
 
-- (void)trackWithCategory:(NSString*)category withAction:(NSString*)action withLabel:(NSString*)label withValue:(NSNumber*)value {
-    //id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    //[tracker send:[[GAIDictionaryBuilder createEventWithCategory:category action:action label:[self.className stringByAppendingPathComponent:label] value:nil] build]];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.isAlertShowing = NO;
 	
     self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
-    
-    super.screenName = self.className;
-    
+        
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
 }

@@ -41,6 +41,8 @@ typedef enum : NSUInteger {
 @property (readonly, nonatomic) NSString *campaignDescriptionHistory;
 @property (readonly, nonatomic) NSString *campaignDiscount;
 @property (readonly, nonatomic) NSString *campaignProvider;
+@property (strong, nonatomic) NSNumber *tip;
+
 
 #pragma mark - Helper
 

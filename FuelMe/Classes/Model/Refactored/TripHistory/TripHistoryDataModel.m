@@ -45,6 +45,7 @@
              @"riderFirstName" : @"mainRiderFirstName",
              @"riderLastName" : @"mainRiderLastName",
              @"riderPictureURL" : @"mainRiderPicture",
+             @"tip" : @"tip",
              @"mapURL" : @"mapUrl",
              @"driverRating" : @"driverRating",
              @"carBrand" : @"carBrand",
@@ -154,5 +155,9 @@
 
 - (NSString *)displayTotalCharged {
     return [NSString stringWithFormat:@"$ %@", self.stripeCreditCharge];
+}
+
+-(NSString *)displayTip {
+    return [NSString stringWithFormat:@"$ %@", self.tip];
 }
 @end

@@ -104,6 +104,10 @@
     return self.campaignDiscount && self.campaignProvider;
 }
 
+- (BOOL)hasTip {
+    return self.tip != 0;
+}
+
 - (NSString *)dateString {
     switch (self.status) {
         case TripCompleted:

@@ -102,7 +102,7 @@ typedef void(^RequestRideBlock)(NSString *applePayToken);
 
 - (void)configureDriverProfile {
     [self.imgDriver sd_setImageWithURL:self.driverDetailViewModel.driverPhotoUrl placeholderImage:[UIImage imageNamed:@"person_placeholder"]];
-    self.lblDriverName.text = self.driverDetailViewModel.driverFullName;
+    self.lblDriverName.text = self.driverDetailViewModel.driverFirstName;
     self.lblDriverRating.text = self.driverDetailViewModel.driverRating;
 }
 

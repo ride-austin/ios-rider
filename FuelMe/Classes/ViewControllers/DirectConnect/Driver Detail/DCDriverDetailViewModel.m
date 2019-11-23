@@ -35,6 +35,10 @@
     return [NSString stringWithFormat:@"%@ %@", self.driverDirectConnect.firstName, self.driverDirectConnect.lastName];
 }
 
+- (NSString *)driverFirstName {
+    return self.driverDirectConnect.firstName;
+}
+
 - (NSString *)driverRating {
     NSNumberFormatter *formatter = [NSNumberFormatter new];
     [formatter setMinimumFractionDigits:2];

@@ -49,6 +49,10 @@
 	<string>{{facebookDisplayName}}</string>
 	<key>FacebookUrlSchemeSuffix</key>
 	<string>{{facebookUrlSchemeSuffix}}</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+    <false/>
+    <key>FacebookAdvertiserIDCollectionEnabled</key>
+    <false/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>

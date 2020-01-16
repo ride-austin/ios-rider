@@ -6,7 +6,7 @@ version: 2
 jobs:
   build-and-test:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     environment:
       FL_OUTPUT_DIR: output
     steps:
@@ -51,7 +51,7 @@ jobs:
 
   build-development:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - checkout
       - run: scripts/infoplist.sh
@@ -89,7 +89,7 @@ jobs:
 
   build-production:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - checkout
       - run: scripts/infoplist.sh
@@ -127,7 +127,7 @@ jobs:
 
   refresh-signing:
     macos:
-      xcode: "11.3.0"
+      xcode: "11.3.1"
     steps:
       - checkout
       - run: scripts/infoplist.sh

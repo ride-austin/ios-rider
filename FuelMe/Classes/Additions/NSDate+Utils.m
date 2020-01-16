@@ -65,7 +65,7 @@
 }
 
 - (NSString *)tripDateFormat {
-    return [self convertToStringUsingFormat:@"MM/dd/YYYY hh:mm a"];
+    return [self convertToStringUsingFormat:@"MM/dd/yyyy hh:mm a"];
 }
 
 - (NSString *)reportTimeString {

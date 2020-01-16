@@ -8,7 +8,7 @@ platform :ios do
     ENV["FL_BUILD_NUMBER_PROJECT"] = "./Ride.xcodeproj"
     ENV["FL_HOCKEY_API_TOKEN"] = ENV["HOCKEYAPP_API_TOKEN"]
     ENV["PRECHECK_USERNAME"] = ENV["DELIVER_USERNAME"]
-    xcversion(version: "11.3.0")
+    xcversion(version: "11.3.1")
     setup_circle_ci
   end
   TARGETVERSION = 'RideAustin'

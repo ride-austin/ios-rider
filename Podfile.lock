@@ -173,7 +173,7 @@ PODS:
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
   - Shimmer (1.0.2)
-  - Stripe (16.0.3)
+  - Stripe (19.0.0)
   - SVProgressHUD (2.2.5)
   - SWHttpTrafficRecorder (1.0.2)
   - SwiftGen (6.1.0)
@@ -335,7 +335,7 @@ SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
-  Stripe: 82a77b8dd26be83555f8ca9a3cc034dfda81fc40
+  Stripe: 5afd38a520f7a1a16b609127165d517fa9f7de32
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SWHttpTrafficRecorder: 6c0804d3f8edf9c7f3a1e0eec9f6bf5e4b241b9f
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
@@ -346,6 +346,6 @@ SPEC CHECKSUMS:
   XLForm: b8d47a9a00fb6166981cb40de7169d70d611e9be
   ZLPeoplePickerViewController: 0666f4153ba3086e462cfc8a73ad20cdf39da908
 
-PODFILE CHECKSUM: 85e7305bbf0dd17932a50feef9c011fe93b4e882
+PODFILE CHECKSUM: 5c0bb8425682c21d8856a6d980ccd1b698ba253a
 
 COCOAPODS: 1.5.3

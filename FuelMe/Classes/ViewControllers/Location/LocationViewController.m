@@ -738,7 +738,6 @@ typedef void(^ConfirmedDistanceBlock)(BOOL confirmed);
 
 - (void)didTapMenuBarButton:(UIBarButtonItem *)sender {
     [self.view endEditing:YES];
-    [self trackButtonUI:@"Menu"];
     [self.sideMenuCoordinator showSideMenu];
 }
 
@@ -749,7 +748,6 @@ typedef void(^ConfirmedDistanceBlock)(BOOL confirmed);
     }
     
     self.btFindLocation.enabled = NO;
-    [self trackButtonUI:@"Find Location"];
     [self moveToCurrentLocationWithCompletion:[self currentLocationDefaultHandler]];
 }
 

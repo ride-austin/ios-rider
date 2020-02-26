@@ -23,13 +23,11 @@
 #import "UIBarButtonItem+RAFactory.h"
 #import "UIViewController+progressHUD.h"
 #import "UIView+CompatibleAnchor.h"
-#import "GAI.h"
-#import "GAITrackedViewController.h"
 #import "KLCPopup.h"
 #import "RAAlertManager.h"
 
 
-@interface BaseViewController : GAITrackedViewController
+@interface BaseViewController : UIViewController
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,12 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)configureAllTapsWillDismissKeyboard;
 - (void)dismissKeyboard;
 - (void)addChildViewController:(UIViewController*)controller withContainer:(UIView*)container;
-
-@end
-
-@interface BaseViewController (Tracker)
-
-- (void)trackButtonUI:(NSString*)label;
 
 @end
 

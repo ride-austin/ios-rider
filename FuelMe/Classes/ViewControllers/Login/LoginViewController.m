@@ -129,7 +129,6 @@ NSString * const kFacebookSignin = @"kFacebookSignin";
         [errors.lastObject becomeFirstResponder];
         sender.enabled = YES;
     } else {
-        [self trackButtonUI:@"LoginButton"];
         [self showHUD];
         
         __weak LoginViewController *weakSelf = self;

@@ -18,6 +18,7 @@
 
 //Driver Profile
 @property (nonatomic, readonly) NSString *driverFullName;
+@property (nonatomic, readonly) NSString *driverFirstName;
 @property (nonatomic, readonly) NSString *driverRating;
 @property (nonatomic, readonly) NSURL *driverPhotoUrl;
 

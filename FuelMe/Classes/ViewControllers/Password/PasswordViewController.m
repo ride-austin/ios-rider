@@ -54,9 +54,7 @@
 - (void)save {
     [self.view endEditing:YES];
     NSString* message = [self validateFields];
-    if (!message) {
-        [self trackButtonUI:@"Save"];
-        
+    if (!message) {        
         [self showHUD];
         [[RASessionManager sharedManager] updatePassword:self.password.text withCompletion:^(NSError *error) {
             if (error) {

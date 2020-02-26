@@ -56,6 +56,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintCampaignBottomToLastItem;
 
 //Constraints
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTipContainerHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintRedDotHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintCreditCardHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintDriverPhotoHeight;
@@ -173,10 +174,14 @@
     if (hasCompletedWithCampaign) {
         [self.btCampaignProvider setTitle:model.campaignProvider forState:UIControlStateNormal];
         self.lblBDRideCost.text = @"Ride Cost";
-        self.lblBDTip.text = @"Tip";
+        if (model.hasTip) {
+            self.lblBDTip.text = @"Tip";
+            self.lblBDTipValue.text = model.displayTip;
+        } else {
+            self.constraintTipContainerHeight.constant = 0.0;
+        }
         self.lblBDTotal.text = @"Total";
         self.lblBDRideCostValue.text = model.displayRideCost;
-        self.lblBDTipValue.text = @"$ 0.00";
         self.lblBDCampaignDescription.text = model.campaignDescriptionHistory;
         self.lblBDCampaignDescriptionValue.text = model.displayDiscount;
         self.lblBDTotalValue.text = model.displayTotalCharged;

@@ -41,6 +41,8 @@ typedef enum : NSUInteger {
 @property (readonly, nonatomic) NSString *campaignDescriptionHistory;
 @property (readonly, nonatomic) NSString *campaignDiscount;
 @property (readonly, nonatomic) NSString *campaignProvider;
+@property (strong, nonatomic) NSString *tip;
+
 
 #pragma mark - Helper
 
@@ -48,6 +50,8 @@ typedef enum : NSUInteger {
 - (BOOL)isCancelled;
 - (BOOL)hasCreditCardInfo;
 - (BOOL)hasCampaign;
+- (BOOL)hasTip;
+
 - (NSString *)dateString;
 - (NSString *)statusString;
 - (NSString *)carInformation;
@@ -60,5 +64,5 @@ typedef enum : NSUInteger {
 - (NSString *)displayDiscount;
 - (NSString *)displayRideCost;
 - (NSString *)displayTotalCharged;
-
+- (NSString *)displayTip;
 @end

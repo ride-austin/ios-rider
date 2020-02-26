@@ -45,7 +45,6 @@
 - (IBAction)doForgotPassword:(id)sender {
     NSArray *errors = [self validate];
     if (!errors || self.emailTextField!=[errors lastObject]) {
-        [self trackButtonUI:@"ForgotPasswordButton"];
         
         [self.view endEditing:YES];
         self.backButton.enabled = NO;

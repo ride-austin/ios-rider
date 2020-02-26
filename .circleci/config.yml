@@ -6,7 +6,7 @@ version: 2
 jobs:
   build-and-test:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.3.1"
     environment:
       FL_OUTPUT_DIR: output
     steps:
@@ -29,8 +29,11 @@ jobs:
       - run:
           name: Install CocoaPods
           command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-            bundle exec pod install
+            if [ ! -d "Pods" ]
+            then
+              curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+              bundle exec pod install
+            fi
       - save_cache:
           key: 1-pods-{{ checksum "Podfile.lock" }}
           paths:
@@ -48,7 +51,7 @@ jobs:
 
   build-development:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.3.1"
     steps:
       - checkout
       - run: scripts/infoplist.sh
@@ -66,8 +69,11 @@ jobs:
       - run:
           name: Install CocoaPods
           command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-            bundle exec pod install
+            if [ ! -d "Pods" ]
+            then
+              curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+              bundle exec pod install
+            fi
       - save_cache:
           key: 1-pods-{{ checksum "Podfile.lock" }}
           paths:
@@ -86,7 +92,7 @@ jobs:
 
   build-production:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.3.1"
     steps:
       - checkout
       - run: scripts/infoplist.sh
@@ -104,8 +110,11 @@ jobs:
       - run:
           name: Install CocoaPods
           command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-            bundle exec pod install
+            if [ ! -d "Pods" ]
+            then
+              curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+              bundle exec pod install
+            fi
       - save_cache:
           key: 1-pods-{{ checksum "Podfile.lock" }}
           paths:
@@ -124,7 +133,7 @@ jobs:
 
   refresh-signing:
     macos:
-      xcode: "11.0.0"
+      xcode: "11.3.1"
     steps:
       - checkout
       - run: scripts/infoplist.sh

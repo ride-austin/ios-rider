@@ -57,7 +57,7 @@ extension FingerprintsViewController {
         titleLabel.textColor = .grayText
         titleLabel.text = "RideAustin uses a third party background check that costs 20$."
         subTitleLabel.font = UIFont(name: FontTypeRegular, size: 12)
-        subTitleLabel.text = "THIS WILL BE REIMBURSED AFTER YOUR 100TH SUCCESSFUL TRIP"
+        subTitleLabel.text = "THIS WILL BE REIMBURSED AFTER YOUR 50TH SUCCESSFUL TRIP"
         backgroundCheckTextArea.textColor = .grayText
     }
     

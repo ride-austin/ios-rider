@@ -42,9 +42,13 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>748</string>
+	<string>759</string>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<false/>
 	<key>FacebookAppID</key>
 	<string>{{facebookAppId}}</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<false/>
 	<key>FacebookDisplayName</key>
 	<string>{{facebookDisplayName}}</string>
 	<key>FacebookUrlSchemeSuffix</key>

@@ -315,7 +315,6 @@ static NSInteger const kMinimumFirstAndLastNameLength = 2;
 }
 
 - (void)saveUser {
-    [self trackButtonUI:@"Save"];
     
     RAUserDataModel *user = [[RASessionManager sharedManager] currentUser];
     NSString *newPhone = self.mobileTextField.text;

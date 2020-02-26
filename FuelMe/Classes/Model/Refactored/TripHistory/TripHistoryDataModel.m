@@ -45,6 +45,7 @@
              @"riderFirstName" : @"mainRiderFirstName",
              @"riderLastName" : @"mainRiderLastName",
              @"riderPictureURL" : @"mainRiderPicture",
+             @"tip" : @"tip",
              @"mapURL" : @"mapUrl",
              @"driverRating" : @"driverRating",
              @"carBrand" : @"carBrand",
@@ -103,6 +104,10 @@
     return self.campaignDiscount && self.campaignProvider;
 }
 
+- (BOOL)hasTip {
+    return self.tip != 0;
+}
+
 - (NSString *)dateString {
     switch (self.status) {
         case TripCompleted:
@@ -154,5 +159,9 @@
 
 - (NSString *)displayTotalCharged {
     return [NSString stringWithFormat:@"$ %@", self.stripeCreditCharge];
+}
+
+-(NSString *)displayTip {
+    return [NSString stringWithFormat:@"$ %@", self.tip];
 }
 @end

@@ -24,8 +24,6 @@ typedef void(^ApplePayTokenBlock)(NSString *token, NSError *error);
 + (BOOL)canMakePayment;
 + (BOOL)hasApplePaySetup;
 + (void)openSettingsApplePay;
-+ (UIButton*)applePayButton;
-+ (UIButton*)applePaySetupButton;
 
 - (void)showApplePayAuthorizationWithCategory:(RACarCategoryDataModel *)carCategory completion:(ApplePayTokenBlock)completion;
 

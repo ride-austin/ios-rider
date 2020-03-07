@@ -64,30 +64,6 @@ NSString *const kApplePaymentInvalidDomainError = @"com.rideaustin.apple.pay.inv
     }
 }
 
-+ (UIButton*)applePayButton {
-    UIButton *applePayBtn;
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"10.0")) {
-        applePayBtn = [PKPaymentButton buttonWithType:PKPaymentButtonTypeInStore style:PKPaymentButtonStyleBlack];
-    } else if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.3")) {
-        applePayBtn = [PKPaymentButton buttonWithType:PKPaymentButtonTypePlain style:PKPaymentButtonStyleBlack];
-    } else {
-        applePayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [applePayBtn setImage:[UIImage imageNamed:@"applePayButton"] forState:UIControlStateNormal];
-    }
-    return applePayBtn;
-}
-
-+ (UIButton*)applePaySetupButton {
-    UIButton *applePayBtn;
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")) {
-        applePayBtn = [PKPaymentButton buttonWithType:PKPaymentButtonTypeSetUp style:PKPaymentButtonStyleBlack];
-    } else {
-        applePayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [applePayBtn setBackgroundImage:[UIImage imageNamed:@"applePaySetupButton"] forState:UIControlStateNormal];
-    }
-    return applePayBtn;
-}
-
 - (void)showApplePayAuthorizationWithCategory:(RACarCategoryDataModel *)carCategory completion:(ApplePayTokenBlock)completion {
     UIViewController *rootController = [[UIApplication sharedApplication] keyWindow].rootViewController;
     PKPaymentRequest *paymentRequest = [Stripe paymentRequestWithMerchantIdentifier:@"merchant.com.rideaustin.public" country:@"US" currency:@"USD"];

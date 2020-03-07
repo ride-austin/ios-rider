@@ -70,8 +70,6 @@ internal enum Asset {
   internal static let iconPinkDrivers = ImageAsset(name: "icon-pink-drivers")
   internal static let active = ImageAsset(name: "active")
   internal static let addIcon = ImageAsset(name: "add-icon")
-  internal static let applePayButton = ImageAsset(name: "applePayButton")
-  internal static let applePaySetupButton = ImageAsset(name: "applePaySetupButton")
   internal static let backgroundDriverRating = ImageAsset(name: "backgroundDriverRating")
   internal static let backgroundNumberplate = ImageAsset(name: "backgroundNumberplate")
   internal static let backgroundRoundUpHeader = ImageAsset(name: "backgroundRoundUpHeader")

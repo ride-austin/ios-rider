@@ -16,15 +16,19 @@ RideAustin is a non-profit rideshare built for the Austin community. It is power
 
 ## Requirements
 
+- bundler 2.0.1
 - iOS 12.0+
 - Xcode 11.3.1
 - Configure SSH for the github 
 
 ## Installation
 
-- Install Bundler 2.0.1 to manage ruby gems [Bundler guide](https://bundler.io) 
+- Install [bundler](https://bundler.io) to manage ruby gems
+```
+gem install bundler --version=2.0.1
+```
 
-after installation successful run:
+- Install gems
 
 ```
 bundle install

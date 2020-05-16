@@ -17,7 +17,7 @@ RideAustin is a non-profit rideshare built for the Austin community. It is power
 ## Requirements
 
 - iOS 12.0+
-- Xcode 10.2.1
+- Xcode 11.3.1
 - Configure SSH for the github 
 
 ## Installation

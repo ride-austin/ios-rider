@@ -45,15 +45,6 @@ bundle exec pod install
 scripts/infoplist.sh
 ```
 
-## Troubleshooting
-
-- After running pod install if it fails with the following error
-
-```
-Unable to add a source with url `git@github.com:ride-austin/ios-podspecs.git` named `ride-austin`
-```
-check SSH configuration  check guide [SSH Help](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)  
-
 ## Environmental Variables
 
 This project is configured with Fastlane to work with CLI tools  here are the environmental variables available in the fastlane that can be provided in `/fastlane/.env.default` file 
@@ -107,6 +98,15 @@ This project is configured with Fastlane to work with CLI tools  here are the en
 
 - __SLACK_URL:__ Provide webhook url for the slack to post the updates on the slack. Follow these steps to add webhook in your slack channel  [guide](https://api.slack.com/incoming-webhooks)
 
+
+## Troubleshooting
+
+- After running pod install if it fails with the following error
+
+```
+Unable to add a source with url `git@github.com:ride-austin/ios-podspecs.git` named `ride-austin`
+```
+check SSH configuration  check guide [SSH Help](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)  
 
 ## Contribute 
 

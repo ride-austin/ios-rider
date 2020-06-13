@@ -13,15 +13,21 @@ RideAustin is a non-profit rideshare built for the Austin community. It is power
 
 ![](https://static1.squarespace.com/static/57302ab61d07c088bf6e694b/57408281e3214003460a6d3a/5740828137013bfb815d1b4a/1463845509237/phone-main.jpg?format=1000w)
 
-## Requirements
+## Features
+
+Most of the features are described by the `ConfigGlobal` which is the response of `GET /configs/rider/global`
+
+1. accessibility
+    * this feature describes the button to call the taxi company that can drive for people with disabilities
+## Installation
+
+### Requirements
 
 - bundler 2.0.1
 - iOS 12.0+
 - Ruby 2.5.5
 - SSH for github access
 - Xcode 11.3.1
-
-## Installation
 
 - Install [bundler](https://bundler.io) to manage ruby gems
 ```

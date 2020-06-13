@@ -1,7 +1,6 @@
 # RideAustin Rider
 > iOS App for RideAustin Rider
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EZSwiftExtensions.svg)](https://img.shields.io/cocoapods/v/LFAlertController.svg)  
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
@@ -14,17 +13,42 @@ RideAustin is a non-profit rideshare built for the Austin community. It is power
 
 ![](https://static1.squarespace.com/static/57302ab61d07c088bf6e694b/57408281e3214003460a6d3a/5740828137013bfb815d1b4a/1463845509237/phone-main.jpg?format=1000w)
 
-## Requirements
+## Features
 
-- iOS 12.0+
-- Xcode 10.2.1
-- Configure SSH for the github 
+Most of the features are described by the `ConfigGlobal` which is the response of `GET /configs/rider/global`
+
+1. accessibility
+    * this feature describes the button to call the taxi company that can drive for people with disabilities
+2. cancellationFeedback
+3. carTypes
+4. commonMessages
+5. currentCity
+6. directConnectPhone
+7. driverTypes
+8. genderSelection
+9. generalInformation
+10. geocodingConfiguration
+11. rides
+12. smsMaskingEnabled
+13. supportedCities
+14. unpaidBalance
 
 ## Installation
 
-- Install Bundler 2.0.1 to manage ruby gems [Bundler guide](https://bundler.io) 
+### Requirements
 
-after installation successful run:
+- bundler 2.0.1
+- iOS 12.0+
+- Ruby 2.5.5
+- SSH for github access
+- Xcode 11.3.1
+
+- Install [bundler](https://bundler.io) to manage ruby gems
+```
+gem install bundler --version=2.0.1
+```
+
+- Install gems
 
 ```
 bundle install
@@ -39,15 +63,6 @@ bundle exec pod install
 ```
 scripts/infoplist.sh
 ```
-
-## Troubleshooting
-
-- After running pod install if it fails with the following error
-
-```
-Unable to add a source with url `git@github.com:ride-austin/ios-podspecs.git` named `ride-austin`
-```
-check SSH configuration  check guide [SSH Help](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)  
 
 ## Environmental Variables
 
@@ -102,6 +117,15 @@ This project is configured with Fastlane to work with CLI tools  here are the en
 
 - __SLACK_URL:__ Provide webhook url for the slack to post the updates on the slack. Follow these steps to add webhook in your slack channel  [guide](https://api.slack.com/incoming-webhooks)
 
+
+## Troubleshooting
+
+- After running pod install if it fails with the following error
+
+```
+Unable to add a source with url `git@github.com:ride-austin/ios-podspecs.git` named `ride-austin`
+```
+check SSH configuration  check guide [SSH Help](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)  
 
 ## Contribute 
 

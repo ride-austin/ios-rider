@@ -19,6 +19,20 @@ Most of the features are described by the `ConfigGlobal` which is the response o
 
 1. accessibility
     * this feature describes the button to call the taxi company that can drive for people with disabilities
+2. cancellationFeedback
+3. carTypes
+4. commonMessages
+5. currentCity
+6. directConnectPhone
+7. driverTypes
+8. genderSelection
+9. generalInformation
+10. geocodingConfiguration
+11. rides
+12. smsMaskingEnabled
+13. supportedCities
+14. unpaidBalance
+
 ## Installation
 
 ### Requirements

@@ -3,7 +3,7 @@ name: Build Development
 on:
   push:
     branches:
-      - 'develop'
+      - 'internal/test'
 
 jobs:
   build-and-test:

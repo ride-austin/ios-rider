@@ -1,7 +1,7 @@
 if [ -f fastlane/.env.default ]
 then
 	source fastlane/.env.default
-elif test -z "$CIRCLECI"
+elif test -z "$CI"
 then
 	echo "Please provide missing fastlane/.env.default file"
 	exit 1

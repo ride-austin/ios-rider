@@ -2,7 +2,7 @@
 if [ -f $SRCROOT/fastlane/.env.default ]
 then
 	source $SRCROOT/fastlane/.env.default
-elif test -z "$CIRCLECI"
+elif test -z "$CI"
 then
 	echo "Please provide missing ${SRCROOT}/fastlane/.env.default file"
 	exit 1

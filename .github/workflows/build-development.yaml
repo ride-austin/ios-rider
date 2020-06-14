@@ -1,0 +1,85 @@
+name: Build Development
+
+on:
+  push:
+    branches:
+      - 'develop'
+
+jobs:
+  build-and-test:
+    name: Build and run tests
+    runs-on: macos-10.15
+    env:
+      FL_OUTPUT_DIR: output
+      API_KEY: ${{ secrets.API_KEY }}
+      APP_IDENTIFIER_PROD: ${{ secrets.APP_IDENTIFIER_PROD }}
+      APP_IDENTIFIER_QA: ${{ secrets.APP_IDENTIFIER_QA }}
+      APPCENTER_API_TOKEN: ${{ secrets.APPCENTER_API_TOKEN }}
+      APPCENTER_APP_NAME: ${{ secrets.APPCENTER_APP_NAME }}
+      APPCENTER_OWNER_NAME: ${{ secrets.APPCENTER_OWNER_NAME }}
+      APPLE_MERCHANT_IDENTIFIER: ${{ secrets.APPLE_MERCHANT_IDENTIFIER }}
+      BRANCH_KEY_PRODUCTION: ${{ secrets.BRANCH_KEY_PRODUCTION }}
+      BRANCH_KEY_QA: ${{ secrets.BRANCH_KEY_QA }}
+      BUG_FENDER_KEY: ${{ secrets.BUG_FENDER_KEY }}
+      CRASHLYTICS_API_TOKEN: ${{ secrets.CRASHLYTICS_API_TOKEN }}
+      CRASHLYTICS_BUILD_SECRET: ${{ secrets.CRASHLYTICS_BUILD_SECRET }}
+      DELIVER_USERNAME: ${{ secrets.DELIVER_USERNAME }}
+      DEV_SERVER_URL: ${{ secrets.DEV_SERVER_URL }}
+      FACEBOOK_APP_ID: ${{ secrets.FACEBOOK_APP_ID }}
+      FACEBOOK_BUNDLE_URL_SCHEME: ${{ secrets.FACEBOOK_BUNDLE_URL_SCHEME }}
+      FACEBOOK_DISPLAY_NAME: ${{ secrets.FACEBOOK_DISPLAY_NAME }}
+      FACEBOOK_URL_SCHEME_SUFFIX: ${{ secrets.FACEBOOK_URL_SCHEME_SUFFIX }}
+      FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
+      FASTLANE_TEAM_ID: ${{ secrets.FASTLANE_TEAM_ID }}
+      FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
+      FEATURE_SERVER_URL: ${{ secrets.FEATURE_SERVER_URL }}
+      GOOGLE_MAP_DIRECTIONS_KEY: ${{ secrets.GOOGLE_MAP_DIRECTIONS_KEY }}
+      GOOGLE_MAP_KEY: ${{ secrets.GOOGLE_MAP_KEY }}
+      GOOGLE_SERVICE_INFO_PLIST_PRODUCTION: ${{ secrets.GOOGLE_SERVICE_INFO_PLIST_PRODUCTION }}
+      HOCKEYAPP_API_TOKEN: ${{ secrets.HOCKEYAPP_API_TOKEN }}
+      HOCKEYAPP_ID_QA: ${{ secrets.HOCKEYAPP_ID_QA }}
+      MATCH_GIT_FULL_NAME: ${{ secrets.MATCH_GIT_FULL_NAME }}
+      MATCH_GIT_URL: ${{ secrets.MATCH_GIT_URL }}
+      MATCH_GIT_USER_EMAIL: ${{ secrets.MATCH_GIT_USER_EMAIL }}
+      MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+      MATCH_USERNAME: ${{ secrets.MATCH_USERNAME }}
+      MD5_PASSWORD_SALT: ${{ secrets.MD5_PASSWORD_SALT }}
+      PRODUCTION_SERVER_URL: ${{ secrets.PRODUCTION_SERVER_URL }}
+      QA_SERVER_URL: ${{ secrets.QA_SERVER_URL }}
+      SLACK_URL: ${{ secrets.SLACK_URL }}
+      SLACK_URL_XOCHAT: ${{ secrets.SLACK_URL_XOCHAT }}
+      STAGE_SERVER_URL: ${{ secrets.STAGE_SERVER_URL }}
+      STRIPE_KEY_PRODUCTION: ${{ secrets.STRIPE_KEY_PRODUCTION }}
+      STRIPE_KEY_QA: ${{ secrets.STRIPE_KEY_QA }}
+      TEAM_ID_PRODUCTION: ${{ secrets.TEAM_ID_PRODUCTION }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Map infoplist
+      run: scripts/infoplist.sh
+    - name: Cache gems
+      uses: actions/cache@v2
+      with:
+        path: circle_vendor/bundle
+        key: 1-gems-{{ checksum "Gemfile.lock" }}
+    - name: Install gems
+      run: bundle install --path circle_vendor/bundle
+    - name: Cache pods
+      uses: actions/cache@v2
+      with:
+        path: ./Pods
+        key: 1-pods-{{ checksum "Podfile.lock" }}
+    - name: Install Cocoapods
+      run: |
+        if [ ! -d "Pods" ]
+        then
+          bundle exec pod install --repo-update
+        fi
+    - name: Map GoogleService-Info.plist
+      run: |
+        [ ! -z "$GOOGLE_SERVICE_INFO_PLIST_PRODUCTION" ]
+        echo $GOOGLE_SERVICE_INFO_PLIST_PRODUCTION | base64 --decode -o Resources/Plists/GoogleService-Info.plist
+    - name: Build QA
+      run: bundle exec fastlane qa
+    - uses: actions/upload-artifact@v2
+      with:
+        path: output

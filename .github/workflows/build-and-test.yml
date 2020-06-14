@@ -60,14 +60,20 @@ jobs:
       uses: actions/cache@v2
       with:
         path: circle_vendor/bundle
-        key: 1-gems-{{ checksum "Gemfile.lock" }}
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
     - name: Install gems
-      run: bundle install --path circle_vendor/bundle
+      run: |
+        bundle config path circle_vendor/bundle
+        bundle install --jobs 4 --retry 3
     - name: Cache pods
       uses: actions/cache@v2
       with:
-        path: ./Pods
-        key: 1-pods-{{ checksum "Podfile.lock" }}
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
     - name: Install Cocoapods
       run: |
         if [ ! -d "Pods" ]

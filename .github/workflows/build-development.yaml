@@ -84,6 +84,10 @@ jobs:
       run: |
         [ ! -z "$GOOGLE_SERVICE_INFO_PLIST_PRODUCTION" ]
         echo $GOOGLE_SERVICE_INFO_PLIST_PRODUCTION | base64 --decode -o Resources/Plists/GoogleService-Info.plist
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.MATCH_GIT_SSH_KEY }}
     - name: Build QA
       run: bundle exec fastlane qa
     - uses: actions/upload-artifact@v2
